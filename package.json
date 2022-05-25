@@ -1,0 +1,23 @@
+{
+    "name": "employment-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile": "sass -w assets/styles/scss/global.scss:assets/styles/css/global.css assets/styles/scss/layout.scss:assets/styles/css/layout.css assets/styles/scss/styles.scss:assets/styles/css/styles.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/phpdevelopers/employment-template.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/phpdevelopers/employment-template/issues"
+    },
+    "homepage": "https://gitlab.com/phpdevelopers/employment-template#readme",
+    "dependencies": {
+        "sass": "^1.52.1"
+    }
+}
