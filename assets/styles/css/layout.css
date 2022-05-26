@@ -1,6 +1,25 @@
+* {
+  direction: rtl;
+  font-family: "DIN NEXTTM ARABIC", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(17, 43, 27, 0.7333333333), rgba(12, 51, 28, 0.8)), url("../../images/hero_home_03.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 100px;
+}
+@media screen and (min-height: 850px) {
+  .header {
+    min-height: 90vh;
+  }
 }
 
 /*# sourceMappingURL=layout.css.map */

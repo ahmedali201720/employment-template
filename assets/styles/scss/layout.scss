@@ -1,4 +1,12 @@
-body {
-    margin: 0;
-    padding: 0;
+@import './global.scss';
+.header {
+    min-height: 100vh;
+    background: linear-gradient(#112b1bbb, #0c331ccc), url('../../images/hero_home_03.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
+    @media screen and (min-height: 850px) {
+        min-height: 90vh;
+    }
 }
