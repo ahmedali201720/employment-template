@@ -3,9 +3,41 @@
   font-family: "DIN NEXTTM ARABIC", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+.sep-sm {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.sep-md {
+  display: inline-block;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
+}
+
+.circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2da860;
+}
+
+.text-green {
+  color: #327950 !important;
+}
+
+.text-grey {
+  color: #777777;
 }
 
 /*# sourceMappingURL=global.css.map */

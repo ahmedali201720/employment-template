@@ -1,12 +1,342 @@
 @import './global.scss';
 .header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    background: linear-gradient(#112b1bbb, #0c331ccc), url('../../images/hero_home_03.jpg');
+    background: linear-gradient(#051d0fde, #1c5031b2), url('../../images/hero_home_03.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    @media screen and (max-height: 700px) {
+        min-height: 110vh;
+    }
     @media screen and (min-height: 850px) {
-        min-height: 90vh;
+        min-height: 93vh;
+    }
+    .top-nav {
+        position: absolute;
+        top: 25px;
+        right: 0;
+        width: 100%;
+        padding: 1.5rem 3rem;
+        .brand {
+            img {
+                position: relative;
+                animation: fadeLogo 2.5s ease-in-out;
+            }
+        }
+        .nav-list {
+            margin-bottom: 0;
+            list-style: none;
+            padding: 0;
+            .nav-list-item {
+                display: inline-block;
+                .nav-list-link {
+                    position: relative;
+                    display: inline-block;
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    padding-bottom: 1rem;
+                    transition: all 0.5s;
+                    &:not(.dropdown-toggle)::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        width: 0;
+                        height: 2px;
+                        background-color: lighten($color: $greenColor, $amount: 50%);
+                        transition: all 0.5s;
+                    }
+                    &:hover {
+                        color: lighten($color: $greenColor, $amount: 50%);
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .dropdown-toggle {
+                &::after {
+                    border-top: none !important;
+                }
+                i {
+                    position: relative;
+                    top: 3px;
+                }
+            }
+            .dropdown:hover .dropdown-menu {
+                display: block;
+                margin-top: 0;
+                min-width: 250px;
+                padding-top: 0;
+                padding-bottom: 0;
+                li {
+                    a {
+                        position: relative;
+                        display: inline-block;
+                        padding-top: 0.625rem;
+                        padding-bottom: 0.4rem;
+                        transition: all 0.5s;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 5px;
+                            height: 100%;
+                            background-color: $greenColor;
+                            display: none;
+                            transition: all 0.5s;
+                        }
+                        &:hover {
+                            color: $greenColor;
+                            background-color: lighten($color: $greenColor, $amount: 60%);
+                            padding-right: 1.5rem;
+                            &::after {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .links {
+            .auth {
+                position: relative;
+                overflow: hidden;
+                display: inline-block;
+                color: #ffffff;
+                width: 150px;
+                border: 1px solid #efefef;
+                border-radius: 50px;
+                padding: 0.5rem 1.2rem;
+                text-decoration: none;
+                z-index: 1;
+                text-align: center;
+                transition: all 0.5s;
+                &.register {
+                    background-color: transparent;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        right: -100%;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: $greenColor;
+                        transition: all 0.6s;
+                    }
+                    &:hover {
+                        color: #ffffff;
+                        &::before {
+                            right: 0;
+                            z-index: -1;
+                        }
+                    }
+                }
+                &.login {
+                    background-color: #ffffff;
+                    @media screen and (max-width: 1200px) {
+                        width: 160px;
+                    }
+                    color: $greenColor;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        right: -100%;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: $greenColor;
+                        transition: all 0.6s;
+                    }
+                    &:hover {
+                        color: #ffffff;
+                        &::before {
+                            right: 0;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header-swiper {
+        position: relative;
+        top: 80px;
+        animation: fadeSwiper 2s linear;
+        text-align: center;
+        cursor: grab;
+        width: 90%;
+        max-width: 1000px;
+        max-height: auto;
+        .sub-meta {
+            color: #fcdca6;
+            font-size: 1.3rem;
+        }
+        .head {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 2.5rem;
+            @media screen and (max-width: 1024px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .header-search-form {
+        position: relative;
+        top: 80px;
+        width: 90%;
+        max-width: 1000px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        padding: 1rem;
+        animation: fadeSearchForm 2s linear;
+        .input-wrapper {
+            position: relative;
+            i {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                font-size: 1.5rem;
+                color: $greenColor;
+            }
+            input,
+            select {
+                padding-right: 3rem;
+                outline: none !important;
+                box-shadow: none !important;
+                border: none;
+                font-size: 1.2rem;
+            }
+        }
+        .searchHeaderButton {
+            position: relative;
+            display: block;
+            border-radius: 50px;
+            padding: 0.8rem;
+            background-color: transparent !important;
+            color: $greenColor;
+            width: 100%;
+            height: 100%;
+            border: 1px solid $greenColor;
+            outline: none;
+            box-shadow: none;
+            overflow: hidden;
+            z-index: 1;
+            transition: all 0.5s;
+            &::before {
+                content: "";
+                position: absolute;
+                right: -100%;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $greenColor;
+                transition: all 0.6s;
+            }
+            &:hover {
+                color: #ffffff;
+                &::before {
+                    right: 0;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+    .statistics-content {
+        position: relative;
+        top: 80px;
+        .item {
+            position: relative;
+            width: 200px;
+            padding: 1rem;
+            border: 2px solid #45f045;
+            color: #ffffff;
+            border-radius: 50px;
+            text-align: center;
+            animation: fadeStats 2s linear forwards;
+            opacity: 0;
+            top: 130px;
+            p {
+                span {
+                    font-size: 1.3rem;
+                }
+            }
+            @media screen and (max-width:768px) {
+                width: 150px;
+                p {
+                    span {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            &:nth-child(1) {
+                animation-delay: 0s;
+            }
+            &:nth-child(2) {
+                animation-delay: .3s;
+            }
+            &:nth-child(3) {
+                animation-delay: .6s;
+            }
+            &:nth-child(4) {
+                animation-delay: .8s;
+            }
+        }
+    }
+    .next-section-link {
+        position: absolute;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        bottom: -50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: all 0.5s;
+        &:hover {
+            border-color: #45f045;
+            span {
+                background-color: #1da71d;
+                i {
+                    color: #ffffff;
+                }
+            }
+        }
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            background-color: #ffffff;
+            box-shadow: 0 0 5px #9e9c9c;
+            border-radius: 50%;
+            transition: all 0.5s;
+            i {
+                color: $greenColor;
+                transition: all 0.5s;
+            }
+        }
     }
 }

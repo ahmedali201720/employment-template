@@ -3,23 +3,383 @@
   font-family: "DIN NEXTTM ARABIC", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
+.sep-sm {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.sep-md {
+  display: inline-block;
+  padding-right: 1.3rem;
+  padding-left: 1.3rem;
+}
+
+.circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #2da860;
+}
+
+.text-green {
+  color: #327950 !important;
+}
+
+.text-grey {
+  color: #777777;
+}
+
 .header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  background: linear-gradient(rgba(17, 43, 27, 0.7333333333), rgba(12, 51, 28, 0.8)), url("../../images/hero_home_03.jpg");
+  background: linear-gradient(rgba(5, 29, 15, 0.8705882353), rgba(28, 80, 49, 0.6980392157)), url("../../images/hero_home_03.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+@media screen and (max-height: 700px) {
+  .header {
+    min-height: 110vh;
+  }
 }
 @media screen and (min-height: 850px) {
   .header {
-    min-height: 90vh;
+    min-height: 93vh;
   }
+}
+.header .top-nav {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 100%;
+  padding: 1.5rem 3rem;
+}
+.header .top-nav .brand img {
+  position: relative;
+  animation: fadeLogo 2.5s ease-in-out;
+}
+.header .top-nav .nav-list {
+  margin-bottom: 0;
+  list-style: none;
+  padding: 0;
+}
+.header .top-nav .nav-list .nav-list-item {
+  display: inline-block;
+}
+.header .top-nav .nav-list .nav-list-item .nav-list-link {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  transition: all 0.5s;
+}
+.header .top-nav .nav-list .nav-list-item .nav-list-link:not(.dropdown-toggle)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c4e6d2;
+  transition: all 0.5s;
+}
+.header .top-nav .nav-list .nav-list-item .nav-list-link:hover {
+  color: #c4e6d2;
+}
+.header .top-nav .nav-list .nav-list-item .nav-list-link:hover::after {
+  width: 100%;
+}
+.header .top-nav .nav-list .dropdown-toggle::after {
+  border-top: none !important;
+}
+.header .top-nav .nav-list .dropdown-toggle i {
+  position: relative;
+  top: 3px;
+}
+.header .top-nav .nav-list .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  min-width: 250px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.header .top-nav .nav-list .dropdown:hover .dropdown-menu li a {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.625rem;
+  padding-bottom: 0.4rem;
+  transition: all 0.5s;
+}
+.header .top-nav .nav-list .dropdown:hover .dropdown-menu li a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #327950;
+  display: none;
+  transition: all 0.5s;
+}
+.header .top-nav .nav-list .dropdown:hover .dropdown-menu li a:hover {
+  color: #327950;
+  background-color: #e8f5ed;
+  padding-right: 1.5rem;
+}
+.header .top-nav .nav-list .dropdown:hover .dropdown-menu li a:hover::after {
+  display: block;
+}
+.header .top-nav .links .auth {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  color: #ffffff;
+  width: 150px;
+  border: 1px solid #efefef;
+  border-radius: 50px;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  z-index: 1;
+  text-align: center;
+  transition: all 0.5s;
+}
+.header .top-nav .links .auth.register {
+  background-color: transparent;
+}
+.header .top-nav .links .auth.register::before {
+  content: "";
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #327950;
+  transition: all 0.6s;
+}
+.header .top-nav .links .auth.register:hover {
+  color: #ffffff;
+}
+.header .top-nav .links .auth.register:hover::before {
+  right: 0;
+  z-index: -1;
+}
+.header .top-nav .links .auth.login {
+  background-color: #ffffff;
+  color: #327950;
+}
+@media screen and (max-width: 1200px) {
+  .header .top-nav .links .auth.login {
+    width: 160px;
+  }
+}
+.header .top-nav .links .auth.login::before {
+  content: "";
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #327950;
+  transition: all 0.6s;
+}
+.header .top-nav .links .auth.login:hover {
+  color: #ffffff;
+}
+.header .top-nav .links .auth.login:hover::before {
+  right: 0;
+  z-index: -1;
+}
+.header .header-swiper {
+  position: relative;
+  top: 80px;
+  animation: fadeSwiper 2s linear;
+  text-align: center;
+  cursor: grab;
+  width: 90%;
+  max-width: 1000px;
+  max-height: auto;
+}
+.header .header-swiper .sub-meta {
+  color: #fcdca6;
+  font-size: 1.3rem;
+}
+.header .header-swiper .head {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .header .header-swiper .head {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .header-swiper .head {
+    font-size: 1.8rem;
+  }
+}
+.header .header-search-form {
+  position: relative;
+  top: 80px;
+  width: 90%;
+  max-width: 1000px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 1rem;
+  animation: fadeSearchForm 2s linear;
+}
+.header .header-search-form .input-wrapper {
+  position: relative;
+}
+.header .header-search-form .input-wrapper i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #327950;
+}
+.header .header-search-form .input-wrapper input,
+.header .header-search-form .input-wrapper select {
+  padding-right: 3rem;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+  font-size: 1.2rem;
+}
+.header .header-search-form .searchHeaderButton {
+  position: relative;
+  display: block;
+  border-radius: 50px;
+  padding: 0.8rem;
+  background-color: transparent !important;
+  color: #327950;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #327950;
+  outline: none;
+  box-shadow: none;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s;
+}
+.header .header-search-form .searchHeaderButton::before {
+  content: "";
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #327950;
+  transition: all 0.6s;
+}
+.header .header-search-form .searchHeaderButton:hover {
+  color: #ffffff;
+}
+.header .header-search-form .searchHeaderButton:hover::before {
+  right: 0;
+  z-index: -1;
+}
+.header .statistics-content {
+  position: relative;
+  top: 80px;
+}
+.header .statistics-content .item {
+  position: relative;
+  width: 200px;
+  padding: 1rem;
+  border: 2px solid #45f045;
+  color: #ffffff;
+  border-radius: 50px;
+  text-align: center;
+  animation: fadeStats 2s linear forwards;
+  opacity: 0;
+  top: 130px;
+}
+.header .statistics-content .item p span {
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 768px) {
+  .header .statistics-content .item {
+    width: 150px;
+  }
+  .header .statistics-content .item p span {
+    font-size: 1rem;
+  }
+}
+.header .statistics-content .item:nth-child(1) {
+  animation-delay: 0s;
+}
+.header .statistics-content .item:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.header .statistics-content .item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.header .statistics-content .item:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.header .next-section-link {
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  bottom: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.header .next-section-link:hover {
+  border-color: #45f045;
+}
+.header .next-section-link:hover span {
+  background-color: #1da71d;
+}
+.header .next-section-link:hover span i {
+  color: #ffffff;
+}
+.header .next-section-link span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px #9e9c9c;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.header .next-section-link span i {
+  color: #327950;
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,52 @@
+@keyframes wavy {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 118px;
+    }
+}
+
+@keyframes fadeLogo {
+    0% {
+        right: -60px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeSearchForm {
+    0% {
+        right: -130px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeSwiper {
+    0% {
+        left: -130px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeStats {
+    0% {
+        top: 130px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
