@@ -53,6 +53,28 @@ $(document).ready(function() {
             'transform': 'scale(1)'
         })
     }, {
+        offset: '90%'
+    })
+
+    const blogSection = $('#blogSection .blog-item').waypoint(function(direction) {
+        $('#blogSection .section-head').css({
+            'transform': 'scale(1)'
+        })
+        $('#blogSection .blog-item').css({
+            'transform': 'scale(1)'
+        })
+    }, {
+        offset: '100%'
+    })
+
+    const companySection = $('#companySection .item').waypoint(function(direction) {
+        $('#companySection .section-head').css({
+            'transform': 'scale(1)'
+        })
+        $('#companySection .item').css({
+            'transform': 'scale(1)'
+        })
+    }, {
         offset: '100%'
     })
 
@@ -128,6 +150,50 @@ $(document).ready(function() {
             1200: {
                 slidesPerView: 2,
                 spaceBetween: 20,
+            }
+        }
+    });
+
+    var blogsSwiper = new Swiper(".blogs-swiper", {
+        direction: "horizontal",
+        loop: true,
+        center: true,
+        preloadImages: false,
+        lazy: true,
+        keyboard: {
+            enabled: true,
+        },
+        autoplay: {
+            delay: 3500
+        },
+        navigation: {
+            nextEl: ".blogs-section .swiper-button-next",
+            prevEl: ".blogs-section .swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            576: {
+                slidesPerView: 1.5,
+                spaceBetween: 30,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 40,
             }
         }
     });

@@ -28,7 +28,7 @@
 }
 @keyframes fadeSwiper {
   0% {
-    left: -130px;
+    left: -50px;
     opacity: 0;
   }
   100% {

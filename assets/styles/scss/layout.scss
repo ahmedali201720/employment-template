@@ -12,13 +12,24 @@
     background-repeat: no-repeat;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    @media screen and (max-height: 700px) {
+    @media screen and (max-height: 850px) {
+        min-height: 105vh;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    @media screen and (max-height: 812px) {
         min-height: 110vh;
     }
-    @media screen and (max-height: 650px) {
+    @media screen and (max-height: 750px) {
+        min-height: 120vh;
+    }
+    @media screen and (max-height: 660px) {
         min-height: 140vh;
     }
-    @media screen and (min-height: 850px) {
+    @media screen and (max-height: 500px) {
+        min-height: 180vh;
+    }
+    @media screen and (min-height: 900px) {
         min-height: 93vh;
     }
     .top-nav {
@@ -27,10 +38,33 @@
         right: 0;
         width: 100%;
         padding: 1.5rem 3rem;
+        @media screen and (max-width: 768px) {
+            padding: 1.5rem;
+        }
+        @media screen and (max-width: 575px) {
+            padding: 1rem;
+        }
+        .nav-toggler {
+            font-size: 1.8rem;
+            background-color: transparent;
+            color: #ffffff;
+            border: none;
+            outline: none;
+        }
+        .small-search-toggler {
+            font-size: 1.8rem;
+            background-color: transparent;
+            color: #ffffff;
+            border: none;
+            outline: none;
+        }
         .brand {
             img {
                 position: relative;
                 animation: fadeLogo 2.5s ease-in-out;
+                @media screen and (max-width: 575px) {
+                    width: 120px;
+                }
             }
         }
         .nav-list {
@@ -175,21 +209,22 @@
     .header-swiper {
         position: relative;
         top: 80px;
-        animation: fadeSwiper 2s linear;
         text-align: center;
         cursor: grab;
         width: 90%;
-        max-width: 1000px;
-        max-height: auto;
+        max-width: 600px;
         overflow: hidden;
         .sub-meta {
             color: #fcdca6;
             font-size: 1.3rem;
+            animation: fadeSwiper 2s linear;
         }
         .head {
+            position: relative;
             color: #ffffff;
             font-weight: 600;
             font-size: 2.5rem;
+            animation: fadeSwiper 2s linear;
             @media screen and (max-width: 1024px) {
                 font-size: 2rem;
             }
@@ -350,6 +385,103 @@
                 color: $greenColor;
                 transition: all 0.5s;
             }
+        }
+    }
+}
+
+.footer {
+    padding: 5rem 1rem;
+    background-color: #000000;
+    color: #ffffff;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    .footer-head {
+        max-width: 450px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2rem;
+        h3 {
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #dfdfdf;
+        }
+    }
+    .footer-form {
+        max-width: 450px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 5rem;
+        background-color: #ffffff;
+        padding: 0.8rem;
+        border-radius: 50px;
+        input {
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+        .subscribe-btn {
+            display: block;
+            width: 100%;
+            border-radius: 50px;
+            border: none;
+            padding: 0.5rem;
+            background-color: #2ac731;
+            color: #ffffff;
+            transition: all 0.5s;
+        }
+    }
+    .phone,
+    .address,
+    .email {
+        a {
+            display: block;
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #ffffff;
+            margin-bottom: 0.8rem;
+        }
+    }
+    .links {
+        .head {
+            h5 {
+                font-size: 1.3rem;
+            }
+            margin-bottom: 1.5rem;
+        }
+        a {
+            display: block;
+            color: #ffffff;
+            margin-bottom: 0.625rem;
+            text-decoration: none;
+        }
+    }
+    .mobile-link {
+        display: flex !important;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        width: 200px;
+        border: 1px solid #45f045;
+        color: #ffffff !important;
+        border-radius: 50px;
+        i {
+            font-size: 2rem;
+        }
+        transition: all 0.5s;
+        &:hover {
+            background-color: #18d118;
+        }
+    }
+    .bottom-footer {
+        border-top: 1px solid #ffffff;
+    }
+    .socials {
+        a {
+            color: #ffffff;
+            font-size: 1.3rem;
+            text-decoration: none;
         }
     }
 }
