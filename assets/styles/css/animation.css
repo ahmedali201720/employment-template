@@ -46,5 +46,25 @@
     opacity: 1;
   }
 }
+@keyframes fadeLeftRight {
+  0% {
+    left: -130px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes fadeRightLeft {
+  0% {
+    left: 130px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=animation.css.map */
