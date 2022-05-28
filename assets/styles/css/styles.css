@@ -648,4 +648,112 @@ body {
   text-align: center;
 }
 
+/* Login and register */
+.auth-section {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* Form styles */
+}
+.auth-section .form-content {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  transition: all 0.6s;
+}
+.auth-section .auth-footer .social-icons .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  transition: all 0.4s;
+}
+.auth-section .auth-footer .social-icons .icon:hover {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.05);
+}
+.auth-section .auth-footer .social-icons .icon i {
+  color: #327950;
+  line-height: 40px;
+  font-size: 20px;
+}
+.auth-section .form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.auth-section .form-content .head {
+  text-align: center;
+}
+.auth-section .form-container {
+  width: 100%;
+  max-width: 550px;
+}
+.auth-section .input-wrapper {
+  position: relative;
+}
+.auth-section .input-wrapper i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 15px;
+  color: #327950;
+}
+.auth-section .input-wrapper input {
+  padding-right: 40px;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 50px;
+  height: 50px;
+}
+.auth-section .input-wrapper input:focus {
+  border: 1px solid #a7f8ae !important;
+}
+.auth-section .form-check-input {
+  outline: none !important;
+  box-shadow: none !important;
+  transition: all 0.5s;
+}
+.auth-section .form-check-input:checked {
+  background-color: #327950;
+  border-color: #327950;
+}
+.auth-section .form-container button {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+.auth-section .form-container button:hover {
+  background-color: #F26522;
+  color: #ffffff;
+}
+.auth-section .auth-form .error {
+  font-size: 12px;
+  color: #ff2525;
+}
+
+@media screen and (max-width: 768px) {
+  .auth-section {
+    min-height: 40vh;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .auth-section .section-head {
+    margin-bottom: 2rem;
+  }
+}
+.auth-section .banner {
+  background: linear-gradient(to bottom, rgba(2, 15, 6, 0.631372549), rgba(15, 63, 9, 0.6352941176), rgba(2, 1, 10, 0.7176470588)), url("../../images/banner-2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*# sourceMappingURL=styles.css.map */

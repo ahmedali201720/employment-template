@@ -78,6 +78,14 @@ $(document).ready(function() {
         offset: '100%'
     })
 
+    const authSection = $('#authSection .form-content').waypoint(function(direction) {
+        $('#authSection .form-content').css({
+            'transform': 'scale(1)'
+        })
+    }, {
+        offset: '100%'
+    })
+
     var testSwiper = new Swiper(".testomonial-swiper", {
         direction: "horizontal",
         loop: true,
