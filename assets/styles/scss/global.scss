@@ -99,6 +99,9 @@ body {
 
 .section-head {
     margin-bottom: 5rem;
+    @media screen and (max-width: 576px) {
+        margin-bottom: 2rem;
+    }
     span {
         color: $brownColor;
     }
@@ -309,4 +312,9 @@ body {
             color: #ffffff;
         }
     }
+}
+
+.form-check-input:checked {
+    background-color: $greenColor;
+    border-color: $greenColor;
 }

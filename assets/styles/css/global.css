@@ -96,6 +96,11 @@ body {
 .section-head {
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 576px) {
+  .section-head {
+    margin-bottom: 2rem;
+  }
+}
 .section-head span {
   color: #a07832;
 }
@@ -304,6 +309,11 @@ body {
 }
 .job-item .apply-btn:hover {
   color: #ffffff;
+}
+
+.form-check-input:checked {
+  background-color: #327950;
+  border-color: #327950;
 }
 
 /*# sourceMappingURL=global.css.map */

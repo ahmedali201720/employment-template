@@ -206,5 +206,15 @@ $(document).ready(function() {
         }
     });
 
+    $(window).scroll(function() {
+
+        const scrollHeader = $("#scrollHeader");
+        if ($(window).scrollTop() > 0) {
+            scrollHeader.slideDown(300);
+        } else {
+            scrollHeader.slideUp(300);
+        }
+
+    });
 
 });

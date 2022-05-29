@@ -96,6 +96,11 @@ body {
 .section-head {
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 576px) {
+  .section-head {
+    margin-bottom: 2rem;
+  }
+}
 .section-head span {
   color: #a07832;
 }
@@ -304,6 +309,11 @@ body {
 }
 .job-item .apply-btn:hover {
   color: #ffffff;
+}
+
+.form-check-input:checked {
+  background-color: #327950;
+  border-color: #327950;
 }
 
 .how-to-section {
@@ -754,6 +764,71 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Jobs page styles */
+.jobs-filter-section {
+  padding: 10rem 1rem;
+  overflow: hidden;
+}
+.jobs-filter-section .filter-category {
+  padding: 1rem 0;
+  border-bottom: 1px solid #adadad;
+  margin-top: 1.2rem;
+  transition: all 0.6s;
+}
+.jobs-filter-section .filter-category .head {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.jobs-filter-section .filter-category .content {
+  overflow: hidden;
+  transition: all 0.6s;
+}
+.jobs-filter-section .filter-category .content .form-check {
+  position: relative;
+  margin-bottom: 0.325rem;
+  padding-left: 2rem;
+}
+.jobs-filter-section .filter-category .content .form-check:lang(en) {
+  padding-right: 2rem;
+  padding-left: 0;
+}
+.jobs-filter-section .filter-category .content .form-check .count {
+  color: #038db8;
+  position: absolute;
+  left: 5px;
+}
+.jobs-filter-section .filter-category .content .form-check .count:lang(en) {
+  right: 5px;
+  left: auto;
+}
+.jobs-filter-section .filter-category.content-hidden .head .plus {
+  display: inline-block;
+}
+.jobs-filter-section .filter-category.content-hidden .head .minus {
+  display: none;
+}
+.jobs-filter-section .filter-category.content-hidden .content {
+  max-height: 0;
+}
+.jobs-filter-section .filter-category.content-shown .head .minus {
+  display: inline-block;
+}
+.jobs-filter-section .filter-category.content-shown .head .plus {
+  display: none;
+}
+.jobs-filter-section .filter-category.content-shown .content {
+  max-height: 320px;
+}
+.jobs-filter-section .filter-category:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.jobs-filter-section .job-item .image {
+  width: 70px;
 }
 
 /*# sourceMappingURL=styles.css.map */
