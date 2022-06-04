@@ -939,7 +939,8 @@ body {
   right: -100%;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background: linear-gradient(to bottom right, rgba(7, 5, 3, 0.9254901961), rgba(12, 32, 21, 0.9254901961));
   color: #ffffff;
   padding: 0;
