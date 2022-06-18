@@ -35,125 +35,273 @@
   <body>
     <!-- Sidebar -->
 
-    <aside class="dashboard-sidebar" id="dashboardSidebar">
-      <div class="logo">
-        <img src="../assets/images/logo-white.png" alt="Logo" />
-      </div>
-      <div class="user">
-        <img src="../assets/images/icons/dr.png" alt="user" />
-        <div class="meta">
-          <a href="#" class="name"> مستشفى الجابرى </a>
-          <span class="role">
-            <span class="dot online me-1"></span>
-            <small class="text-online" t>متصل </small>
+    <div class="page-container" id="pageContainer">
+      <aside class="dashboard-sidebar" id="dashboardSidebar">
+        <div class="wrapper text-end mb-3 d-sm-none d-block">
+          <button class="sidebar-closer" id="sidebarCloser">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="logo text-center">
+          <img class="brand" src="../assets/images/logo-white.png" alt="Logo" />
+          <img
+            src="../assets/images/icon-white.png"
+            alt="Icon"
+            class="logo-icon"
+          />
+        </div>
+        <div class="user">
+          <img src="../assets/images/icons/dr.png" alt="user" />
+          <div class="meta">
+            <a href="#" class="name"> مستشفى الجابرى </a>
+            <span class="role">
+              <span class="dot online me-1"></span>
+              <small class="text-online" t>متصل </small>
+            </span>
+          </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              id="userDropdownButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa fa-ellipsis-v ellipsis-icon"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-user me-1"></i>
+                  <span>الملف الشخصي</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-cogs me-1"></i>
+                  <span>الإعدادات</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-sign-out-alt me-1"></i>
+                  <span>تسجيل الخروج</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="side-links-list">
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/dashboard.png"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text">لوحة التحكم</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+            <div class="submenu">
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span>التوظيف</span>
+              </a>
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span> طلبات التوظيف</span>
+              </a>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img src="../assets/images/icons/job.png" alt="" class="icon" />
+                <span class="text">الوظائف</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+            <div class="submenu">
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span>الوظائف المفتوحة</span>
+              </a>
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span>الوظائف السابقة</span>
+              </a>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img src="../assets/images/icons/add.png" alt="" class="icon" />
+                <span class="text">أضف وظيفة</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/search.png"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text">بحث عن أطباء</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/bell.png"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text">الإشعارات</span>
+              </a>
+              <span class="badge"> +100 </span>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/email.png"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text">الرسائل</span>
+              </a>
+              <span class="badge"> +100 </span>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/setting.png"
+                  alt="setting"
+                  class="icon"
+                />
+                <span class="text">الإعدادات</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/service.png"
+                  alt="service"
+                  class="icon"
+                />
+                <span class="text">خدمة الدعم</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/logout.png"
+                  alt="logout"
+                  class="icon"
+                />
+                <span class="text">تسجيل خروج</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+        </ul>
+        <div class="hint">
+          <i class="fa fa-check-circle me-2"></i>
+          <span>
+            للحصول على أفضل نتائج البحث ، اشترك فى النشرة الاخبارية الخاصة بنا
+            ليصلك كل التحديثات
           </span>
         </div>
-        <div class="dropdown">
-          <button
-            type="button"
-            id="userDropdownButton"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i class="fa fa-ellipsis-v ellipsis-icon"></i>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li>
-              <a class="dropdown-item" href="#">
-                <i class="fa fa-user me-1"></i>
-                <span>الملف الشخصي</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">
-                <i class="fa fa-cogs me-1"></i>
-                <span>الإعدادات</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">
-                <i class="fa fa-sign-out-alt me-1"></i>
-                <span>تسجيل الخروج</span>
-              </a>
-            </li>
-          </ul>
+        <div class="footer text-white text-center">
+          <strong>شركة التوظيف</strong>
+          <p class="mb-0 mt-1">
+            <i class="far fa-copyright me-1"></i>
+            <span>جميع الحقوق محفوظة 2022</span>
+          </p>
+        </div>
+      </aside>
+      <div class="page-body">
+        <div class="header" class="header" id="header">
+          <div class="controls-wrapper">
+            <button
+              class="sidebar-toggler d-sm-inline-block d-none"
+              id="sidebarToggler"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <button
+              class="sidebar-toggler d-sm-none d-inline-block"
+              id="mobileSidebarToggler"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="brand">
+              <img src="../assets/images/logo-green.png" alt="Logo" />
+            </div>
+          </div>
+          <div class="header-search-form-container">
+            <form action="" class="header-search-form">
+              <div class="input-wrapper">
+                <i class="icon fa fa-search"></i>
+                <input
+                  type="text"
+                  name="key"
+                  placeholder="بحث عن أطباء"
+                  class="form-control"
+                />
+              </div>
+            </form>
+            <button class="add-job-btn">
+              <i class="fa fa-plus"></i>
+            </button>
+          </div>
+
+          <div class="links-wrapper">
+            <button class="widget" type="button" id="notButton">
+              <img src="../assets/images/icons/black/bell.png" alt="Chat" />
+              <div class="badge">10</div>
+            </button>
+            <button class="widget" type="button" id="chatButton">
+              <img
+                src="../assets/images/icons/black/message.png"
+                alt="setting"
+              />
+              <div class="badge">10</div>
+            </button>
+            <button class="widget" id="settingButton">
+              <img
+                src="../assets/images/icons/black/setting.png"
+                alt="setting"
+              />
+              <div class="badge">10</div>
+            </button>
+            <button class="profile-btn" id="profileButton">
+              <img
+                class="profile"
+                src="../assets/images/icons/dr.png"
+                alt="user"
+              />
+            </button>
+          </div>
         </div>
       </div>
-      <ul class="side-links-list">
-        <li class="side-item">
-          <div class="wrapper">
-            <a href="#" class="side-link">
-              <img
-                src="../assets/images/icons/dashboard.png"
-                alt=""
-                class="icon"
-              />
-              <span class="text">لوحة التحكم</span>
-            </a>
-            <i class="fa fa-angle-left ico"></i>
-          </div>
-          <div class="submenu">
-            <a href="#">
-              <i class="fa fa-dot-circle me-1"></i>
-              <span>التوظيف</span>
-            </a>
-            <a href="#">
-              <i class="fa fa-dot-circle me-1"></i>
-              <span> طلبات التوظيف</span>
-            </a>
-          </div>
-        </li>
-        <li class="side-item">
-          <div class="wrapper">
-            <a href="#" class="side-link">
-              <img src="../assets/images/icons/job.png" alt="" class="icon" />
-              <span class="text">الوظائف</span>
-            </a>
-            <i class="fa fa-angle-left ico"></i>
-          </div>
-          <div class="submenu">
-            <a href="#">
-              <i class="fa fa-dot-circle me-1"></i>
-              <span>الوظائف المفتوحة</span>
-            </a>
-            <a href="#">
-              <i class="fa fa-dot-circle me-1"></i>
-              <span>الوظائف السابقة</span>
-            </a>
-          </div>
-        </li>
-        <li class="side-item">
-          <div class="wrapper">
-            <a href="#" class="side-link">
-              <img
-                src="../assets/images/icons/search.png"
-                alt=""
-                class="icon"
-              />
-              <span class="text">بحث عن أطباء</span>
-            </a>
-            <i class="fa fa-angle-left ico"></i>
-          </div>
-        </li>
-        <li class="side-item">
-          <div class="wrapper">
-            <a href="#" class="side-link">
-              <img src="../assets/images/icons/bell.png" alt="" class="icon" />
-              <span class="text">الإشعارات</span>
-            </a>
-          </div>
-        </li>
-        <li class="side-item">
-          <div class="wrapper">
-            <a href="#" class="side-link">
-              <img src="../assets/images/icons/email.png" alt="" class="icon" />
-              <span class="text">الرسائل</span>
-            </a>
-            <i class="fa fa-angle-left ico"></i>
-          </div>
-        </li>
-      </ul>
-    </aside>
+    </div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -169,6 +317,12 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js"
       integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+      integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
