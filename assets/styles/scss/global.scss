@@ -352,3 +352,21 @@ body {
   background-color: $greenColor;
   border-color: $greenColor;
 }
+
+.dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000000;
+  &.online {
+    background-color: #40f78c;
+  }
+  &.offline {
+    background-color: #ff0000;
+  }
+}
+
+.text-online {
+  color: #40f78c;
+}

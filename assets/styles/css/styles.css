@@ -357,6 +357,24 @@ body {
   border-color: #327950;
 }
 
+.dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.dot.online {
+  background-color: #40f78c;
+}
+.dot.offline {
+  background-color: #ff0000;
+}
+
+.text-online {
+  color: #40f78c;
+}
+
 .how-to-section {
   margin: 6rem 0;
   overflow: hidden;
