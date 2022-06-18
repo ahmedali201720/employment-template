@@ -90,14 +90,14 @@ $(document).ready(function () {
     }
   );
 
-  const authSection = $("#authSection .form-content").waypoint(
+  const authSection = $("#authSection").waypoint(
     function (direction) {
       $("#authSection .form-content").css({
         transform: "scale(1)",
       });
     },
     {
-      offset: "100%",
+      offset: "50%",
     }
   );
 

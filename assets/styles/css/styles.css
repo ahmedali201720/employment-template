@@ -93,6 +93,47 @@ body {
   z-index: -1;
 }
 
+.separator {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.separator::before, .separator::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 28%;
+  height: 1px;
+  background-color: #d4d4d4;
+}
+@media screen and (max-width: 1024px) {
+  .separator::before, .separator::after {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .separator::before, .separator::after {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .separator::before, .separator::after {
+    width: 17%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .separator::before, .separator::after {
+    width: 13%;
+  }
+}
+.separator::after {
+  left: auto;
+  right: 0;
+}
+
 .section-head {
   margin-bottom: 5rem;
 }
@@ -544,7 +585,7 @@ body {
   display: inline-block;
   width: 35px;
   height: 35px;
-  background-color: #DF1B23;
+  background-color: #df1b23;
   border-radius: 50%;
   text-align: center;
   line-height: 38px;
@@ -663,7 +704,16 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 50% 50%;
+  overflow: hidden;
   /* Form styles */
+}
+@media screen and (min-width: 992px) {
+  .auth-section.register-section .section-head {
+    margin-top: 4rem;
+  }
+}
+.auth-section .section-head {
+  margin-bottom: 1.5rem;
 }
 .auth-section .form-content {
   -webkit-transform: scale(0);
@@ -693,6 +743,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 550px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.auth-section.company-section .form-content {
+  max-width: 700px;
 }
 .auth-section .form-content .head {
   text-align: center;
@@ -722,6 +779,56 @@ body {
 .auth-section .input-wrapper input:focus {
   border: 1px solid #a7f8ae !important;
 }
+.auth-section .nice-selector {
+  height: 100%;
+  border-radius: 50px;
+  width: 100%;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #ced4da;
+}
+.auth-section .nice-select {
+  padding-right: 0.9rem;
+}
+.auth-section .nice-select .current {
+  display: block;
+  text-align: right;
+}
+.auth-section .nice-select::after {
+  left: 15px;
+  right: auto;
+}
+.auth-section .nice-select .list {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #327950 #e7e7e7;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  text-align: right;
+}
+.auth-section .nice-select .list::-webkit-scrollbar {
+  width: 5px;
+}
+.auth-section .nice-select .list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.auth-section .nice-select .list::-webkit-scrollbar-thumb {
+  background: #327950;
+  border-radius: 50px;
+}
+.auth-section .nice-select .list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.auth-section .nice-select .list li {
+  text-align: right;
+  padding-right: 0.9rem;
+  padding-left: 0.9rem;
+}
 .auth-section .form-check-input {
   outline: none !important;
   box-shadow: none !important;
@@ -737,12 +844,27 @@ body {
   height: 50px;
 }
 .auth-section .form-container button:hover {
-  background-color: #F26522;
+  background-color: #f26522;
   color: #ffffff;
 }
 .auth-section .auth-form .error {
   font-size: 12px;
   color: #ff2525;
+}
+.auth-section .company-auth {
+  margin: 2.5rem 0;
+}
+.auth-section .company-auth .theme-btn {
+  width: 100%;
+  border: 1px solid #a07832;
+  text-align: center;
+  color: #a07832;
+}
+.auth-section .company-auth .theme-btn::before {
+  background-color: #a07832;
+}
+.auth-section .company-auth .theme-btn:hover {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
