@@ -393,6 +393,59 @@ body {
   color: #ff5555;
 }
 
+/* Nice Selector */
+.nice-selector {
+  height: 100%;
+  border-radius: 50px;
+  width: 100%;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #ced4da;
+}
+
+.nice-select {
+  padding-right: 0.9rem;
+}
+.nice-select .current {
+  display: block;
+  text-align: right;
+}
+.nice-select::after {
+  left: 15px;
+  right: auto;
+}
+.nice-select .list {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #327950 #e7e7e7;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+  text-align: right;
+}
+.nice-select .list::-webkit-scrollbar {
+  width: 5px;
+}
+.nice-select .list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.nice-select .list::-webkit-scrollbar-thumb {
+  background: #327950;
+  border-radius: 50px;
+}
+.nice-select .list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.nice-select .list li {
+  text-align: right;
+  padding-right: 0.9rem;
+  padding-left: 0.9rem;
+}
+
 .how-to-section {
   margin: 6rem 0;
   overflow: hidden;
@@ -814,56 +867,6 @@ body {
 }
 .auth-section .input-wrapper input:focus {
   border: 1px solid #a7f8ae !important;
-}
-.auth-section .nice-selector {
-  height: 100%;
-  border-radius: 50px;
-  width: 100%;
-  box-shadow: none;
-  outline: none;
-  border: 1px solid #ced4da;
-}
-.auth-section .nice-select {
-  padding-right: 0.9rem;
-}
-.auth-section .nice-select .current {
-  display: block;
-  text-align: right;
-}
-.auth-section .nice-select::after {
-  left: 15px;
-  right: auto;
-}
-.auth-section .nice-select .list {
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  max-height: 200px;
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: #327950 #e7e7e7;
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-  text-align: right;
-}
-.auth-section .nice-select .list::-webkit-scrollbar {
-  width: 5px;
-}
-.auth-section .nice-select .list::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-.auth-section .nice-select .list::-webkit-scrollbar-thumb {
-  background: #327950;
-  border-radius: 50px;
-}
-.auth-section .nice-select .list::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-.auth-section .nice-select .list li {
-  text-align: right;
-  padding-right: 0.9rem;
-  padding-left: 0.9rem;
 }
 .auth-section .form-check-input {
   outline: none !important;

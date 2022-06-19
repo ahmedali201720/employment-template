@@ -388,3 +388,60 @@ body {
 .text-offline {
   color: #ff5555;
 }
+
+/* Nice Selector */
+
+.nice-selector {
+  height: 100%;
+  border-radius: 50px;
+  width: 100%;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #ced4da;
+}
+
+.nice-select {
+  padding-right: 0.9rem;
+  .current {
+    display: block;
+    text-align: right;
+  }
+  &::after {
+    left: 15px;
+    right: auto;
+  }
+  .list {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: $greenColor #e7e7e7;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $greenColor;
+      border-radius: 50px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    li {
+      text-align: right;
+      padding-right: 0.9rem;
+      padding-left: 0.9rem;
+    }
+    text-align: right;
+  }
+}

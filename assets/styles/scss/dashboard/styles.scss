@@ -102,4 +102,31 @@ body {
       }
     }
   }
+  .job-form {
+    .input-wrapper {
+      position: relative;
+      .icon {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 1.2rem;
+        color: $greenColor;
+      }
+      input {
+        border: none;
+        border-radius: 50px;
+        background-color: #efefef;
+        padding: 0.9rem 3rem 0.9rem 0.9rem;
+        outline: none;
+        box-shadow: none;
+      }
+      .nice-selector {
+        background-color: #efefef !important;
+        border: none;
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+  }
 }
