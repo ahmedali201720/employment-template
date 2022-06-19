@@ -446,6 +446,62 @@ body {
   padding-left: 0.9rem;
 }
 
+.candidate-card {
+  position: relative;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  box-shadow: 0 0 5px #eeeeee;
+  border-radius: 10px;
+  text-align: center;
+}
+.candidate-card .image {
+  margin-bottom: 1rem;
+}
+.candidate-card .image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.candidate-card .name {
+  display: block;
+  color: #327950;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.candidate-card .desc {
+  color: #696969;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+.candidate-card .meta {
+  color: #005085;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.candidate-card .actions a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  color: #a07832;
+  margin-left: 0.6rem;
+  border: 1px solid #a07832;
+  transition: all 0.4s;
+}
+.candidate-card .actions a:hover {
+  background-color: #a07832;
+  color: #ffffff;
+}
+.candidate-card .actions a:last-child {
+  margin-left: 0;
+}
+
 .how-to-section {
   margin: 6rem 0;
   overflow: hidden;

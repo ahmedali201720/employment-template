@@ -129,4 +129,77 @@ body {
       }
     }
   }
+  .jobs-filter-section {
+    padding-top: 2rem;
+    overflow: hidden;
+    .filter-conainer {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #eeeeee;
+    }
+    .filter-category {
+      padding: 1rem 0;
+      border-bottom: 1px solid #dadada;
+      margin-top: 1.2rem;
+      transition: all 0.6s;
+      .head {
+        margin-bottom: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .content {
+        overflow: hidden;
+        transition: all 0.6s;
+        .form-check {
+          position: relative;
+          margin-bottom: 0.325rem;
+          padding-left: 2rem;
+          &:lang(en) {
+            padding-right: 2rem;
+            padding-left: 0;
+          }
+          .count {
+            color: #038db8;
+            position: absolute;
+            left: 5px;
+            &:lang(en) {
+              right: 5px;
+              left: auto;
+            }
+          }
+        }
+      }
+      &.content-hidden {
+        .head {
+          .plus {
+            display: inline-block;
+          }
+          .minus {
+            display: none;
+          }
+        }
+        .content {
+          max-height: 0;
+        }
+      }
+      &.content-shown {
+        .head {
+          .minus {
+            display: inline-block;
+          }
+          .plus {
+            display: none;
+          }
+        }
+        .content {
+          max-height: 320px;
+        }
+      }
+      &:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
