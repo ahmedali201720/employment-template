@@ -1,0 +1,105 @@
+@import "../global.scss";
+body {
+  background-color: #f8f8f8;
+}
+.page-content {
+  padding: 2rem;
+  height: calc(100vh - 120px);
+  overflow: auto;
+  @media screen and (max-width: 1400px) {
+    padding: 1rem;
+  }
+  .statistics-card {
+    box-shadow: 0 0 5px #dfdfdf;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    .head {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      small {
+        display: inline-block;
+        position: relative;
+        top: -5px;
+        font-size: 1.2rem;
+        margin-right: 1rem;
+        font-weight: 500;
+      }
+    }
+    .desc {
+      font-size: 1rem;
+      margin-bottom: 0;
+      display: inline-block;
+      background-color: #004381;
+      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      color: #ffffff;
+    }
+  }
+  .dashboard-card {
+    box-shadow: 0 0 5px #dfdfdf;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    @media screen and (max-width: 1400px) {
+      padding: 1.25rem;
+    }
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      .dropdown {
+        button {
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+          outline: none;
+        }
+        .dropdown-menu {
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 0 5px #eeeeee;
+          padding: 0;
+          .dropdown-item {
+            padding: 1rem;
+            border-bottom: 1px solid #f1f1f1;
+          }
+        }
+      }
+    }
+    .content {
+      .person-item {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin-left: 0.7rem;
+          box-shadow: 0 0 5px #eeeeee;
+        }
+        .meta {
+          display: flex;
+          flex-direction: column;
+          .name {
+            font-weight: 600;
+            color: #004381;
+            text-decoration: none;
+            transition: all 0.4s;
+            &:hover {
+              color: #0365c2;
+            }
+          }
+          .title {
+            color: #7a7a7a;
+          }
+        }
+      }
+      .job-item {
+        padding-bottom: 3.5rem;
+      }
+    }
+  }
+}

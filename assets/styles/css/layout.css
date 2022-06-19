@@ -92,6 +92,20 @@ body {
   right: 0;
   z-index: -1;
 }
+.theme-btn.danger {
+  border: 1px solid #ff4e4e !important;
+  color: #ff4e4e !important;
+}
+.theme-btn.danger::before {
+  background-color: #ff4e4e !important;
+}
+.theme-btn.danger:hover {
+  color: #ffffff !important;
+}
+.theme-btn.danger:hover::before {
+  right: 0;
+  z-index: -1;
+}
 
 .separator {
   position: relative;
@@ -373,6 +387,10 @@ body {
 
 .text-online {
   color: #40f78c;
+}
+
+.text-offline {
+  color: #ff5555;
 }
 
 .header {

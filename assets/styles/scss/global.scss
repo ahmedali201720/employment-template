@@ -95,6 +95,20 @@ body {
       z-index: -1;
     }
   }
+  &.danger {
+    border: 1px solid #ff4e4e !important;
+    color: #ff4e4e !important;
+    &::before {
+      background-color: #ff4e4e !important;
+    }
+    &:hover {
+      color: #ffffff !important;
+      &::before {
+        right: 0;
+        z-index: -1;
+      }
+    }
+  }
 }
 
 .separator {
@@ -369,4 +383,8 @@ body {
 
 .text-online {
   color: #40f78c;
+}
+
+.text-offline {
+  color: #ff5555;
 }
