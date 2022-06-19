@@ -202,4 +202,133 @@ body {
       }
     }
   }
+  .profile-section {
+    overflow: hidden;
+    .info-section {
+      background-color: #ffffff;
+      .cover {
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+          max-height: 400px;
+          object-fit: cover;
+          object-position: top;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
+          box-shadow: 0 0 5px #d3d3d3;
+        }
+      }
+      .avatar {
+        position: relative;
+        top: -120px;
+        right: 50px;
+        img {
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+          border: 5px solid #000000;
+        }
+      }
+      .meta {
+        position: relative;
+        top: -140px;
+        left: 20px;
+        @media screen and (max-width: 768px) {
+          top: -80px;
+        }
+        @media screen and (max-width: 575px) {
+          top: -100px;
+        }
+        .dropdown {
+          button {
+            display: flex;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            background-color: transparent;
+            font-size: 1.7rem;
+            vertical-align: middle;
+            color: $greenColor;
+          }
+        }
+
+        .theme-btn {
+          border: 1px solid $greenColor;
+          margin-left: 1rem;
+          border-radius: 10px;
+          padding: 0.5rem;
+        }
+        .dropdown-menu {
+          padding: 0;
+          border: none;
+          box-shadow: 0 0 5px #eeeeee;
+          border-radius: 10px;
+          li {
+            a {
+              padding: 0.85rem;
+              border-bottom: 1px solid #efefef;
+            }
+          }
+        }
+      }
+      .main-info {
+        position: relative;
+        top: -150px;
+        right: 20px;
+        padding: 1.5rem;
+        @media screen and (max-width: 768px) {
+          top: -60px;
+        }
+        @media screen and (max-width: 575px) {
+          top: -90px;
+        }
+        .title {
+          color: #7a7a7a;
+        }
+      }
+      .description {
+        position: relative;
+        top: -160px;
+        right: 20px;
+        padding: 1.5rem;
+        width: 80%;
+        max-width: 1000px;
+        @media screen and (max-width: 768px) {
+          top: -90px;
+        }
+        @media screen and (max-width: 575px) {
+          top: -120px;
+        }
+        .title {
+          color: #7a7a7a;
+        }
+        h5 {
+          margin-bottom: 1rem;
+        }
+        ul {
+          li {
+            padding-right: 0.8rem;
+            &::marker {
+              content: "\f058";
+              font-family: "Font Awesome 5 Free";
+              color: $greenColor;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .action {
+        position: relative;
+        top: -40px;
+        left: 40px;
+        @media screen and (max-width: 575px) {
+          top: -80px;
+        }
+        .theme-btn {
+          border-radius: 10px;
+        }
+      }
+    }
+  }
 }
