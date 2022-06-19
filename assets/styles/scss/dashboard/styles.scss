@@ -42,7 +42,7 @@ body {
     border-radius: 10px;
     padding: 2rem;
     @media screen and (max-width: 1400px) {
-      padding: 1.25rem;
+      padding: 2rem 1.25rem;
     }
     .head {
       display: flex;
@@ -327,6 +327,71 @@ body {
         }
         .theme-btn {
           border-radius: 10px;
+        }
+      }
+    }
+  }
+  .job-details-section {
+    .candidate-item {
+      border-bottom: 1px solid #eeeeee;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-left: 0.7rem;
+        box-shadow: 0 0 5px #eeeeee;
+      }
+      .meta {
+        display: flex;
+        flex-direction: column;
+        .name {
+          font-weight: 600;
+          color: #004381;
+          text-decoration: none;
+          transition: all 0.4s;
+          &:hover {
+            color: #0365c2;
+          }
+        }
+        .title {
+          color: #7a7a7a;
+        }
+      }
+      button {
+        border: none;
+        box-shadow: none;
+        outline: none;
+        background-color: $greenColor;
+        color: #ffffff;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        transition: all 0.4s;
+        &:hover {
+          background-color: #1db100;
+        }
+        &:first-child {
+          margin-left: 0.5rem;
+        }
+        &.reject-btn {
+          background-color: #ff4040;
+          &:hover {
+            background-color: #e65151;
+          }
         }
       }
     }
