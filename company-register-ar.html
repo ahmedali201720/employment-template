@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Vendors -->
+    <link rel="shortcut icon" href="./assets/images/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.rtl.min.css"
+      integrity="sha512-rXhL8a+X3wTosWn2Zgd/5L8rfWrpff7qdOnl7Wg1n2zHk8lHGhiSujoyxoKw1nf43kZAzJoe0Z0ymr2Kkku7lQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/styles/css/nice-select.css" />
+    <link rel="stylesheet" href="./assets/styles/css/global.css" />
+    <link rel="stylesheet" href="./assets/styles/css/animation.css" />
+    <link rel="stylesheet" href="./assets/styles/css/layout.css" />
+    <link rel="stylesheet" href="./assets/styles/css/styles.css" />
+    <title>حساب جديد</title>
+  </head>
+
+  <body>
+    <section
+      class="auth-section register-section company-section"
+      id="authSection"
+    >
+      <div class="banner py-lg-5 py-4">
+        <div class="logo w-100 text-lg-start text-center px-lg-5 mb-sm-0 mb-5">
+          <img src="./assets/images/logo-white.png" alt="Logo" />
+        </div>
+
+        <div class="auth-footer">
+          <div class="social-icons mb-3">
+            <a href="#" class="icon me-1">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="icon me-1">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="icon me-1">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="icon">
+              <i class="fab fa-viber"></i>
+            </a>
+          </div>
+
+          <div class="wrapper text-center text-white">
+            <p class="mb-1">لديك حساب بالفعل ؟</p>
+
+            <a href="./login.html" class="text-white">تسجيل الدخول</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-content py-5 px-lg-5 px-4">
+        <div class="form-container">
+          <div class="section-head text-center">
+            <h2 class="main-head">
+              حساب
+              <span class="display-5 fw-bold text-green">للمؤسسات</span>
+            </h2>
+            <p class="head-meta mb-0">
+              <span class="text-grey"
+                >يتم نشر محتوى إخباري جديد متعلق بالوظيفة كل يوم.</span
+              >
+            </p>
+          </div>
+
+          <form class="auth-form mt-5 mb-4" id="registerForm">
+            <div class="form-group mb-3">
+              <label for="username" class="form-label">
+                اسم المؤسسة / المستشفى
+                <span class="text-danger">*</span>
+              </label>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="form-control"
+                  placeholder="اسم جهة العمل "
+                  autofocus
+                  autocomplete="off"
+                />
+                <i class="fa fa-building"></i>
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="username" class="form-label">
+                البريد الإلكترونى للمؤسسة
+                <span class="text-danger">*</span>
+              </label>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="form-control"
+                  placeholder="ادخل البريد الإلكترونى "
+                  autofocus
+                  autocomplete="off"
+                />
+                <i class="fa fa-envelope"></i>
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <div class="row">
+                <div class="col-md-6 mb-md-0 mb-3">
+                  <div class="wrapper">
+                    <label for="password" class="form-label">
+                      كلمة السر
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-wrapper password-wrapper">
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="ادحل كلمة السر الخاصة بك"
+                      />
+                      <i class="fa fa-lock"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="wrapper">
+                    <label for="password" class="form-label">
+                      تأكيد كلمة السر
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-wrapper password-wrapper">
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="ادحل كلمة السر الخاصة بك"
+                      />
+                      <i class="fa fa-lock"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <div class="row">
+                <div class="col-md-6 mb-md-0 mb-3">
+                  <div class="wrapper">
+                    <label for="spec" class="form-label">
+                      التخصص
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-wrapper">
+                      <select
+                        class="form-control nice-selector"
+                        name="spec"
+                        id="spec"
+                      >
+                        <option value="">--اختر التخصص--</option>
+                        <option value="AL">طب الأطفال</option>
+                        <option value="WY">جراحة العيون</option>
+                        <option value="AL">النساء و حديثى الولادة</option>
+                        <option value="WY">طب الأطفال</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="wrapper">
+                    <label for="num" class="form-label">
+                      عدد الموظفين
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-wrapper">
+                      <input
+                        type="tel"
+                        name="num"
+                        id="num"
+                        class="form-control text-start"
+                        placeholder="عدد الموظفين بالمؤسسة"
+                      />
+                      <i class="fa fa-sort-numeric-down"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <div class="row">
+                <div class="col-md-6 mb-md-0 mb-3">
+                  <div class="wrapper">
+                    <label for="gov" class="form-label">
+                      المحافظة
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-wrapper">
+                      <select
+                        class="form-control nice-selector"
+                        name="gov"
+                        id="gov"
+                      >
+                        <option value="">-- اختر المحافظة --</option>
+                        <option value="WY">القاهرة</option>
+                        <option value="AL">الجيزة</option>
+                        <option value="WY">الإسكندرية</option>
+                        <option value="WY">دمياط</option>
+                        <option value="AL">أسيوط</option>
+                        <option value="WY">البحر الأحمر</option>
+                        <option value="WY">الشرقية</option>
+                        <option value="AL">طنطا</option>
+                        <option value="WY">جنوب سيناء</option>
+                        <option value="WY">قنا</option>
+                        <option value="AL">المنيا</option>
+                        <option value="WY">الأقصر</option>
+                        <option value="WY">المنصورة</option>
+                        <option value="AL">بور سعيد</option>
+                        <option value="WY">الإسماعيلية</option>
+                        <option value="WY">أسوان</option>
+                        <option value="AL">السويس</option>
+                        <option value="WY">مرسي مطروح</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="wrapper">
+                    <label for="gov" class="form-label">
+                      المدينة
+                      <span class="text-danger">*</span>
+                    </label>
+                    <div class="input-wrapper">
+                      <select
+                        class="form-control nice-selector"
+                        name="city"
+                        id="city"
+                      >
+                        <option value="">-- اختر المدينة --</option>
+                        <option value="WY">مدينة نصر</option>
+                        <option value="AL">العباسية</option>
+                        <option value="WY">الشروق</option>
+                        <option value="WY">المهندسين</option>
+                        <option value="AL">6 أكتوبر</option>
+                        <option value="WY">الشيخ زايد</option>
+                        <option value="WY">حدائق الأهرام</option>
+                        <option value="AL">حدائق أكتوبر</option>
+                        <option value="WY">مدينتى</option>
+                        <option value="WY">التجمع الخامس</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="username" class="form-label">
+                العنوان بالتفصيل
+                <span class="text-danger">*</span>
+              </label>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  class="form-control"
+                  placeholder="ادخل العنوان .."
+                  autofocus
+                  autocomplete="off"
+                />
+                <i class="fa fa-map-marker-alt"></i>
+              </div>
+            </div>
+
+            <div class="form-group mb-4">
+              <label for="phone" class="form-label">
+                رقم الهاتف
+                <span class="text-danger">*</span>
+              </label>
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="form-control text-start"
+                  placeholder="رقم هاتف للتواصل"
+                  autofocus
+                  autocomplete="off"
+                />
+                <i class="fa fa-phone"></i>
+              </div>
+            </div>
+
+            <div class="mb-xl-5 mb-4 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >موافقة على <a href="#">الشروط و الأحكام</a></label
+              >
+            </div>
+
+            <button type="submit" class="form-action-btn theme-btn mt-4">
+              تقديم طلب انضمام
+            </button>
+          </form>
+
+          <div class="hint text-center">
+            <p class="mb-1 text-secondary">
+              هل تواجة مشاكل فى التسجيل ؟
+              <a href="#" class="text-brown">اضغط هنا</a>
+            </p>
+          </div>
+
+          <div class="company-auth">
+            <div class="separator">حساب جديد للأطباء ؟</div>
+            <a href="#" class="theme-btn">
+              <i class="fa fa-user-check me-1"></i>
+              <span>اضغط هنــا</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js"
+      integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script type="module" src="./assets/js/jquery.waypoints.min.js"></script>
+    <script type="module" src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script type="module" src="./assets/js/layout.js"></script>
+    <script type="module" src="./assets/js/scripts.js"></script>
+  </body>
+</html>
