@@ -136,7 +136,39 @@
 
 .jobs-section {
   position: relative;
-  top: -160px;
+  top: -230px;
+}
+.jobs-section .section-head {
+  margin-bottom: 2rem;
+}
+.jobs-section .section-head h2 {
+  text-align: right;
+}
+@media screen and (max-width: 991px) {
+  .jobs-section .section-head h2 {
+    text-align: center;
+  }
+}
+.jobs-section .section-head p {
+  text-align: right;
+}
+@media screen and (max-width: 991px) {
+  .jobs-section .section-head p {
+    text-align: center;
+  }
+}
+.jobs-section .section-head h2 {
+  font-size: 1.2rem;
+}
+.jobs-section .section-head h2 span {
+  font-size: 1.5rem;
+}
+.jobs-section .job-item {
+  margin-bottom: 0.8rem;
+}
+.jobs-section .job-item .meta {
+  top: 0 !important;
+  left: 0 !important;
 }
 
 .standalone-btn-section {
