@@ -1,0 +1,155 @@
+.profile-section {
+  overflow: hidden;
+}
+.profile-section .info-section {
+  background-color: #ffffff;
+}
+.profile-section .info-section .cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: top;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 0 0 5px #d3d3d3;
+}
+.profile-section .info-section .avatar {
+  position: relative;
+  top: -100px;
+  right: 50px;
+}
+.profile-section .info-section .avatar img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+}
+.profile-section .info-section .meta {
+  position: relative;
+  top: -140px;
+  left: 20px;
+}
+@media screen and (max-width: 768px) {
+  .profile-section .info-section .meta {
+    top: -80px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .profile-section .info-section .meta {
+    top: -85px;
+  }
+}
+.profile-section .info-section .meta .dropdown button {
+  display: flex;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  font-size: 1.7rem;
+  vertical-align: middle;
+  color: #327950;
+}
+.profile-section .info-section .meta .theme-btn {
+  border: 1px solid #327950;
+  margin-left: 1rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+.profile-section .info-section .meta .dropdown-menu {
+  padding: 0;
+  border: none;
+  box-shadow: 0 0 5px #eeeeee;
+  border-radius: 10px;
+}
+.profile-section .info-section .meta .dropdown-menu li a {
+  padding: 0.85rem;
+  border-bottom: 1px solid #efefef;
+}
+.profile-section .info-section .main-info {
+  position: relative;
+  top: -150px;
+  right: 20px;
+  padding: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .profile-section .info-section .main-info {
+    top: -60px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .profile-section .info-section .main-info {
+    top: -90px;
+  }
+}
+.profile-section .info-section .main-info .title {
+  color: #7a7a7a;
+}
+.profile-section .info-section .description {
+  position: relative;
+  top: -160px;
+  right: 20px;
+  padding: 1.5rem;
+  width: 80%;
+  max-width: 1000px;
+}
+@media screen and (max-width: 768px) {
+  .profile-section .info-section .description {
+    top: -90px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .profile-section .info-section .description {
+    top: -120px;
+    width: 100%;
+  }
+}
+.profile-section .info-section .description .title {
+  color: #7a7a7a;
+}
+.profile-section .info-section .description h5 {
+  margin-bottom: 1rem;
+}
+.profile-section .info-section .description ul li {
+  padding-right: 0.8rem;
+}
+.profile-section .info-section .description ul li::marker {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  color: #327950;
+  font-weight: 700;
+}
+.profile-section .info-section .action {
+  position: relative;
+  top: -40px;
+  left: 40px;
+}
+@media screen and (max-width: 575px) {
+  .profile-section .info-section .action {
+    top: -80px;
+  }
+}
+.profile-section .info-section .action .theme-btn {
+  border-radius: 10px;
+}
+
+.jobs-section {
+  position: relative;
+  top: -160px;
+}
+
+.standalone-btn-section {
+  text-align: center;
+  position: relative;
+  top: -120px;
+}
+.standalone-btn-section .bubble-link {
+  background-color: #20bd61;
+  color: #ffffff !important;
+}
+.standalone-btn-section .bubble-link::after {
+  background-color: #3c9762;
+}
+
+/*# sourceMappingURL=cprofile.css.map */

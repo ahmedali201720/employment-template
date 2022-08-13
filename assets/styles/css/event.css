@@ -1,0 +1,100 @@
+.inner-page-banner-section {
+  padding-top: 13rem;
+  padding-bottom: 6rem;
+  background: linear-gradient(to bottom left, rgba(33, 90, 57, 0.8078431373), rgba(0, 0, 0, 0.7254901961)), url("../../images/event-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.inner-page-banner-section .head {
+  text-align: center;
+}
+.inner-page-banner-section .head h4 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.inner-page-banner-section .head h6 {
+  color: #fdeed4;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.event-desc-section {
+  margin-top: 5rem;
+}
+.event-desc-section .image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+.event-desc-section h2 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.event-desc-section h4 {
+  color: #757575;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+.event-desc-section .bubble-link {
+  background-color: #2baa60;
+  color: #ffffff !important;
+  text-align: center;
+}
+.event-desc-section .bubble-link::after {
+  background-color: #2baa60;
+}
+
+.companies-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #f8f2f2;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+.companies-section .item {
+  position: relative;
+  background-color: #ffffff;
+  border: none !important;
+  box-shadow: 4px 4px 5px #acacac;
+  top: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.companies-section .item:hover {
+  top: -8px;
+}
+
+.more-features-section {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.more-features-section .section-head {
+  margin-bottom: 3.5rem;
+  font-weight: 700;
+}
+.more-features-section .item {
+  text-align: center;
+  height: 100%;
+}
+.more-features-section .item .icon {
+  margin-bottom: 1.5rem;
+}
+.more-features-section .item h4 {
+  font-size: 1.2rem;
+}
+.more-features-section .item .text p {
+  font-weight: 300;
+  margin-bottom: 0.3rem;
+  max-width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*# sourceMappingURL=event.css.map */

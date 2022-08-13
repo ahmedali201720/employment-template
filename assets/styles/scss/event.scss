@@ -1,0 +1,103 @@
+.inner-page-banner-section {
+  padding-top: 13rem;
+  padding-bottom: 6rem;
+  background: linear-gradient(to bottom left, #215a39ce, #000000b9),
+    url("../../images/event-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  .head {
+    text-align: center;
+    h4 {
+      color: #ffffff;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    h6 {
+      color: #fdeed4;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.event-desc-section {
+  margin-top: 5rem;
+  .image {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+    }
+  }
+  h2 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  h4 {
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+  .bubble-link {
+    background-color: #2baa60;
+    color: #ffffff !important;
+    text-align: center;
+    &::after {
+      background-color: #2baa60;
+    }
+  }
+}
+
+.companies-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #f8f2f2;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  .item {
+    position: relative;
+    background-color: #ffffff;
+    border: none !important;
+    box-shadow: 4px 4px 5px #acacac;
+    top: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover {
+      top: -8px;
+    }
+  }
+}
+
+.more-features-section {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  .section-head {
+    margin-bottom: 3.5rem;
+    font-weight: 700;
+  }
+  .item {
+    text-align: center;
+    height: 100%;
+    .icon {
+      margin-bottom: 1.5rem;
+    }
+    h4 {
+      font-size: 1.2rem;
+    }
+    .text {
+      p {
+        font-weight: 300;
+        margin-bottom: 0.3rem;
+        max-width: 250px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+}

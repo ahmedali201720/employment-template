@@ -339,7 +339,12 @@
         color: #ffffff;
         border-radius: 10px;
         text-decoration: none;
+        border-radius: 50px;
         text-align: center;
+        transition: all 0.5s;
+        &:hover {
+          background-color: #239b19;
+        }
       }
     }
   }

@@ -502,6 +502,49 @@ body {
   margin-left: 0;
 }
 
+.join-link {
+  display: inline-block;
+  min-width: 250px;
+  border-radius: 50px;
+  background-color: #ffffff;
+  color: #131d02;
+  margin: 0 auto;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+.join-link:hover {
+  color: #2da860;
+}
+
+.bubble-link {
+  position: relative;
+  display: inline-block;
+}
+.bubble-link::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.8s;
+}
+.bubble-link:hover {
+  box-shadow: 0 0 -4px #ffffff;
+}
+.bubble-link:hover::after {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+  opacity: 0;
+  z-index: 1;
+}
+
 .page-container {
   display: flex;
   transition: 0.4s;
