@@ -545,6 +545,92 @@ body {
   z-index: 1;
 }
 
+section.middle {
+  padding: 50px 0 50px;
+}
+
+/* Accordion Design */
+.accordion .card-header {
+  padding: 1rem 1rem;
+  background: transparent;
+  margin: 0;
+  display: block;
+  border: none;
+}
+.accordion .card-header button {
+  color: #121212;
+  font-weight: 500;
+  padding: 0;
+  display: block;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  box-shadow: none;
+  text-decoration: initial;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.accordion .card-header button:lang(ar) {
+  text-align: right;
+}
+.accordion .card-body {
+  padding-top: 0px;
+}
+
+.collapsible-link:before,
+.accordion .btn-link:before {
+  content: "";
+  width: 14px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+/* Vertical line */
+.collapsible-link:after,
+.accordion .btn-link:after {
+  content: "";
+  width: 2px;
+  height: 14px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 7px);
+  left: calc(1rem + 6px);
+  display: block;
+  transition: all 0.3s;
+}
+
+.collapsible-link[aria-expanded=true]:after,
+.accordion .btn-link[aria-expanded=true]:after {
+  transform: rotate(90deg) translateX(1px);
+}
+
+.collapsible-link[aria-expanded=true]:before,
+.accordion .btn-link[aria-expanded=true]:before {
+  transform: rotate(180deg);
+}
+
+.card-header {
+  position: relative;
+}
+
+.accordion .card {
+  border-color: #e8edf7;
+  margin-bottom: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.accordion_title,
+.accordion .card-header h5 {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
 body {
   background-color: #f8f8f8;
 }
