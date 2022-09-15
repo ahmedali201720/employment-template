@@ -702,6 +702,10 @@ section.middle {
   border-color: #acacac;
 }
 
+.no-animation {
+  animation: none !important;
+}
+
 .header {
   position: relative;
   display: flex;

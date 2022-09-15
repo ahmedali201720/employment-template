@@ -702,6 +702,10 @@ section.middle {
   border-color: #acacac;
 }
 
+.no-animation {
+  animation: none !important;
+}
+
 body {
   background-color: #f8f8f8;
 }

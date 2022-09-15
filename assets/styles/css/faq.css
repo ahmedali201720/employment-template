@@ -702,6 +702,10 @@ section.middle {
   border-color: #acacac;
 }
 
+.no-animation {
+  animation: none !important;
+}
+
 .faq-section {
   padding-top: 160px;
   padding-bottom: 90px;

@@ -702,6 +702,10 @@ section.middle {
   border-color: #acacac;
 }
 
+.no-animation {
+  animation: none !important;
+}
+
 .page-container {
   display: flex;
   transition: 0.4s;
