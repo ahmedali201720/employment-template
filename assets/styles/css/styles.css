@@ -669,6 +669,39 @@ section.middle {
   font-weight: 600;
 }
 
+.theme-pagination {
+  text-align: center;
+}
+.theme-pagination a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 12px;
+  border: 1px solid #a07832;
+  color: #a07832;
+  transition: all 0.4s;
+}
+.theme-pagination a.text-link {
+  width: 80px;
+  border-radius: 50px;
+}
+.theme-pagination a.active {
+  background-color: #a07832;
+  color: #ffffff;
+}
+.theme-pagination a:hover {
+  background-color: #a07832;
+  color: #ffffff;
+}
+.theme-pagination a.disabled {
+  pointer-events: none;
+  color: #acacac;
+  border-color: #acacac;
+}
+
 .how-to-section {
   margin: 6rem 0;
   overflow: hidden;
@@ -1218,6 +1251,15 @@ section.middle {
 
 .jobs-filter-section .job-item .image {
   width: 70px;
+}
+
+.partners-section {
+  padding: 150px 20px 60px !important;
+}
+@media screen and (max-width: 767px) {
+  .partners-section {
+    padding: 100px 20px 50px !important;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

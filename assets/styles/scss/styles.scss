@@ -574,3 +574,10 @@
     }
   }
 }
+
+.partners-section {
+  padding: 150px 20px 60px !important;
+  @media screen and (max-width: 767px) {
+    padding: 100px 20px 50px !important;
+  }
+}

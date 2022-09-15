@@ -675,3 +675,36 @@ section {
     }
   }
 }
+
+.theme-pagination {
+  text-align: center;
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 12px;
+    border: 1px solid $brownColor;
+    color: $brownColor;
+    transition: all 0.4s;
+    &.text-link {
+      width: 80px;
+      border-radius: 50px;
+    }
+    &.active {
+      background-color: $brownColor;
+      color: #ffffff;
+    }
+    &:hover {
+      background-color: $brownColor;
+      color: #ffffff;
+    }
+    &.disabled {
+      pointer-events: none;
+      color: #acacac;
+      border-color: #acacac;
+    }
+  }
+}
