@@ -631,6 +631,26 @@ section.middle {
   font-size: 16px;
 }
 
+.section-caption {
+  font-size: 28px;
+}
+
+.row-separator {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.theme-ul li {
+  padding-right: 12px;
+  margin-bottom: 10px;
+}
+.theme-ul li::marker {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  color: #327950;
+  font-weight: 600;
+}
+
 body {
   background-color: #f8f8f8;
 }
