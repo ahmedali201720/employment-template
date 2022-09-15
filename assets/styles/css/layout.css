@@ -52,6 +52,20 @@ body {
   color: #dcc08f !important;
 }
 
+.text-blue {
+  color: #005085 !important;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.text-blue:hover {
+  color: #0d77be !important;
+}
+
+.adjusted-icon {
+  position: relative;
+  top: 2px;
+}
+
 .section-button {
   margin-top: 4rem;
 }
@@ -633,6 +647,10 @@ section.middle {
 
 .section-caption {
   font-size: 28px;
+}
+
+.normal-h1 {
+  font-size: 36px;
 }
 
 .row-separator {

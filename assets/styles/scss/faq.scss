@@ -7,3 +7,30 @@
 .aboutus-section {
   padding: 200px 20px 120px;
 }
+
+.contactus-section {
+  padding: 200px 20px 120px;
+  @media screen and (max-width: 768px) {
+    padding: 150px 20px 80px;
+  }
+}
+
+.contactus-section .card-wrap-body {
+  background-color: #efefef;
+  box-shadow: 0 0 5px #efefef;
+  h4 {
+    font-size: 20px;
+    color: $greenColor;
+    font-weight: 500;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 14px;
+  }
+}
+
+.contact-form {
+  input {
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 15px 10px !important;
+  }
+}

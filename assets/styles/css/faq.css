@@ -52,6 +52,20 @@ body {
   color: #dcc08f !important;
 }
 
+.text-blue {
+  color: #005085 !important;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.text-blue:hover {
+  color: #0d77be !important;
+}
+
+.adjusted-icon {
+  position: relative;
+  top: 2px;
+}
+
 .section-button {
   margin-top: 4rem;
 }
@@ -635,6 +649,10 @@ section.middle {
   font-size: 28px;
 }
 
+.normal-h1 {
+  font-size: 36px;
+}
+
 .row-separator {
   margin-top: 70px;
   margin-bottom: 70px;
@@ -658,6 +676,33 @@ section.middle {
 
 .aboutus-section {
   padding: 200px 20px 120px;
+}
+
+.contactus-section {
+  padding: 200px 20px 120px;
+}
+@media screen and (max-width: 768px) {
+  .contactus-section {
+    padding: 150px 20px 80px;
+  }
+}
+
+.contactus-section .card-wrap-body {
+  background-color: #efefef;
+  box-shadow: 0 0 5px #efefef;
+}
+.contactus-section .card-wrap-body h4 {
+  font-size: 20px;
+  color: #327950;
+  font-weight: 500;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 14px;
+}
+
+.contact-form input {
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 15px 10px !important;
 }
 
 /*# sourceMappingURL=faq.css.map */
