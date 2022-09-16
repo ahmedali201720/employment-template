@@ -1266,4 +1266,52 @@ section.middle {
   }
 }
 
+/* Profile Section */
+.profile-section {
+  padding: 180px 20px 80px;
+}
+@media screen and (max-width: 575px) {
+  .profile-section {
+    padding: 140px 20px 50px;
+  }
+}
+.profile-section .profile-content {
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+.profile-section .profile-content .profile-content-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e2e2;
+  color: #327950;
+}
+.profile-section .profile-content .profile-img img {
+  background-color: #f3fdd3;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  padding: 1rem;
+  border: 5px solid #327950;
+  border-radius: 50%;
+}
+.profile-section .profile-content form input,
+.profile-section .profile-content form label {
+  font-size: 15px;
+}
+.profile-section .profile-content form input,
+.profile-section .profile-content form select,
+.profile-section .profile-content form textarea {
+  padding: 10px;
+  outline: none;
+  box-shadow: none;
+}
+.profile-section .profile-content form input:focus,
+.profile-section .profile-content form select:focus,
+.profile-section .profile-content form textarea:focus {
+  border: 1px solid #327950;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -581,3 +581,52 @@
     padding: 100px 20px 50px !important;
   }
 }
+
+/* Profile Section */
+
+.profile-section {
+  padding: 180px 20px 80px;
+  @media screen and (max-width: 575px) {
+    padding: 140px 20px 50px;
+  }
+  .profile-content {
+    border: 1px solid #e2e2e2;
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 40px;
+    .profile-content-header {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e2e2e2;
+      color: $greenColor;
+    }
+    .profile-img {
+      img {
+        background-color: #f3fdd3;
+        width: 200px;
+        height: 200px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        padding: 1rem;
+        border: 5px solid $greenColor;
+        border-radius: 50%;
+      }
+    }
+    form {
+      input,
+      label {
+        font-size: 15px;
+      }
+      input,
+      select,
+      textarea {
+        padding: 10px;
+        outline: none;
+        box-shadow: none;
+        &:focus {
+          border: 1px solid $greenColor;
+        }
+      }
+    }
+  }
+}
