@@ -706,7 +706,8 @@ section.middle {
   animation: none !important;
 }
 
-.faq-section {
+.faq-section,
+.privacy-section {
   padding-top: 160px;
   padding-bottom: 90px;
 }
