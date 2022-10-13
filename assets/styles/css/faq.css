@@ -743,4 +743,32 @@ section.middle {
   padding: 15px 10px !important;
 }
 
+.help-center-card {
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 5px #cecece;
+  padding: 30px;
+  border-radius: 20px;
+  height: 100%;
+  transition: all 0.4s;
+}
+.help-center-card:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  background-color: #efefef;
+}
+.help-center-card .float-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.help-center-card .icon {
+  display: inline-block;
+  font-size: 40px;
+  color: #327950;
+  margin-bottom: 20px;
+}
+
 /*# sourceMappingURL=faq.css.map */

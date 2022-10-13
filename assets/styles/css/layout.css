@@ -713,7 +713,7 @@ section.middle {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(rgba(5, 29, 15, 0.8705882353), rgba(28, 80, 49, 0.6980392157)), url("../../images/hero_home_03.jpg");
+  background: linear-gradient(rgba(5, 29, 15, 0.8705882353), rgba(28, 80, 49, 0.6980392157)), url("../../images/home_slider.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

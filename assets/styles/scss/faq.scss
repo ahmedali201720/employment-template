@@ -35,3 +35,31 @@
     padding: 15px 10px !important;
   }
 }
+
+.help-center-card {
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 5px #cecece;
+  padding: 30px;
+  border-radius: 20px;
+  height: 100%;
+  transition: all 0.4s;
+  &:hover {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    background-color: #efefef;
+  }
+  .float-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .icon {
+    display: inline-block;
+    font-size: 40px;
+    color: $greenColor;
+    margin-bottom: 20px;
+  }
+}

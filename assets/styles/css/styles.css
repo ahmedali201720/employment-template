@@ -781,7 +781,7 @@ section.middle {
 
 .testomonial-section {
   position: relative;
-  background: linear-gradient(rgba(5, 29, 15, 0.8705882353), rgba(28, 80, 49, 0.6980392157)), url("../../images/slider-4.jpg");
+  background: linear-gradient(rgba(5, 29, 15, 0.8705882353), rgba(28, 80, 49, 0.6980392157)), url("../../images/testimonial.jpeg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -828,7 +828,7 @@ section.middle {
 
 .info-section {
   position: relative;
-  background: linear-gradient(rgba(3, 24, 12, 0.8705882353), rgba(28, 80, 49, 0.8470588235)), url("../../images/hero_home_02.jpg");
+  background: linear-gradient(rgba(3, 24, 12, 0.8705882353), rgba(28, 80, 49, 0.8470588235)), url("../../images/info.jpeg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
