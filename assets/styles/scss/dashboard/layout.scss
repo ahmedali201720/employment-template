@@ -35,7 +35,7 @@
       right: -800px;
       z-index: 1000;
     }
-    background-color: $greenColor;
+    background-color: $mainColor;
     height: 100vh;
     padding: 2rem;
     transition: all 0.4s;
@@ -113,7 +113,7 @@
             width: 100%;
             transition: all 0.4s;
             &:hover {
-              color: $greenColor;
+              color: $mainColor;
             }
           }
         }
@@ -241,6 +241,9 @@
     }
   }
   &.collapsed {
+    .std-logo {
+      display: none;
+    }
     .dashboard-sidebar {
       width: 5%;
       @media screen and (max-width: 1600px) {
@@ -382,7 +385,7 @@
       align-items: center;
       .sidebar-toggler {
         background-color: transparent;
-        color: $greenColor;
+        color: $mainColor;
         border: none;
         outline: none;
         box-shadow: none;
@@ -418,7 +421,7 @@
         width: 55px;
         height: 55px;
         border-radius: 50%;
-        background-color: $greenColor;
+        background-color: $mainColor;
         color: #ffffff;
         border: none;
         box-shadow: none;
@@ -444,7 +447,7 @@
           -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
           font-size: 1.5rem;
-          color: $greenColor;
+          color: $mainColor;
         }
         input {
           height: 40px;

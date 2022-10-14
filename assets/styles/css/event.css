@@ -1,7 +1,7 @@
 .inner-page-banner-section {
   padding-top: 13rem;
   padding-bottom: 6rem;
-  background: linear-gradient(to bottom left, rgba(33, 90, 57, 0.8078431373), rgba(0, 0, 0, 0.7254901961)), url("../../images/event-bg.jpg");
+  background: linear-gradient(to bottom left, rgba(111, 182, 40, 0.8), rgba(0, 76, 112, 0.7529411765), rgba(0, 76, 112, 0.7529411765)), url("../../images/event-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,18 +43,18 @@
   margin-bottom: 32px;
 }
 .event-desc-section .bubble-link {
-  background-color: #2baa60;
+  background-color: #6fb628;
   color: #ffffff !important;
   text-align: center;
 }
 .event-desc-section .bubble-link::after {
-  background-color: #2baa60;
+  background-color: #6fb628;
 }
 
 .companies-section {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #f8f2f2;
+  background-color: #efefef;
   margin-bottom: 0 !important;
   margin-top: 0 !important;
 }

@@ -52,7 +52,7 @@
       font-weight: 500;
     }
     .text {
-      color: $brownColor;
+      color: $secondaryColor;
     }
   }
 }
@@ -72,7 +72,7 @@
 
 .testomonial-section {
   position: relative;
-  background: linear-gradient(#051d0fde, #1c5031b2),
+  background: linear-gradient(to bottom, #75a545be, #004c6fd8, #013a55c0),
     url("../../images/testimonial.jpeg");
   background-position: top center;
   background-size: cover;
@@ -120,7 +120,7 @@
 
 .info-section {
   position: relative;
-  background: linear-gradient(#03180cde, #1c5031d8),
+  background: linear-gradient(to bottom, #8ec556b6, #004c6fd0, #004c6fb7),
     url("../../images/info.jpeg");
   background-position: top center;
   background-size: cover;
@@ -335,7 +335,7 @@
         margin-left: auto;
         width: 200px;
         padding: 0.5rem 1.5rem;
-        background-color: #2bc51d;
+        background-color: $secondaryColor;
         color: #ffffff;
         border-radius: 10px;
         text-decoration: none;
@@ -343,7 +343,7 @@
         text-align: center;
         transition: all 0.5s;
         &:hover {
-          background-color: #239b19;
+          background-color: lighten($color: $secondaryColor, $amount: 10%);
         }
       }
     }
@@ -386,7 +386,7 @@
     transform: scale(1.05);
   }
   .auth-footer .social-icons .icon i {
-    color: $greenColor;
+    color: $mainColor;
     line-height: 40px;
     font-size: 20px;
   }
@@ -422,7 +422,7 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 15px;
-    color: $greenColor;
+    color: $mainColor;
   }
   .input-wrapper input {
     padding-right: 40px;
@@ -441,8 +441,8 @@
     transition: all 0.5s;
   }
   .form-check-input:checked {
-    background-color: $greenColor;
-    border-color: $greenColor;
+    background-color: $mainColor;
+    border-color: $mainColor;
   }
   .form-container button {
     display: block;
@@ -461,11 +461,11 @@
     margin: 2.5rem 0;
     .theme-btn {
       width: 100%;
-      border: 1px solid $brownColor;
+      border: 1px solid $secondaryColor;
       text-align: center;
-      color: $brownColor;
+      color: $secondaryColor;
       &::before {
-        background-color: $brownColor;
+        background-color: $secondaryColor;
       }
       &:hover {
         color: #ffffff;
@@ -486,8 +486,8 @@
 }
 
 .auth-section .banner {
-  background: linear-gradient(to bottom, #020f06a1, #0f3f09a2, #02010ab7),
-    url("../../images/banner-2.webp");
+  background: linear-gradient(to bottom, #6fb628c7, #0e5475be, #0a3c53ad),
+    url("../../images/group.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -598,7 +598,7 @@
       margin-bottom: 30px;
       padding-bottom: 20px;
       border-bottom: 1px solid #e2e2e2;
-      color: $greenColor;
+      color: $mainColor;
     }
     .profile-img {
       img {
@@ -608,7 +608,7 @@
         -o-object-fit: cover;
         object-fit: cover;
         padding: 1rem;
-        border: 5px solid $greenColor;
+        border: 5px solid $mainColor;
         border-radius: 50%;
       }
     }
@@ -624,7 +624,7 @@
         outline: none;
         box-shadow: none;
         &:focus {
-          border: 1px solid $greenColor;
+          border: 1px solid $mainColor;
         }
       }
     }

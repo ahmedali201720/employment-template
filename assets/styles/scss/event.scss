@@ -1,7 +1,7 @@
 .inner-page-banner-section {
   padding-top: 13rem;
   padding-bottom: 6rem;
-  background: linear-gradient(to bottom left, #215a39ce, #000000b9),
+  background: linear-gradient(to bottom left, #6fb628cc, #004c70c0, #004c70c0),
     url("../../images/event-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,11 +45,11 @@
     margin-bottom: 32px;
   }
   .bubble-link {
-    background-color: #2baa60;
+    background-color: #6fb628;
     color: #ffffff !important;
     text-align: center;
     &::after {
-      background-color: #2baa60;
+      background-color: #6fb628;
     }
   }
 }
@@ -57,7 +57,7 @@
 .companies-section {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: #f8f2f2;
+  background-color: #efefef;
   margin-bottom: 0 !important;
   margin-top: 0 !important;
   .item {

@@ -1,5 +1,5 @@
-$brownColor: #a07832;
-$greenColor: #327950;
+$secondaryColor: #6fb728;
+$mainColor: #004c70;
 * {
   direction: rtl;
   font-family: "DIN NEXTTM ARABIC", sans-serif;
@@ -35,11 +35,11 @@ body {
 }
 
 .text-green {
-  color: $greenColor !important;
+  color: $mainColor !important;
 }
 
 .text-brown {
-  color: $brownColor !important;
+  color: $secondaryColor !important;
 }
 
 .text-grey {
@@ -51,7 +51,7 @@ body {
 }
 
 .text-light-brown {
-  color: lighten($color: $brownColor, $amount: 30%) !important;
+  color: lighten($color: $secondaryColor, $amount: 30%) !important;
 }
 
 .text-blue {
@@ -84,9 +84,9 @@ body {
   border-radius: 50px;
   padding: 0.8rem;
   background-color: transparent !important;
-  color: $greenColor;
+  color: $mainColor;
   width: 220px;
-  border: 1px solid $greenColor;
+  border: 1px solid $mainColor;
   outline: none;
   box-shadow: none;
   overflow: hidden;
@@ -100,7 +100,7 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: $greenColor;
+    background-color: $mainColor;
     transition: all 0.6s;
   }
   &:hover {
@@ -166,7 +166,7 @@ body {
     margin-bottom: 2rem;
   }
   span {
-    color: $brownColor;
+    color: $mainColor;
   }
   .main-head {
     position: relative;
@@ -223,9 +223,9 @@ body {
   }
   &.dark {
     .swiper-pagination-bullet {
-      border: 2px solid #3fd67e;
+      border: 2px solid #6eb727;
       &::after {
-        background-color: #3fd67e;
+        background-color: #6eb727;
       }
     }
   }
@@ -237,11 +237,11 @@ body {
   transform: translateY(-90%);
   width: 30px;
   height: 30px;
-  border: 2px solid $greenColor;
+  border: 2px solid $mainColor;
   border-radius: 50%;
   &::after {
     font-size: 0.9rem;
-    color: $greenColor;
+    color: $mainColor;
     font-weight: 600;
   }
 }
@@ -349,7 +349,7 @@ body {
     .success-badge {
       display: inline-block;
       background-color: #cdffd6;
-      color: $greenColor;
+      color: $mainColor;
     }
     .danger-badge {
       display: inline-block;
@@ -366,10 +366,10 @@ body {
     height: 30px;
     font-size: 0.9rem;
     text-align: center;
-    border: 1px solid $brownColor;
-    color: $brownColor;
+    border: 1px solid $secondaryColor;
+    color: $secondaryColor;
     &::before {
-      background-color: $brownColor;
+      background-color: $secondaryColor;
     }
     &:hover {
       color: #ffffff;
@@ -378,8 +378,8 @@ body {
 }
 
 .form-check-input:checked {
-  background-color: $greenColor;
-  border-color: $greenColor;
+  background-color: $mainColor;
+  border-color: $mainColor;
 }
 
 .dot {
@@ -432,7 +432,7 @@ body {
     max-height: 200px;
     overflow-y: auto;
     scrollbar-width: thin;
-    scrollbar-color: $greenColor #e7e7e7;
+    scrollbar-color: $mainColor #e7e7e7;
     &::-webkit-scrollbar {
       width: 5px;
     }
@@ -444,7 +444,7 @@ body {
 
     /* Handle */
     &::-webkit-scrollbar-thumb {
-      background: $greenColor;
+      background: $mainColor;
       border-radius: 50px;
     }
 
@@ -479,7 +479,7 @@ body {
   }
   .name {
     display: block;
-    color: $greenColor;
+    color: $mainColor;
     font-size: 1.125rem;
     font-weight: 500;
     text-decoration: none;
@@ -504,12 +504,12 @@ body {
       line-height: 40px;
       text-align: center;
       border-radius: 10px;
-      color: $brownColor;
+      color: $secondaryColor;
       margin-left: 0.6rem;
-      border: 1px solid $brownColor;
+      border: 1px solid $secondaryColor;
       transition: all 0.4s;
       &:hover {
-        background-color: $brownColor;
+        background-color: $secondaryColor;
         color: #ffffff;
       }
       &:last-child {
@@ -670,7 +670,7 @@ section {
     &::marker {
       content: "\f058";
       font-family: "Font Awesome 5 Free";
-      color: $greenColor;
+      color: $mainColor;
       font-weight: 600;
     }
   }
@@ -686,19 +686,19 @@ section {
     height: 35px;
     border-radius: 50%;
     font-size: 12px;
-    border: 1px solid $brownColor;
-    color: $brownColor;
+    border: 1px solid $secondaryColor;
+    color: $secondaryColor;
     transition: all 0.4s;
     &.text-link {
       width: 80px;
       border-radius: 50px;
     }
     &.active {
-      background-color: $brownColor;
+      background-color: $secondaryColor;
       color: #ffffff;
     }
     &:hover {
-      background-color: $brownColor;
+      background-color: $secondaryColor;
       color: #ffffff;
     }
     &.disabled {
@@ -711,4 +711,10 @@ section {
 
 .no-animation {
   animation: none !important;
+}
+
+.std-logo {
+  max-width: 160px;
+  height: auto;
+  border-radius: 50px;
 }

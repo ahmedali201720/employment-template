@@ -109,7 +109,7 @@
           &::marker {
             content: "\f058";
             font-family: "Font Awesome 5 Free";
-            color: #327950;
+            color: #6fb628;
             font-weight: 700;
           }
         }
@@ -167,10 +167,10 @@
   position: relative;
   top: -120px;
   .bubble-link {
-    background-color: #20bd61;
+    background-color: #6fb628;
     color: #ffffff !important;
     &::after {
-      background-color: #3c9762;
+      background-color: #6fb628;
     }
   }
 }

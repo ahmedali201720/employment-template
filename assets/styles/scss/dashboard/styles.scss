@@ -111,7 +111,7 @@ body {
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         right: 1.2rem;
-        color: $greenColor;
+        color: $mainColor;
       }
       input {
         border: none;
@@ -249,12 +249,12 @@ body {
             background-color: transparent;
             font-size: 1.7rem;
             vertical-align: middle;
-            color: $greenColor;
+            color: $mainColor;
           }
         }
 
         .theme-btn {
-          border: 1px solid $greenColor;
+          border: 1px solid $mainColor;
           margin-left: 1rem;
           border-radius: 10px;
           padding: 0.5rem;
@@ -312,7 +312,7 @@ body {
             &::marker {
               content: "\f058";
               font-family: "Font Awesome 5 Free";
-              color: $greenColor;
+              color: $mainColor;
               font-weight: 700;
             }
           }
@@ -376,7 +376,7 @@ body {
         border: none;
         box-shadow: none;
         outline: none;
-        background-color: $greenColor;
+        background-color: $mainColor;
         color: #ffffff;
         border-radius: 10px;
         padding: 0.5rem 1rem;

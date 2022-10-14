@@ -33,11 +33,11 @@ body {
 }
 
 .text-green {
-  color: #327950 !important;
+  color: #004c70 !important;
 }
 
 .text-brown {
-  color: #a07832 !important;
+  color: #6fb728 !important;
 }
 
 .text-grey {
@@ -49,7 +49,7 @@ body {
 }
 
 .text-light-brown {
-  color: #dcc08f !important;
+  color: #bce791 !important;
 }
 
 .text-blue {
@@ -79,9 +79,9 @@ body {
   border-radius: 50px;
   padding: 0.8rem;
   background-color: transparent !important;
-  color: #327950;
+  color: #004c70;
   width: 220px;
-  border: 1px solid #327950;
+  border: 1px solid #004c70;
   outline: none;
   box-shadow: none;
   overflow: hidden;
@@ -96,7 +96,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #327950;
+  background-color: #004c70;
   transition: all 0.6s;
 }
 .theme-btn:hover {
@@ -171,7 +171,7 @@ body {
   }
 }
 .section-head span {
-  color: #a07832;
+  color: #004c70;
 }
 .section-head .main-head {
   position: relative;
@@ -227,10 +227,10 @@ body {
   transform: translate(-50%) scale(1);
 }
 .swiper-pagination.dark .swiper-pagination-bullet {
-  border: 2px solid #3fd67e;
+  border: 2px solid #6eb727;
 }
 .swiper-pagination.dark .swiper-pagination-bullet::after {
-  background-color: #3fd67e;
+  background-color: #6eb727;
 }
 
 .swiper-button-prev,
@@ -239,13 +239,13 @@ body {
   transform: translateY(-90%);
   width: 30px;
   height: 30px;
-  border: 2px solid #327950;
+  border: 2px solid #004c70;
   border-radius: 50%;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 0.9rem;
-  color: #327950;
+  color: #004c70;
   font-weight: 600;
 }
 
@@ -354,7 +354,7 @@ body {
 .job-item .badges .success-badge {
   display: inline-block;
   background-color: #cdffd6;
-  color: #327950;
+  color: #004c70;
 }
 .job-item .badges .danger-badge {
   display: inline-block;
@@ -370,19 +370,19 @@ body {
   height: 30px;
   font-size: 0.9rem;
   text-align: center;
-  border: 1px solid #a07832;
-  color: #a07832;
+  border: 1px solid #6fb728;
+  color: #6fb728;
 }
 .job-item .apply-btn::before {
-  background-color: #a07832;
+  background-color: #6fb728;
 }
 .job-item .apply-btn:hover {
   color: #ffffff;
 }
 
 .form-check-input:checked {
-  background-color: #327950;
-  border-color: #327950;
+  background-color: #004c70;
+  border-color: #004c70;
 }
 
 .dot {
@@ -435,7 +435,7 @@ body {
   max-height: 200px;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: #327950 #e7e7e7;
+  scrollbar-color: #004c70 #e7e7e7;
   /* Track */
   /* Handle */
   /* Handle on hover */
@@ -448,7 +448,7 @@ body {
   background: #f1f1f1;
 }
 .nice-select .list::-webkit-scrollbar-thumb {
-  background: #327950;
+  background: #004c70;
   border-radius: 50px;
 }
 .nice-select .list::-webkit-scrollbar-thumb:hover {
@@ -479,7 +479,7 @@ body {
 }
 .candidate-card .name {
   display: block;
-  color: #327950;
+  color: #004c70;
   font-size: 1.125rem;
   font-weight: 500;
   text-decoration: none;
@@ -503,13 +503,13 @@ body {
   line-height: 40px;
   text-align: center;
   border-radius: 10px;
-  color: #a07832;
+  color: #6fb728;
   margin-left: 0.6rem;
-  border: 1px solid #a07832;
+  border: 1px solid #6fb728;
   transition: all 0.4s;
 }
 .candidate-card .actions a:hover {
-  background-color: #a07832;
+  background-color: #6fb728;
   color: #ffffff;
 }
 .candidate-card .actions a:last-child {
@@ -665,7 +665,7 @@ section.middle {
 .theme-ul li::marker {
   content: "\f058";
   font-family: "Font Awesome 5 Free";
-  color: #327950;
+  color: #004c70;
   font-weight: 600;
 }
 
@@ -680,8 +680,8 @@ section.middle {
   height: 35px;
   border-radius: 50%;
   font-size: 12px;
-  border: 1px solid #a07832;
-  color: #a07832;
+  border: 1px solid #6fb728;
+  color: #6fb728;
   transition: all 0.4s;
 }
 .theme-pagination a.text-link {
@@ -689,11 +689,11 @@ section.middle {
   border-radius: 50px;
 }
 .theme-pagination a.active {
-  background-color: #a07832;
+  background-color: #6fb728;
   color: #ffffff;
 }
 .theme-pagination a:hover {
-  background-color: #a07832;
+  background-color: #6fb728;
   color: #ffffff;
 }
 .theme-pagination a.disabled {
@@ -704,6 +704,12 @@ section.middle {
 
 .no-animation {
   animation: none !important;
+}
+
+.std-logo {
+  max-width: 160px;
+  height: auto;
+  border-radius: 50px;
 }
 
 .how-to-section {
@@ -761,7 +767,7 @@ section.middle {
   font-weight: 500;
 }
 .categories-section .item .text {
-  color: #a07832;
+  color: #6fb728;
 }
 
 .jobs-section {
@@ -781,7 +787,7 @@ section.middle {
 
 .testomonial-section {
   position: relative;
-  background: linear-gradient(rgba(5, 29, 15, 0.8705882353), rgba(28, 80, 49, 0.6980392157)), url("../../images/testimonial.jpeg");
+  background: linear-gradient(to bottom, rgba(117, 165, 69, 0.7450980392), rgba(0, 76, 111, 0.8470588235), rgba(1, 58, 85, 0.7529411765)), url("../../images/testimonial.jpeg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -828,7 +834,7 @@ section.middle {
 
 .info-section {
   position: relative;
-  background: linear-gradient(rgba(3, 24, 12, 0.8705882353), rgba(28, 80, 49, 0.8470588235)), url("../../images/info.jpeg");
+  background: linear-gradient(to bottom, rgba(142, 197, 86, 0.7137254902), rgba(0, 76, 111, 0.8156862745), rgba(0, 76, 111, 0.7176470588)), url("../../images/info.jpeg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1041,7 +1047,7 @@ section.middle {
   margin-left: auto;
   width: 200px;
   padding: 0.5rem 1.5rem;
-  background-color: #2bc51d;
+  background-color: #6fb728;
   color: #ffffff;
   border-radius: 10px;
   text-decoration: none;
@@ -1050,7 +1056,7 @@ section.middle {
   transition: all 0.5s;
 }
 .companies-section .item .action-btn a:hover {
-  background-color: #239b19;
+  background-color: #88d53d;
 }
 
 /* Login and register */
@@ -1088,7 +1094,7 @@ section.middle {
   transform: scale(1.05);
 }
 .auth-section .auth-footer .social-icons .icon i {
-  color: #327950;
+  color: #004c70;
   line-height: 40px;
   font-size: 20px;
 }
@@ -1121,7 +1127,7 @@ section.middle {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 15px;
-  color: #327950;
+  color: #004c70;
 }
 .auth-section .input-wrapper input {
   padding-right: 40px;
@@ -1139,8 +1145,8 @@ section.middle {
   transition: all 0.5s;
 }
 .auth-section .form-check-input:checked {
-  background-color: #327950;
-  border-color: #327950;
+  background-color: #004c70;
+  border-color: #004c70;
 }
 .auth-section .form-container button {
   display: block;
@@ -1160,12 +1166,12 @@ section.middle {
 }
 .auth-section .company-auth .theme-btn {
   width: 100%;
-  border: 1px solid #a07832;
+  border: 1px solid #6fb728;
   text-align: center;
-  color: #a07832;
+  color: #6fb728;
 }
 .auth-section .company-auth .theme-btn::before {
-  background-color: #a07832;
+  background-color: #6fb728;
 }
 .auth-section .company-auth .theme-btn:hover {
   color: #ffffff;
@@ -1182,7 +1188,7 @@ section.middle {
   }
 }
 .auth-section .banner {
-  background: linear-gradient(to bottom, rgba(2, 15, 6, 0.631372549), rgba(15, 63, 9, 0.6352941176), rgba(2, 1, 10, 0.7176470588)), url("../../images/banner-2.webp");
+  background: linear-gradient(to bottom, rgba(111, 182, 40, 0.7803921569), rgba(14, 84, 117, 0.7450980392), rgba(10, 60, 83, 0.6784313725)), url("../../images/group.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1285,7 +1291,7 @@ section.middle {
   margin-bottom: 30px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e2e2e2;
-  color: #327950;
+  color: #004c70;
 }
 .profile-section .profile-content .profile-img img {
   background-color: #f3fdd3;
@@ -1294,7 +1300,7 @@ section.middle {
   -o-object-fit: cover;
   object-fit: cover;
   padding: 1rem;
-  border: 5px solid #327950;
+  border: 5px solid #004c70;
   border-radius: 50%;
 }
 .profile-section .profile-content form input,
@@ -1311,7 +1317,7 @@ section.middle {
 .profile-section .profile-content form input:focus,
 .profile-section .profile-content form select:focus,
 .profile-section .profile-content form textarea:focus {
-  border: 1px solid #327950;
+  border: 1px solid #004c70;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(#051d0fde, #1c5031b2),
+  background: linear-gradient(to bottom left, #6db7289c, #004c70bb, #004c70c2),
     url("../../images/home_slider.jpeg");
   background-position: center;
   background-size: cover;
@@ -62,7 +62,10 @@
     .brand {
       img {
         position: relative;
+        max-width: 180px;
+        height: auto;
         animation: fadeLogo 2.5s ease-in-out;
+        border-radius: 50px;
         @media screen and (max-width: 575px) {
           width: 120px;
         }
@@ -90,11 +93,11 @@
             right: 0;
             width: 0;
             height: 2px;
-            background-color: lighten($color: $greenColor, $amount: 50%);
+            background-color: lighten($color: $mainColor, $amount: 50%);
             transition: all 0.5s;
           }
           &:hover {
-            color: lighten($color: $greenColor, $amount: 50%);
+            color: lighten($color: $mainColor, $amount: 50%);
             &::after {
               width: 100%;
             }
@@ -130,13 +133,13 @@
               top: 0;
               width: 5px;
               height: 100%;
-              background-color: $greenColor;
+              background-color: $mainColor;
               display: none;
               transition: all 0.5s;
             }
             &:hover {
-              color: $greenColor;
-              background-color: lighten($color: $greenColor, $amount: 60%);
+              color: $mainColor;
+              background-color: lighten($color: $mainColor, $amount: 60%);
               padding-right: 1.5rem;
               &::after {
                 display: block;
@@ -169,7 +172,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: $greenColor;
+            background-color: $mainColor;
             transition: all 0.6s;
           }
           &:hover {
@@ -185,7 +188,7 @@
           @media screen and (max-width: 1200px) {
             width: 160px;
           }
-          color: $greenColor;
+          color: $mainColor;
           &::before {
             content: "";
             position: absolute;
@@ -193,7 +196,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: $greenColor;
+            background-color: $mainColor;
             transition: all 0.6s;
           }
           &:hover {
@@ -253,7 +256,7 @@
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         font-size: 1.5rem;
-        color: $greenColor;
+        color: $mainColor;
       }
       input,
       select {
@@ -270,10 +273,10 @@
       border-radius: 50px;
       padding: 0.8rem;
       background-color: transparent !important;
-      color: $greenColor;
+      color: $mainColor;
       width: 100%;
       height: 100%;
-      border: 1px solid $greenColor;
+      border: 1px solid $mainColor;
       outline: none;
       box-shadow: none;
       overflow: hidden;
@@ -286,7 +289,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: $greenColor;
+        background-color: $mainColor;
         transition: all 0.6s;
       }
       &:hover {
@@ -364,9 +367,9 @@
     text-decoration: none;
     transition: all 0.5s;
     &:hover {
-      border-color: #45f045;
+      border-color: #6eb728;
       span {
-        background-color: #1da71d;
+        background-color: #6eb728;
         i {
           color: #ffffff;
         }
@@ -383,7 +386,7 @@
       border-radius: 50%;
       transition: all 0.5s;
       i {
-        color: $greenColor;
+        color: $mainColor;
         transition: all 0.5s;
       }
     }
@@ -423,6 +426,9 @@
   .brand {
     img {
       position: relative;
+      max-width: 150px;
+      height: auto;
+      border-radius: 50px;
       @media screen and (max-width: 575px) {
         width: 120px;
       }
@@ -450,11 +456,11 @@
           right: 0;
           width: 0;
           height: 2px;
-          background-color: lighten($color: $greenColor, $amount: 50%);
+          background-color: lighten($color: $mainColor, $amount: 50%);
           transition: all 0.5s;
         }
         &:hover {
-          color: lighten($color: $greenColor, $amount: 50%);
+          color: lighten($color: $mainColor, $amount: 50%);
           &::after {
             width: 100%;
           }
@@ -490,13 +496,13 @@
             top: 0;
             width: 5px;
             height: 100%;
-            background-color: $greenColor;
+            background-color: $mainColor;
             display: none;
             transition: all 0.5s;
           }
           &:hover {
-            color: $greenColor;
-            background-color: lighten($color: $greenColor, $amount: 60%);
+            color: $mainColor;
+            background-color: lighten($color: $mainColor, $amount: 60%);
             padding-right: 1.5rem;
             &::after {
               display: block;
@@ -529,7 +535,7 @@
           top: 0;
           width: 100%;
           height: 100%;
-          background-color: $greenColor;
+          background-color: $mainColor;
           transition: all 0.6s;
         }
         &:hover {
@@ -545,7 +551,7 @@
         @media screen and (max-width: 1200px) {
           width: 160px;
         }
-        color: $greenColor;
+        color: $mainColor;
         &::before {
           content: "";
           position: absolute;
@@ -553,7 +559,7 @@
           top: 0;
           width: 100%;
           height: 100%;
-          background-color: $greenColor;
+          background-color: $mainColor;
           transition: all 0.6s;
         }
         &:hover {
@@ -624,7 +630,7 @@
 
 .footer {
   padding: 5rem 1rem;
-  background-color: #000000;
+  background-color: $mainColor;
   color: #ffffff;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -661,7 +667,7 @@
       border-radius: 50px;
       border: none;
       padding: 0.5rem;
-      background-color: #2ac731;
+      background-color: $secondaryColor;
       color: #ffffff;
       transition: all 0.5s;
     }
@@ -696,7 +702,7 @@
     align-items: center;
     padding: 0.5rem 1rem;
     width: 200px;
-    border: 1px solid #45f045;
+    border: 1px solid #6eb727;
     color: #ffffff !important;
     border-radius: 50px;
     i {
@@ -704,7 +710,7 @@
     }
     transition: all 0.5s;
     &:hover {
-      background-color: #18d118;
+      background-color: #6eb727;
     }
   }
   .bottom-footer {
@@ -715,6 +721,13 @@
       color: #ffffff;
       font-size: 1.3rem;
       text-decoration: none;
+    }
+  }
+  .logo {
+    img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 50px;
     }
   }
 }

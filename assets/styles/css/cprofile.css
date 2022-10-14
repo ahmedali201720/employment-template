@@ -117,7 +117,7 @@
 .profile-section .info-section .description ul li::marker {
   content: "\f058";
   font-family: "Font Awesome 5 Free";
-  color: #327950;
+  color: #6fb628;
   font-weight: 700;
 }
 .profile-section .info-section .action {
@@ -177,11 +177,11 @@
   top: -120px;
 }
 .standalone-btn-section .bubble-link {
-  background-color: #20bd61;
+  background-color: #6fb628;
   color: #ffffff !important;
 }
 .standalone-btn-section .bubble-link::after {
-  background-color: #3c9762;
+  background-color: #6fb628;
 }
 
 /*# sourceMappingURL=cprofile.css.map */

@@ -33,11 +33,11 @@ body {
 }
 
 .text-green {
-  color: #327950 !important;
+  color: #004c70 !important;
 }
 
 .text-brown {
-  color: #a07832 !important;
+  color: #6fb728 !important;
 }
 
 .text-grey {
@@ -49,7 +49,7 @@ body {
 }
 
 .text-light-brown {
-  color: #dcc08f !important;
+  color: #bce791 !important;
 }
 
 .text-blue {
@@ -79,9 +79,9 @@ body {
   border-radius: 50px;
   padding: 0.8rem;
   background-color: transparent !important;
-  color: #327950;
+  color: #004c70;
   width: 220px;
-  border: 1px solid #327950;
+  border: 1px solid #004c70;
   outline: none;
   box-shadow: none;
   overflow: hidden;
@@ -96,7 +96,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #327950;
+  background-color: #004c70;
   transition: all 0.6s;
 }
 .theme-btn:hover {
@@ -171,7 +171,7 @@ body {
   }
 }
 .section-head span {
-  color: #a07832;
+  color: #004c70;
 }
 .section-head .main-head {
   position: relative;
@@ -227,10 +227,10 @@ body {
   transform: translate(-50%) scale(1);
 }
 .swiper-pagination.dark .swiper-pagination-bullet {
-  border: 2px solid #3fd67e;
+  border: 2px solid #6eb727;
 }
 .swiper-pagination.dark .swiper-pagination-bullet::after {
-  background-color: #3fd67e;
+  background-color: #6eb727;
 }
 
 .swiper-button-prev,
@@ -239,13 +239,13 @@ body {
   transform: translateY(-90%);
   width: 30px;
   height: 30px;
-  border: 2px solid #327950;
+  border: 2px solid #004c70;
   border-radius: 50%;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 0.9rem;
-  color: #327950;
+  color: #004c70;
   font-weight: 600;
 }
 
@@ -354,7 +354,7 @@ body {
 .job-item .badges .success-badge {
   display: inline-block;
   background-color: #cdffd6;
-  color: #327950;
+  color: #004c70;
 }
 .job-item .badges .danger-badge {
   display: inline-block;
@@ -370,19 +370,19 @@ body {
   height: 30px;
   font-size: 0.9rem;
   text-align: center;
-  border: 1px solid #a07832;
-  color: #a07832;
+  border: 1px solid #6fb728;
+  color: #6fb728;
 }
 .job-item .apply-btn::before {
-  background-color: #a07832;
+  background-color: #6fb728;
 }
 .job-item .apply-btn:hover {
   color: #ffffff;
 }
 
 .form-check-input:checked {
-  background-color: #327950;
-  border-color: #327950;
+  background-color: #004c70;
+  border-color: #004c70;
 }
 
 .dot {
@@ -435,7 +435,7 @@ body {
   max-height: 200px;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: #327950 #e7e7e7;
+  scrollbar-color: #004c70 #e7e7e7;
   /* Track */
   /* Handle */
   /* Handle on hover */
@@ -448,7 +448,7 @@ body {
   background: #f1f1f1;
 }
 .nice-select .list::-webkit-scrollbar-thumb {
-  background: #327950;
+  background: #004c70;
   border-radius: 50px;
 }
 .nice-select .list::-webkit-scrollbar-thumb:hover {
@@ -479,7 +479,7 @@ body {
 }
 .candidate-card .name {
   display: block;
-  color: #327950;
+  color: #004c70;
   font-size: 1.125rem;
   font-weight: 500;
   text-decoration: none;
@@ -503,13 +503,13 @@ body {
   line-height: 40px;
   text-align: center;
   border-radius: 10px;
-  color: #a07832;
+  color: #6fb728;
   margin-left: 0.6rem;
-  border: 1px solid #a07832;
+  border: 1px solid #6fb728;
   transition: all 0.4s;
 }
 .candidate-card .actions a:hover {
-  background-color: #a07832;
+  background-color: #6fb728;
   color: #ffffff;
 }
 .candidate-card .actions a:last-child {
@@ -665,7 +665,7 @@ section.middle {
 .theme-ul li::marker {
   content: "\f058";
   font-family: "Font Awesome 5 Free";
-  color: #327950;
+  color: #004c70;
   font-weight: 600;
 }
 
@@ -680,8 +680,8 @@ section.middle {
   height: 35px;
   border-radius: 50%;
   font-size: 12px;
-  border: 1px solid #a07832;
-  color: #a07832;
+  border: 1px solid #6fb728;
+  color: #6fb728;
   transition: all 0.4s;
 }
 .theme-pagination a.text-link {
@@ -689,11 +689,11 @@ section.middle {
   border-radius: 50px;
 }
 .theme-pagination a.active {
-  background-color: #a07832;
+  background-color: #6fb728;
   color: #ffffff;
 }
 .theme-pagination a:hover {
-  background-color: #a07832;
+  background-color: #6fb728;
   color: #ffffff;
 }
 .theme-pagination a.disabled {
@@ -706,13 +706,19 @@ section.middle {
   animation: none !important;
 }
 
+.std-logo {
+  max-width: 160px;
+  height: auto;
+  border-radius: 50px;
+}
+
 .page-container {
   display: flex;
   transition: 0.4s;
 }
 .page-container .dashboard-sidebar {
   width: 18%;
-  background-color: #327950;
+  background-color: #004c70;
   height: 100vh;
   padding: 2rem;
   transition: all 0.4s;
@@ -839,7 +845,7 @@ section.middle {
   transition: all 0.4s;
 }
 .page-container .dashboard-sidebar .user .dropdown .dropdown-menu .dropdown-item:hover {
-  color: #327950;
+  color: #004c70;
 }
 .page-container .dashboard-sidebar .side-links-list {
   list-style: none;
@@ -974,6 +980,9 @@ section.middle {
   .page-container .page-body {
     width: 100%;
   }
+}
+.page-container.collapsed .std-logo {
+  display: none;
 }
 .page-container.collapsed .dashboard-sidebar {
   width: 5%;
@@ -1162,7 +1171,7 @@ section.middle {
 }
 .page-body .header .controls-wrapper .sidebar-toggler {
   background-color: transparent;
-  color: #327950;
+  color: #004c70;
   border: none;
   outline: none;
   box-shadow: none;
@@ -1204,7 +1213,7 @@ section.middle {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background-color: #327950;
+  background-color: #004c70;
   color: #ffffff;
   border: none;
   box-shadow: none;
@@ -1235,7 +1244,7 @@ section.middle {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 1.5rem;
-  color: #327950;
+  color: #004c70;
 }
 .page-body .header .header-search-form-container .input-wrapper input {
   height: 40px;

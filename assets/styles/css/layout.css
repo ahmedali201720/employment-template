@@ -33,11 +33,11 @@ body {
 }
 
 .text-green {
-  color: #327950 !important;
+  color: #004c70 !important;
 }
 
 .text-brown {
-  color: #a07832 !important;
+  color: #6fb728 !important;
 }
 
 .text-grey {
@@ -49,7 +49,7 @@ body {
 }
 
 .text-light-brown {
-  color: #dcc08f !important;
+  color: #bce791 !important;
 }
 
 .text-blue {
@@ -79,9 +79,9 @@ body {
   border-radius: 50px;
   padding: 0.8rem;
   background-color: transparent !important;
-  color: #327950;
+  color: #004c70;
   width: 220px;
-  border: 1px solid #327950;
+  border: 1px solid #004c70;
   outline: none;
   box-shadow: none;
   overflow: hidden;
@@ -96,7 +96,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #327950;
+  background-color: #004c70;
   transition: all 0.6s;
 }
 .theme-btn:hover {
@@ -171,7 +171,7 @@ body {
   }
 }
 .section-head span {
-  color: #a07832;
+  color: #004c70;
 }
 .section-head .main-head {
   position: relative;
@@ -227,10 +227,10 @@ body {
   transform: translate(-50%) scale(1);
 }
 .swiper-pagination.dark .swiper-pagination-bullet {
-  border: 2px solid #3fd67e;
+  border: 2px solid #6eb727;
 }
 .swiper-pagination.dark .swiper-pagination-bullet::after {
-  background-color: #3fd67e;
+  background-color: #6eb727;
 }
 
 .swiper-button-prev,
@@ -239,13 +239,13 @@ body {
   transform: translateY(-90%);
   width: 30px;
   height: 30px;
-  border: 2px solid #327950;
+  border: 2px solid #004c70;
   border-radius: 50%;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 0.9rem;
-  color: #327950;
+  color: #004c70;
   font-weight: 600;
 }
 
@@ -354,7 +354,7 @@ body {
 .job-item .badges .success-badge {
   display: inline-block;
   background-color: #cdffd6;
-  color: #327950;
+  color: #004c70;
 }
 .job-item .badges .danger-badge {
   display: inline-block;
@@ -370,19 +370,19 @@ body {
   height: 30px;
   font-size: 0.9rem;
   text-align: center;
-  border: 1px solid #a07832;
-  color: #a07832;
+  border: 1px solid #6fb728;
+  color: #6fb728;
 }
 .job-item .apply-btn::before {
-  background-color: #a07832;
+  background-color: #6fb728;
 }
 .job-item .apply-btn:hover {
   color: #ffffff;
 }
 
 .form-check-input:checked {
-  background-color: #327950;
-  border-color: #327950;
+  background-color: #004c70;
+  border-color: #004c70;
 }
 
 .dot {
@@ -435,7 +435,7 @@ body {
   max-height: 200px;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: #327950 #e7e7e7;
+  scrollbar-color: #004c70 #e7e7e7;
   /* Track */
   /* Handle */
   /* Handle on hover */
@@ -448,7 +448,7 @@ body {
   background: #f1f1f1;
 }
 .nice-select .list::-webkit-scrollbar-thumb {
-  background: #327950;
+  background: #004c70;
   border-radius: 50px;
 }
 .nice-select .list::-webkit-scrollbar-thumb:hover {
@@ -479,7 +479,7 @@ body {
 }
 .candidate-card .name {
   display: block;
-  color: #327950;
+  color: #004c70;
   font-size: 1.125rem;
   font-weight: 500;
   text-decoration: none;
@@ -503,13 +503,13 @@ body {
   line-height: 40px;
   text-align: center;
   border-radius: 10px;
-  color: #a07832;
+  color: #6fb728;
   margin-left: 0.6rem;
-  border: 1px solid #a07832;
+  border: 1px solid #6fb728;
   transition: all 0.4s;
 }
 .candidate-card .actions a:hover {
-  background-color: #a07832;
+  background-color: #6fb728;
   color: #ffffff;
 }
 .candidate-card .actions a:last-child {
@@ -665,7 +665,7 @@ section.middle {
 .theme-ul li::marker {
   content: "\f058";
   font-family: "Font Awesome 5 Free";
-  color: #327950;
+  color: #004c70;
   font-weight: 600;
 }
 
@@ -680,8 +680,8 @@ section.middle {
   height: 35px;
   border-radius: 50%;
   font-size: 12px;
-  border: 1px solid #a07832;
-  color: #a07832;
+  border: 1px solid #6fb728;
+  color: #6fb728;
   transition: all 0.4s;
 }
 .theme-pagination a.text-link {
@@ -689,11 +689,11 @@ section.middle {
   border-radius: 50px;
 }
 .theme-pagination a.active {
-  background-color: #a07832;
+  background-color: #6fb728;
   color: #ffffff;
 }
 .theme-pagination a:hover {
-  background-color: #a07832;
+  background-color: #6fb728;
   color: #ffffff;
 }
 .theme-pagination a.disabled {
@@ -706,6 +706,12 @@ section.middle {
   animation: none !important;
 }
 
+.std-logo {
+  max-width: 160px;
+  height: auto;
+  border-radius: 50px;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -713,7 +719,7 @@ section.middle {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(rgba(5, 29, 15, 0.8705882353), rgba(28, 80, 49, 0.6980392157)), url("../../images/home_slider.jpeg");
+  background: linear-gradient(to bottom left, rgba(109, 183, 40, 0.6117647059), rgba(0, 76, 112, 0.7333333333), rgba(0, 76, 112, 0.7607843137)), url("../../images/home_slider.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -785,7 +791,10 @@ section.middle {
 }
 .header .top-nav .brand img {
   position: relative;
+  max-width: 180px;
+  height: auto;
   animation: fadeLogo 2.5s ease-in-out;
+  border-radius: 50px;
 }
 @media screen and (max-width: 575px) {
   .header .top-nav .brand img {
@@ -817,11 +826,11 @@ section.middle {
   right: 0;
   width: 0;
   height: 2px;
-  background-color: #c4e6d2;
+  background-color: #70d1ff;
   transition: all 0.5s;
 }
 .header .top-nav .nav-list .nav-list-item .nav-list-link:hover {
-  color: #c4e6d2;
+  color: #70d1ff;
 }
 .header .top-nav .nav-list .nav-list-item .nav-list-link:hover::after {
   width: 100%;
@@ -854,13 +863,13 @@ section.middle {
   top: 0;
   width: 5px;
   height: 100%;
-  background-color: #327950;
+  background-color: #004c70;
   display: none;
   transition: all 0.5s;
 }
 .header .top-nav .nav-list .dropdown:hover .dropdown-menu li a:hover {
-  color: #327950;
-  background-color: #e8f5ed;
+  color: #004c70;
+  background-color: #a3e1ff;
   padding-right: 1.5rem;
 }
 .header .top-nav .nav-list .dropdown:hover .dropdown-menu li a:hover::after {
@@ -890,7 +899,7 @@ section.middle {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #327950;
+  background-color: #004c70;
   transition: all 0.6s;
 }
 .header .top-nav .links .auth.register:hover {
@@ -902,7 +911,7 @@ section.middle {
 }
 .header .top-nav .links .auth.login {
   background-color: #ffffff;
-  color: #327950;
+  color: #004c70;
 }
 @media screen and (max-width: 1200px) {
   .header .top-nav .links .auth.login {
@@ -916,7 +925,7 @@ section.middle {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #327950;
+  background-color: #004c70;
   transition: all 0.6s;
 }
 .header .top-nav .links .auth.login:hover {
@@ -978,7 +987,7 @@ section.middle {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 1.5rem;
-  color: #327950;
+  color: #004c70;
 }
 .header .header-search-form .input-wrapper input,
 .header .header-search-form .input-wrapper select {
@@ -994,10 +1003,10 @@ section.middle {
   border-radius: 50px;
   padding: 0.8rem;
   background-color: transparent !important;
-  color: #327950;
+  color: #004c70;
   width: 100%;
   height: 100%;
-  border: 1px solid #327950;
+  border: 1px solid #004c70;
   outline: none;
   box-shadow: none;
   overflow: hidden;
@@ -1011,7 +1020,7 @@ section.middle {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #327950;
+  background-color: #004c70;
   transition: all 0.6s;
 }
 .header .header-search-form .searchHeaderButton:hover {
@@ -1088,10 +1097,10 @@ section.middle {
   transition: all 0.5s;
 }
 .header .next-section-link:hover {
-  border-color: #45f045;
+  border-color: #6eb728;
 }
 .header .next-section-link:hover span {
-  background-color: #1da71d;
+  background-color: #6eb728;
 }
 .header .next-section-link:hover span i {
   color: #ffffff;
@@ -1108,7 +1117,7 @@ section.middle {
   transition: all 0.5s;
 }
 .header .next-section-link span i {
-  color: #327950;
+  color: #004c70;
   transition: all 0.5s;
 }
 
@@ -1154,6 +1163,9 @@ section.middle {
 .static-header .brand img,
 .scroll-header .brand img {
   position: relative;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50px;
 }
 @media screen and (max-width: 575px) {
   .static-header .brand img,
@@ -1190,12 +1202,12 @@ section.middle {
   right: 0;
   width: 0;
   height: 2px;
-  background-color: #c4e6d2;
+  background-color: #70d1ff;
   transition: all 0.5s;
 }
 .static-header .nav-list .nav-list-item .nav-list-link:hover,
 .scroll-header .nav-list .nav-list-item .nav-list-link:hover {
-  color: #c4e6d2;
+  color: #70d1ff;
 }
 .static-header .nav-list .nav-list-item .nav-list-link:hover::after,
 .scroll-header .nav-list .nav-list-item .nav-list-link:hover::after {
@@ -1234,14 +1246,14 @@ section.middle {
   top: 0;
   width: 5px;
   height: 100%;
-  background-color: #327950;
+  background-color: #004c70;
   display: none;
   transition: all 0.5s;
 }
 .static-header .nav-list .dropdown:hover .dropdown-menu li a:hover,
 .scroll-header .nav-list .dropdown:hover .dropdown-menu li a:hover {
-  color: #327950;
-  background-color: #e8f5ed;
+  color: #004c70;
+  background-color: #a3e1ff;
   padding-right: 1.5rem;
 }
 .static-header .nav-list .dropdown:hover .dropdown-menu li a:hover::after,
@@ -1275,7 +1287,7 @@ section.middle {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #327950;
+  background-color: #004c70;
   transition: all 0.6s;
 }
 .static-header .links .auth.register:hover,
@@ -1290,7 +1302,7 @@ section.middle {
 .static-header .links .auth.login,
 .scroll-header .links .auth.login {
   background-color: #ffffff;
-  color: #327950;
+  color: #004c70;
 }
 @media screen and (max-width: 1200px) {
   .static-header .links .auth.login,
@@ -1306,7 +1318,7 @@ section.middle {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #327950;
+  background-color: #004c70;
   transition: all 0.6s;
 }
 .static-header .links .auth.login:hover,
@@ -1373,7 +1385,7 @@ section.middle {
 
 .footer {
   padding: 5rem 1rem;
-  background-color: #000000;
+  background-color: #004c70;
   color: #ffffff;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -1412,7 +1424,7 @@ section.middle {
   border-radius: 50px;
   border: none;
   padding: 0.5rem;
-  background-color: #2ac731;
+  background-color: #6fb728;
   color: #ffffff;
   transition: all 0.5s;
 }
@@ -1442,7 +1454,7 @@ section.middle {
   align-items: center;
   padding: 0.5rem 1rem;
   width: 200px;
-  border: 1px solid #45f045;
+  border: 1px solid #6eb727;
   color: #ffffff !important;
   border-radius: 50px;
   transition: all 0.5s;
@@ -1451,7 +1463,7 @@ section.middle {
   font-size: 2rem;
 }
 .footer .mobile-link:hover {
-  background-color: #18d118;
+  background-color: #6eb727;
 }
 .footer .bottom-footer {
   border-top: 1px solid #ffffff;
@@ -1460,6 +1472,11 @@ section.middle {
   color: #ffffff;
   font-size: 1.3rem;
   text-decoration: none;
+}
+.footer .logo img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=layout.css.map */
