@@ -76,7 +76,7 @@ body {
 .theme-btn {
   position: relative;
   display: inline-block;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 0.8rem;
   background-color: transparent !important;
   color: #004c70;
@@ -719,18 +719,14 @@ section.middle {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom left, rgba(109, 183, 40, 0.6117647059), rgba(0, 76, 112, 0.7333333333), rgba(0, 76, 112, 0.7607843137)), url("../../images/home_slider.jpeg");
+  background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.6784313725), rgba(0, 0, 0, 0.5411764706)), url("../../images/home_slider.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
 }
 @media screen and (max-height: 850px) {
   .header {
     min-height: 105vh;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
   }
 }
 @media screen and (max-height: 812px) {
@@ -794,7 +790,6 @@ section.middle {
   max-width: 180px;
   height: auto;
   animation: fadeLogo 2.5s ease-in-out;
-  border-radius: 50px;
 }
 @media screen and (max-width: 575px) {
   .header .top-nav .brand img {
@@ -882,7 +877,7 @@ section.middle {
   color: #ffffff;
   width: 150px;
   border: 1px solid #efefef;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 0.5rem 1.2rem;
   text-decoration: none;
   z-index: 1;
@@ -972,7 +967,7 @@ section.middle {
   width: 90%;
   max-width: 1000px;
   background-color: #ffffff;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 1rem;
   animation: fadeSearchForm 2s linear;
   overflow: hidden;
@@ -1000,7 +995,7 @@ section.middle {
 .header .header-search-form .searchHeaderButton {
   position: relative;
   display: block;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 0.8rem;
   background-color: transparent !important;
   color: #004c70;
@@ -1268,7 +1263,7 @@ section.middle {
   color: #ffffff;
   width: 150px;
   border: 1px solid #efefef;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 0.5rem 1.2rem;
   text-decoration: none;
   z-index: 1;
@@ -1385,10 +1380,8 @@ section.middle {
 
 .footer {
   padding: 5rem 1rem;
-  background-color: #004c70;
+  background-color: #000000;
   color: #ffffff;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
 }
 .footer .footer-head {
   max-width: 450px;

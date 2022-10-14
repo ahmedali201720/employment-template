@@ -6,17 +6,13 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom left, #6db7289c, #004c70bb, #004c70c2),
+  background: linear-gradient(to bottom left, #000000ad, #0000008a),
     url("../../images/home_slider.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
   @media screen and (max-height: 850px) {
     min-height: 105vh;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
   }
   @media screen and (max-height: 812px) {
     min-height: 110vh;
@@ -65,7 +61,6 @@
         max-width: 180px;
         height: auto;
         animation: fadeLogo 2.5s ease-in-out;
-        border-radius: 50px;
         @media screen and (max-width: 575px) {
           width: 120px;
         }
@@ -157,7 +152,7 @@
         color: #ffffff;
         width: 150px;
         border: 1px solid #efefef;
-        border-radius: 50px;
+        border-radius: 5px;
         padding: 0.5rem 1.2rem;
         text-decoration: none;
         z-index: 1;
@@ -243,7 +238,7 @@
     width: 90%;
     max-width: 1000px;
     background-color: #ffffff;
-    border-radius: 50px;
+    border-radius: 5px;
     padding: 1rem;
     animation: fadeSearchForm 2s linear;
     overflow: hidden;
@@ -270,7 +265,7 @@
     .searchHeaderButton {
       position: relative;
       display: block;
-      border-radius: 50px;
+      border-radius: 5px;
       padding: 0.8rem;
       background-color: transparent !important;
       color: $mainColor;
@@ -520,7 +515,7 @@
       color: #ffffff;
       width: 150px;
       border: 1px solid #efefef;
-      border-radius: 50px;
+      border-radius: 5px;
       padding: 0.5rem 1.2rem;
       text-decoration: none;
       z-index: 1;
@@ -630,10 +625,8 @@
 
 .footer {
   padding: 5rem 1rem;
-  background-color: $mainColor;
+  background-color: #000000;
   color: #ffffff;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
   .footer-head {
     max-width: 450px;
     text-align: center;

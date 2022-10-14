@@ -76,7 +76,7 @@ body {
 .theme-btn {
   position: relative;
   display: inline-block;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 0.8rem;
   background-color: transparent !important;
   color: #004c70;

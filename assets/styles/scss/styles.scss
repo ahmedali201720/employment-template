@@ -72,20 +72,18 @@
 
 .testomonial-section {
   position: relative;
-  background: linear-gradient(to bottom, #75a545be, #004c6fd8, #013a55c0),
+  background: linear-gradient(to bottom, #000000ad, #000000b9),
     url("../../images/testimonial.jpeg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
   overflow: hidden;
   .item {
     color: #ffffff;
     font-size: 1.2rem;
+    border: 1px solid #eeeeee;
+    padding: 1.2rem;
     .quote {
       margin-bottom: 1.2rem;
     }
@@ -120,7 +118,7 @@
 
 .info-section {
   position: relative;
-  background: linear-gradient(to bottom, #8ec556b6, #004c6fd0, #004c6fb7),
+  background: linear-gradient(to bottom, #000000af, #0000008c),
     url("../../images/info.jpeg");
   background-position: top center;
   background-size: cover;
@@ -339,7 +337,7 @@
         color: #ffffff;
         border-radius: 10px;
         text-decoration: none;
-        border-radius: 50px;
+        border-radius: 5px;
         text-align: center;
         transition: all 0.5s;
         &:hover {
