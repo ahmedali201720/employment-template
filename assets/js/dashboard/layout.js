@@ -228,14 +228,35 @@ var options2 = {
   },
 };
 
-var chart = new ApexCharts(document.querySelector("#chart1"), options);
-chart.render();
+var el1 = document.querySelector("#chart1");
+var el2 = document.querySelector("#chart2");
+var el3 = document.querySelector("#chart3");
+var el4 = document.querySelector("#chart4");
 
-var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
-chart2.render();
+if (el1) {
+  var chart = new ApexCharts(el1, options);
+}
+if (el2) {
+  var chart2 = new ApexCharts(e12, options2);
+}
+if (el3) {
+  var chart3 = new ApexCharts(el3, options);
+}
+if (el4) {
+  var chart4 = new ApexCharts(el4, options2);
+}
+if (chart) {
+  chart.render();
+}
 
-var chart3 = new ApexCharts(document.querySelector("#chart3"), options);
-chart3.render();
+if (chart2) {
+  chart2.render();
+}
 
-var chart4 = new ApexCharts(document.querySelector("#chart4"), options2);
-chart4.render();
+if (chart3) {
+  chart3.render();
+}
+
+if (chart4) {
+  chart4.render();
+}

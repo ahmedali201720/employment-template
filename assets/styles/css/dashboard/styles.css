@@ -410,7 +410,7 @@ body {
 /* Nice Selector */
 .nice-selector {
   height: 100%;
-  border-radius: 50px;
+  border-radius: 5px;
   width: 100%;
   box-shadow: none;
   outline: none;
@@ -830,7 +830,7 @@ body {
 }
 .page-content .job-form .input-wrapper input {
   border: none;
-  border-radius: 50px;
+  border-radius: 5px;
   background-color: #efefef;
   padding: 0.9rem 3rem 0.9rem 0.9rem;
   outline: none;
@@ -841,6 +841,17 @@ body {
   border: none;
   outline: none !important;
   box-shadow: none !important;
+}
+.page-content .job-form .input-wrapper .select2.select2-container {
+  width: 100% !important;
+}
+.page-content .job-form .input-wrapper .select2.select2-container .select2-selection--multiple {
+  height: 50px !important;
+  background-color: #efefef;
+  border: none;
+}
+.page-content .job-form .input-wrapper .select2.select2-container .select2-search__field {
+  padding: 0 15px;
 }
 .page-content .jobs-filter-section {
   padding-top: 2rem;

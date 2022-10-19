@@ -115,7 +115,7 @@ body {
       }
       input {
         border: none;
-        border-radius: 50px;
+        border-radius: 5px;
         background-color: #efefef;
         padding: 0.9rem 3rem 0.9rem 0.9rem;
         outline: none;
@@ -126,6 +126,19 @@ body {
         border: none;
         outline: none !important;
         box-shadow: none !important;
+      }
+      .select2 {
+        &.select2-container {
+          width: 100% !important;
+          .select2-selection--multiple {
+            height: 50px !important;
+            background-color: #efefef;
+            border: none;
+          }
+          .select2-search__field {
+            padding: 0 15px;
+          }
+        }
       }
     }
   }

@@ -26,6 +26,7 @@
     />
     <link rel="stylesheet" href="../assets/font/stylesheet.css" />
     <link rel="stylesheet" href="../assets/styles/css/nice-select.css" />
+    <link rel="stylesheet" href="../assets/styles/css/select2.min.css" />
     <link rel="stylesheet" href="../assets/styles/css/global.css" />
     <link rel="stylesheet" href="../assets/styles/css/animation.css" />
     <link rel="stylesheet" href="../assets/styles/css/dashboard/layout.css" />
@@ -343,24 +344,67 @@
                     <div class="row g-4">
                       <div class="col-l2">
                         <form class="job-form" id="jobForm">
-                          <div class="form-group mb-4">
-                            <label for="title" class="form-label">
-                              عنوان الوظيفة
-                              <span class="text-danger">*</span>
-                            </label>
-                            <div class="input-wrapper">
-                              <i class="icon fa fa-newspaper"></i>
-                              <input
-                                type="text"
-                                name="title"
-                                id="title"
-                                class="form-control"
-                              />
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="form-group mb-4">
+                                <label for="title" class="form-label">
+                                  عنوان الوظيفة
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <i class="icon fa fa-newspaper"></i>
+                                  <input
+                                    type="text"
+                                    name="title"
+                                    id="title"
+                                    class="form-control"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-group mb-4">
+                                <label for="title" class="form-label">
+                                  اختيار متعدد
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <select
+                                    class="select2"
+                                    name="state"
+                                    multiple="multiple"
+                                  >
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                  </select>
+                                </div>
+                              </div>
                             </div>
                           </div>
                           <div class="form-group mb-4">
                             <div class="row">
-                              <div class="col-xl-4 col-lg-6 mb-xl-0 mb-4">
+                              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="wrapper">
+                                  <label for="ctry" class="form-label">
+                                    القسم
+                                    <span class="text-danger">*</span>
+                                  </label>
+                                  <div class="input-wrapper">
+                                    <select
+                                      class="form-control w-100 nice-selector"
+                                      name="spec"
+                                      id="ctry"
+                                    >
+                                      <option value="">--اختر القسم--</option>
+                                      <option value="AL">مصر</option>
+                                      <option value="WY">السعودية</option>
+                                      <option value="AL">الإمارات</option>
+                                      <option value="WY">تركيا</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
                                 <div class="wrapper">
                                   <label for="ctry" class="form-label">
                                     الدولة
@@ -381,7 +425,53 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-xl-4 col-lg-6 mb-xl-0 mb-4">
+                              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="wrapper">
+                                  <label for="ctry" class="form-label">
+                                    المحافظة
+                                    <span class="text-danger">*</span>
+                                  </label>
+                                  <div class="input-wrapper">
+                                    <select
+                                      class="form-control w-100 nice-selector"
+                                      name="spec"
+                                      id="gvrn"
+                                    >
+                                      <option value="">
+                                        --اختر المحافظة--
+                                      </option>
+                                      <option value="AL">القاهرة</option>
+                                      <option value="WY">الاسكندرية</option>
+                                      <option value="AL">دبى</option>
+                                      <option value="WY">الرياض</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+                                <div class="wrapper">
+                                  <label for="type" class="form-label">
+                                    نوع الوظيفة
+                                    <span class="text-danger">*</span>
+                                  </label>
+                                  <div class="input-wrapper">
+                                    <select
+                                      class="form-control w-100 nice-selector"
+                                      name="spec"
+                                      id="type"
+                                    >
+                                      <option value="">
+                                        --اختر نوع الوظيفة--
+                                      </option>
+                                      <option value="AL">دوام كامل</option>
+                                      <option value="WY">دوام جزئى</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-xl-3 col-lg-4 col-md-6 mb-xl-0 mb-4"
+                              >
                                 <div class="wrapper">
                                   <label for="spec" class="form-label">
                                     التخصص
@@ -404,7 +494,9 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-xl-4 col-lg-6 mb-xl-0 mb-4">
+                              <div
+                                class="col-xl-3 col-lg-4 col-md-6 mb-xl-0 mb-4"
+                              >
                                 <div class="wrapper">
                                   <label for="num" class="form-label">
                                     العدد المطلوب
@@ -421,9 +513,123 @@
                                   </div>
                                 </div>
                               </div>
+                              <div
+                                class="col-xl-3 col-lg-4 col-md-6 mb-xl-0 mb-4"
+                              >
+                                <div class="wrapper">
+                                  <label for="num" class="form-label">
+                                    نطاق الراتب
+                                    <span class="text-danger">*</span>
+                                    <div class="form-check d-inline-block ms-2">
+                                      <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="hideSalaryCheck"
+                                      />
+                                      <label
+                                        style="font-size: 14px"
+                                        class="form-check-label"
+                                        for="hideSalaryCheck"
+                                        >اخفاء الراتب</label
+                                      >
+                                    </div>
+                                  </label>
+                                  <div class="input-wrapper">
+                                    <i class="icon fa fa-credit-card"></i>
+                                    <input
+                                      type="text"
+                                      name="num"
+                                      id="salary"
+                                      class="form-control"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="col-xl-3 col-lg-4 col-md-6 mb-xl-0 mb-4"
+                              >
+                                <div class="wrapper">
+                                  <label for="expiration" class="form-label">
+                                    موعد انتهاء التقديم
+                                    <span class="text-danger">*</span>
+                                  </label>
+                                  <div class="input-wrapper">
+                                    <input
+                                      type="date"
+                                      name="expiration"
+                                      id="expiration"
+                                      class="form-control ps-2"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                          <div class="form-group mb-5">
+                          <div class="row">
+                            <div class="col-lg-6 mb-4">
+                              <div class="wrapper">
+                                <label for="level" class="form-label">
+                                  المستوى التعليمي
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <select
+                                    class="form-control w-100 nice-selector"
+                                    name="spec"
+                                    id="ctry"
+                                  >
+                                    <option value="">
+                                      --اختر المستوى التعليمي--
+                                    </option>
+                                    <option value="AL">ماجستير</option>
+                                    <option value="WY">دكتوراة</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                              <div class="wrapper">
+                                <label for="level" class="form-label">
+                                  مستوى الخبرة
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <select
+                                    class="form-control w-100 nice-selector"
+                                    name="experience"
+                                    id="experience"
+                                  >
+                                    <option value="">
+                                      --اختر مستوى الخبرة--
+                                    </option>
+                                    <option value="AL">+10 سنين خبرة</option>
+                                    <option value="WY">+15 سنة خبرة</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-group mb-4">
+                                <label for="title" class="form-label">
+                                  المهارات العملية المطلوبة
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <select
+                                    class="select2"
+                                    name="state"
+                                    multiple="multiple"
+                                  >
+                                    <option value="AL">طب الأسرة</option>
+                                    <option value="WY">طب الأطفال</option>
+                                    <option value="AL">جراحة عامة</option>
+                                    <option value="WY">اتزان عصبى</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group mb-4">
                             <label for="title" class="form-label">
                               تفاصيل عن الوظيفة
                               <span class="text-danger">*</span>
@@ -437,7 +643,66 @@
                               ></textarea>
                             </div>
                           </div>
-                          <div class="form-group text-end mb-5">
+                          <div class="form-group mb-5">
+                            <div class="row">
+                              <div class="col-xl-3 col-lg-4 mb-3">
+                                <div class="mb-3 form-check">
+                                  <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    id="headDept"
+                                  />
+                                  <label class="form-check-label" for="headDept"
+                                    >رئيس القســم</label
+                                  >
+                                </div>
+                              </div>
+                              <div class="col-xl-9 col-lg-8 mb-3">
+                                <div class="form-group">
+                                  <div class="input-wrapper">
+                                    <select
+                                      class="select2"
+                                      name="state"
+                                      multiple="multiple"
+                                    >
+                                      <option value="AL">Ahmed Hesham</option>
+                                      <option value="WY">Hassan Kaddah</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xl-3 col-lg-4 mb-3">
+                                <div class="mb-3 form-check">
+                                  <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    id="hrDept"
+                                  />
+                                  <label class="form-check-label" for="hrDept"
+                                    >قسم الموارد البشرية</label
+                                  >
+                                </div>
+                              </div>
+                              <div class="col-xl-9 col-lg-8 mb-3">
+                                <div class="form-group">
+                                  <div class="input-wrapper">
+                                    <select
+                                      class="select2"
+                                      name="state"
+                                      multiple="multiple"
+                                      placeholder="اختر المستخدمين .."
+                                    >
+                                      <option value="AL">Ahmed Hesham</option>
+                                      <option value="WY">Hassan Kaddah</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group text-end mb-4">
                             <button class="theme-btn">نشر الوظيفة</button>
                           </div>
                         </form>
@@ -477,6 +742,7 @@
     <script type="module" src="../assets/js/jquery.counterup.min.js"></script>
     <script src="../assets/js/jquery.nice-select.min.js"></script>
     <script src="../assets/js/ckeditor/ckeditor.js"></script>
+    <script src="../assets/js/select2.full.min.js"></script>
     <script type="module" src="../assets/js/dashboard/layout.js"></script>
     <script src="../assets/js/dashboard/script.js"></script>
   </body>
