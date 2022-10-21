@@ -2,6 +2,9 @@
   direction: rtl;
   font-family: "DIN NEXTTM ARABIC", sans-serif;
 }
+*:lang(en) {
+  direction: ltr;
+}
 
 html {
   scroll-behavior: smooth;

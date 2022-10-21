@@ -410,3 +410,72 @@ body {
     }
   }
 }
+
+/* ************************** */
+
+.table-job-stages {
+  border: 1px solid #dadada;
+  padding: 0;
+  overflow: hidden;
+  display: inline-flex;
+  border-radius: 7px;
+  li {
+    width: 95px;
+    position: relative;
+    padding: 5px 15px;
+    span {
+      font-size: 13px;
+    }
+    &:not(:first-child) {
+      padding-right: 22px;
+    }
+    &:lang(en) {
+      &:not(:first-child) {
+        padding-left: 22px;
+        padding-right: 10px;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: -10%;
+      width: 1px;
+      height: 70%;
+      background-color: #dadada;
+      -webkit-transform: rotateZ(45deg);
+      transform: rotateZ(45deg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 100%;
+      bottom: -10%;
+      width: 1px;
+      height: 70%;
+      background-color: #dadada;
+      -webkit-transform: rotateZ(-45deg);
+      transform: rotateZ(-45deg);
+    }
+    &:lang(en) {
+      &::before {
+        left: 100%;
+        right: auto;
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+      }
+      &::after {
+        left: 100%;
+        right: auto;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+      }
+    }
+    &:last-child {
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

@@ -2,6 +2,9 @@
   direction: rtl;
   font-family: "DIN NEXTTM ARABIC", sans-serif;
 }
+*:lang(en) {
+  direction: ltr;
+}
 
 html {
   scroll-behavior: smooth;
@@ -1113,6 +1116,67 @@ body {
 }
 .page-content .job-details-section .candidate-item button.reject-btn:hover {
   background-color: #e65151;
+}
+
+/* ************************** */
+.table-job-stages {
+  border: 1px solid #dadada;
+  padding: 0;
+  overflow: hidden;
+  display: inline-flex;
+  border-radius: 7px;
+}
+.table-job-stages li {
+  width: 95px;
+  position: relative;
+  padding: 5px 15px;
+}
+.table-job-stages li span {
+  font-size: 13px;
+}
+.table-job-stages li:not(:first-child) {
+  padding-right: 22px;
+}
+.table-job-stages li:lang(en):not(:first-child) {
+  padding-left: 22px;
+  padding-right: 10px;
+}
+.table-job-stages li::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: -10%;
+  width: 1px;
+  height: 70%;
+  background-color: #dadada;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+.table-job-stages li::after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: -10%;
+  width: 1px;
+  height: 70%;
+  background-color: #dadada;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+.table-job-stages li:lang(en)::before {
+  left: 100%;
+  right: auto;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+.table-job-stages li:lang(en)::after {
+  left: 100%;
+  right: auto;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+.table-job-stages li:last-child::after, .table-job-stages li:last-child::before {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
