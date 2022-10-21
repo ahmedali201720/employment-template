@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Vendors -->
+    <link rel="shortcut icon" href="../assets/images/icon.jpeg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.rtl.min.css"
+      integrity="sha512-rXhL8a+X3wTosWn2Zgd/5L8rfWrpff7qdOnl7Wg1n2zHk8lHGhiSujoyxoKw1nf43kZAzJoe0Z0ymr2Kkku7lQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/font/stylesheet.css" />
+    <link rel="stylesheet" href="../assets/styles/css/global.css" />
+    <link rel="stylesheet" href="../assets/styles/css/animation.css" />
+    <link rel="stylesheet" href="../assets/styles/css/nice-select.css" />
+    <link rel="stylesheet" href="../assets/styles/css/dashboard/layout.css" />
+    <link rel="stylesheet" href="../assets/assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/styles/css/dashboard/styles.css" />
+    <title>Medical Employment</title>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+
+    <div class="page-container" id="pageContainer">
+      <aside class="dashboard-sidebar" id="dashboardSidebar">
+        <div class="wrapper text-end mb-3 d-sm-none d-block">
+          <button class="sidebar-closer" id="sidebarCloser">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="logo text-center">
+          <img
+            class="brand std-logo"
+            src="../assets/images/logo-w-2.jpeg"
+            alt="Logo"
+          />
+          <img src="../assets/images/icon.jpeg" alt="Icon" class="logo-icon" />
+        </div>
+        <div class="user">
+          <img src="../assets/images/icons/dr.png" alt="user" />
+          <div class="meta">
+            <a href="#" class="name"> مستشفى الجابرى </a>
+            <span class="role">
+              <span class="dot online me-1"></span>
+              <small class="text-online" t>متصل </small>
+            </span>
+          </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              id="userDropdownButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa fa-ellipsis-v ellipsis-icon"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-user me-1"></i>
+                  <span>الملف الشخصي</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-cogs me-1"></i>
+                  <span>الإعدادات</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-sign-out-alt me-1"></i>
+                  <span>تسجيل الخروج</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="side-links-list">
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/dashboard.png"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text">لوحة التحكم</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+            <div class="submenu">
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span>التوظيف</span>
+              </a>
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span> طلبات التوظيف</span>
+              </a>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img src="../assets/images/icons/job.png" alt="" class="icon" />
+                <span class="text">الوظائف</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+            <div class="submenu">
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span>الوظائف المفتوحة</span>
+              </a>
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span>الوظائف السابقة</span>
+              </a>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img src="../assets/images/icons/add.png" alt="" class="icon" />
+                <span class="text">أضف وظيفة</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/search.png"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text">بحث عن أطباء</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/bell.png"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text">الإشعارات</span>
+              </a>
+              <span class="badge"> +100 </span>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/email.png"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text">الرسائل</span>
+              </a>
+              <span class="badge"> +100 </span>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/setting.png"
+                  alt="setting"
+                  class="icon"
+                />
+                <span class="text">الإعدادات</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/service.png"
+                  alt="service"
+                  class="icon"
+                />
+                <span class="text">خدمة الدعم</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <img
+                  src="../assets/images/icons/logout.png"
+                  alt="logout"
+                  class="icon"
+                />
+                <span class="text">تسجيل خروج</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+        </ul>
+        <div class="hint">
+          <i class="fa fa-check-circle me-2"></i>
+          <span>
+            للحصول على أفضل نتائج البحث ، اشترك فى النشرة الاخبارية الخاصة بنا
+            ليصلك كل التحديثات
+          </span>
+        </div>
+        <div class="footer text-white text-center">
+          <strong>شركة التوظيف</strong>
+          <p class="mb-0 mt-1">
+            <i class="far fa-copyright me-1"></i>
+            <span>جميع الحقوق محفوظة 2022</span>
+          </p>
+        </div>
+      </aside>
+      <div class="page-body">
+        <div class="header" class="header" id="header">
+          <div class="controls-wrapper">
+            <button
+              class="sidebar-toggler d-sm-inline-block d-none"
+              id="sidebarToggler"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <button
+              class="sidebar-toggler d-sm-none d-inline-block"
+              id="mobileSidebarToggler"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="brand">
+              <img
+                class="std-logo"
+                src="../assets/images/logo-w-2.jpeg"
+                alt="Logo"
+              />
+            </div>
+          </div>
+          <div class="header-search-form-container">
+            <form action="" class="header-search-form">
+              <div class="input-wrapper">
+                <i class="icon fa fa-search"></i>
+                <input
+                  type="text"
+                  name="key"
+                  placeholder="بحث عن أطباء"
+                  class="form-control"
+                />
+              </div>
+            </form>
+            <button class="add-job-btn">
+              <i class="fa fa-plus"></i>
+            </button>
+          </div>
+
+          <div class="links-wrapper">
+            <button class="widget" type="button" id="notButton">
+              <img src="../assets/images/icons/black/bell.png" alt="Chat" />
+              <div class="badge">10</div>
+            </button>
+            <button class="widget" type="button" id="chatButton">
+              <img
+                src="../assets/images/icons/black/message.png"
+                alt="setting"
+              />
+              <div class="badge">10</div>
+            </button>
+            <button class="widget" id="settingButton">
+              <img
+                src="../assets/images/icons/black/setting.png"
+                alt="setting"
+              />
+              <div class="badge">10</div>
+            </button>
+            <button class="profile-btn" id="profileButton">
+              <img
+                class="profile"
+                src="../assets/images/icons/dr.png"
+                alt="user"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="page-content" id="pageContent">
+          <div class="dashboard-tlbar d-block">
+            <div class="row">
+              <div class="colxl-12 col-lg-12 col-md-12">
+                <h1 class="ft-medium">بيانات المتقدمين</h1>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-muted">
+                      <a href="#">لوحة التحكم</a>
+                    </li>
+                    <li class="breadcrumb-item text-muted">
+                      <a href="#">الوظائف</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="#" class="theme-cl">طبيب جراحة عامة</a>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <!-- ============================ Main Section Start ================================== -->
+          <section class="bg-light pt-5">
+            <div class="container-fluid">
+              <div class="row">
+                <!-- Item Wrap Start -->
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-12">
+                      <ul class="table-job-stages full-width-stages mb-4">
+                        <li class="stage d-inline-block active">
+                          <span
+                            class="meta d-flex justify-content-between align-items-center"
+                          >
+                            <span class="fw-bold">7</span>
+                            <i class="far fa-envelope-open"></i>
+                          </span>
+                          <span class="label d-block mt-2">Inbox</span>
+                        </li>
+                        <li class="stage d-inline-block">
+                          <span
+                            class="meta d-flex justify-content-between align-items-center"
+                          >
+                            <span class="fw-bold">7</span>
+                            <i class="fa fa-check-double"></i>
+                          </span>
+                          <span class="label d-block mt-2">OK</span>
+                        </li>
+                        <li class="stage d-inline-block">
+                          <span
+                            class="meta d-flex justify-content-between align-items-center"
+                          >
+                            <span class="fw-bold">7</span>
+                            <i class="fa fa-users"></i>
+                          </span>
+                          <span class="label d-block mt-2">Shortlisted</span>
+                        </li>
+                        <li class="stage d-inline-block">
+                          <span
+                            class="meta d-flex justify-content-between align-items-center"
+                          >
+                            <span class="fw-bold">5</span>
+                            <i class="fa fa-user-check"></i>
+                          </span>
+                          <span class="label d-block mt-2">Hired</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                      <div
+                        class="row align-items-center justify-content-between mx-0 bg-white rounded py-2 mb-4"
+                      >
+                        <div
+                          class="col-xl-3 col-lg-4 col-md-5 col-sm-12 px-4 py-2"
+                        >
+                          <div class="input-group">
+                            <input
+                              type="text"
+                              class="form-control rounded"
+                              placeholder="ابحث فى المتقدمين"
+                            />
+                            <span class="input-group-text" id="basic-addon1"
+                              ><i class="fa fa-search"></i
+                            ></span>
+                          </div>
+                        </div>
+
+                        <div class="col-xl-9 col-lg-8 col-md-7 col-sm-12">
+                          <div
+                            class="filter_wraps elspo_wrap d-flex align-items-center justify-content-end"
+                          >
+                            <div
+                              class="single_filter me-2"
+                              style="min-width: 160px"
+                            >
+                              <select class="select nice-selector">
+                                <option value="1" selected="">ترتيب حسب</option>
+                                <option value="2">أولوية التقديم</option>
+                                <option value="3">الأكثر تطابقا</option>
+                                <option value="4">ترتيب أبجدى تصاعدى</option>
+                                <option value="5">ترتيب أبجدى تنازلى</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="data-responsive">
+                    <div class="dashed-list-wrap bg-white rounded mb-3">
+                      <div class="dashed-list-full bg-white rounded p-3 mb-3">
+                        <div class="dashed-list-short d-flex align-items-start">
+                          <div class="dashed-list-short-first">
+                            <div class="dashed-avater">
+                              <img
+                                src="https://via.placeholder.com/150"
+                                class="img-fluid rounded-circle"
+                                width="70"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="dashed-list-short-last">
+                            <div class="cats-box-caption px-2">
+                              <h4 class="fs-lg mb-1 ft-medium theme-cl">
+                                د/ كريم عبد العزيز
+                              </h4>
+                              <div class="d-block mb-2 position-relative">
+                                <span
+                                  ><i class="lni lni-map-marker me-1"></i
+                                  >القاهرة ، مصر</span
+                                >
+                                <span class="ms-2"
+                                  ><i class="lni lni-briefcase me-1"></i>جراحة
+                                  عيون</span
+                                >
+                              </div>
+                              <div
+                                class="desc d-flex mb-3"
+                                style="max-width: 400px"
+                              >
+                                <i class="fa fa-briefcase me-2"></i>
+                                <p class="mb-0">
+                                  اخصائى الجراحة العامة و التخدير بمستشفى الزمرد
+                                  بالرياض
+                                </p>
+                              </div>
+                              <div class="ico-content">
+                                <ul class="d-flex flex-sm-row flex-column">
+                                  <li class="me-2 mb-3">
+                                    <a
+                                      href="#"
+                                      class="px-2 py-2 medium bg-light-success rounded text-success"
+                                      ><i class="lni lni-download me-1"></i>
+                                      السيرة الذاتية</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      data-toggle="modal"
+                                      data-target="#message"
+                                      class="px-2 py-2 medium bg-light-info rounded text-info"
+                                      ><i class="lni lni-envelope me-1"></i
+                                      >إرسال رسالة</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dashed-list-last">
+                          <div class="text-end">
+                            <a
+                              href="#"
+                              class="btn gray ft-medium apply-btn fs-sm rounded me-1"
+                              ><i class="fa fa-eye me-2"></i>عـرض</a
+                            >
+                            <a
+                              href="#"
+                              class="btn gray ft-medium apply-btn fs-sm rounded"
+                              ><i class="far fa-bookmark me-2"></i>حفـظ</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="dashed-list-footer justify-content-end p-3 br-top"
+                      >
+                        <div class="ico-content">
+                          <ul class="text-end">
+                            <li class="me-2">
+                              <span
+                                ><i class="lni lni-calendar me-2"></i>منذ 3
+                                ساعات</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="bg-success text-white rounded-pill py-2 px-3"
+                                ><i class="fa fa-check-circle me-2"></i>مطابق
+                                للوظيفة</span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dashed-list-wrap bg-white rounded mb-3">
+                      <div class="dashed-list-full bg-white rounded p-3 mb-3">
+                        <div class="dashed-list-short d-flex align-items-start">
+                          <div class="dashed-list-short-first">
+                            <div class="dashed-avater">
+                              <img
+                                src="https://via.placeholder.com/150"
+                                class="img-fluid rounded-circle"
+                                width="70"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="dashed-list-short-last">
+                            <div class="cats-box-caption px-2">
+                              <h4 class="fs-lg mb-1 ft-medium theme-cl">
+                                د/ كريم عبد العزيز
+                              </h4>
+                              <div class="d-block mb-2 position-relative">
+                                <span
+                                  ><i class="lni lni-map-marker me-1"></i
+                                  >القاهرة ، مصر</span
+                                >
+                                <span class="ms-2"
+                                  ><i class="lni lni-briefcase me-1"></i>جراحة
+                                  عيون</span
+                                >
+                              </div>
+                              <div
+                                class="desc d-flex mb-3"
+                                style="max-width: 400px"
+                              >
+                                <i class="fa fa-briefcase me-2"></i>
+                                <p class="mb-0">
+                                  اخصائى الجراحة العامة و التخدير بمستشفى الزمرد
+                                  بالرياض
+                                </p>
+                              </div>
+                              <div class="ico-content">
+                                <ul class="d-flex flex-sm-row flex-column">
+                                  <li class="me-2 mb-3">
+                                    <a
+                                      href="#"
+                                      class="px-2 py-2 medium bg-light-success rounded text-success"
+                                      ><i class="lni lni-download me-1"></i>
+                                      السيرة الذاتية</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      data-toggle="modal"
+                                      data-target="#message"
+                                      class="px-2 py-2 medium bg-light-info rounded text-info"
+                                      ><i class="lni lni-envelope me-1"></i
+                                      >إرسال رسالة</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dashed-list-last">
+                          <div class="text-end">
+                            <a
+                              href="#"
+                              class="btn gray ft-medium apply-btn fs-sm rounded me-1"
+                              ><i class="fa fa-eye me-2"></i>عـرض</a
+                            >
+                            <a
+                              href="#"
+                              class="btn gray ft-medium apply-btn fs-sm rounded"
+                              ><i class="far fa-bookmark me-2"></i>حفـظ</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="dashed-list-footer justify-content-end p-3 br-top"
+                      >
+                        <div class="ico-content">
+                          <ul class="text-end">
+                            <li class="me-2">
+                              <span
+                                ><i class="lni lni-calendar me-2"></i>منذ 3
+                                ساعات</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="bg-success text-white rounded-pill py-2 px-3"
+                                ><i class="fa fa-check-circle me-2"></i>مطابق
+                                للوظيفة</span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dashed-list-wrap bg-white rounded mb-3">
+                      <div class="dashed-list-full bg-white rounded p-3 mb-3">
+                        <div class="dashed-list-short d-flex align-items-start">
+                          <div class="dashed-list-short-first">
+                            <div class="dashed-avater">
+                              <img
+                                src="https://via.placeholder.com/150"
+                                class="img-fluid rounded-circle"
+                                width="70"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="dashed-list-short-last">
+                            <div class="cats-box-caption px-2">
+                              <h4 class="fs-lg mb-1 ft-medium theme-cl">
+                                د/ كريم عبد العزيز
+                              </h4>
+                              <div class="d-block mb-2 position-relative">
+                                <span
+                                  ><i class="lni lni-map-marker me-1"></i
+                                  >القاهرة ، مصر</span
+                                >
+                                <span class="ms-2"
+                                  ><i class="lni lni-briefcase me-1"></i>جراحة
+                                  عيون</span
+                                >
+                              </div>
+                              <div
+                                class="desc d-flex mb-3"
+                                style="max-width: 400px"
+                              >
+                                <i class="fa fa-briefcase me-2"></i>
+                                <p class="mb-0">
+                                  اخصائى الجراحة العامة و التخدير بمستشفى الزمرد
+                                  بالرياض
+                                </p>
+                              </div>
+                              <div class="ico-content">
+                                <ul class="d-flex flex-sm-row flex-column">
+                                  <li class="me-2 mb-3">
+                                    <a
+                                      href="#"
+                                      class="px-2 py-2 medium bg-light-success rounded text-success"
+                                      ><i class="lni lni-download me-1"></i>
+                                      السيرة الذاتية</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      data-toggle="modal"
+                                      data-target="#message"
+                                      class="px-2 py-2 medium bg-light-info rounded text-info"
+                                      ><i class="lni lni-envelope me-1"></i
+                                      >إرسال رسالة</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dashed-list-last">
+                          <div class="text-end">
+                            <a
+                              href="#"
+                              class="btn gray ft-medium apply-btn fs-sm rounded me-1"
+                              ><i class="fa fa-eye me-2"></i>عـرض</a
+                            >
+                            <a
+                              href="#"
+                              class="btn gray ft-medium apply-btn fs-sm rounded"
+                              ><i class="far fa-bookmark me-2"></i>حفـظ</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="dashed-list-footer justify-content-end p-3 br-top"
+                      >
+                        <div class="ico-content">
+                          <ul class="text-end">
+                            <li class="me-2">
+                              <span
+                                ><i class="lni lni-calendar me-2"></i>منذ 3
+                                ساعات</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="bg-success text-white rounded-pill py-2 px-3"
+                                ><i class="fa fa-check-circle me-2"></i>مطابق
+                                للوظيفة</span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dashed-list-wrap bg-white rounded mb-3">
+                      <div class="dashed-list-full bg-white rounded p-3 mb-3">
+                        <div class="dashed-list-short d-flex align-items-start">
+                          <div class="dashed-list-short-first">
+                            <div class="dashed-avater">
+                              <img
+                                src="https://via.placeholder.com/150"
+                                class="img-fluid rounded-circle"
+                                width="70"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="dashed-list-short-last">
+                            <div class="cats-box-caption px-2">
+                              <h4 class="fs-lg mb-1 ft-medium theme-cl">
+                                د/ كريم عبد العزيز
+                              </h4>
+                              <div class="d-block mb-2 position-relative">
+                                <span
+                                  ><i class="lni lni-map-marker me-1"></i
+                                  >القاهرة ، مصر</span
+                                >
+                                <span class="ms-2"
+                                  ><i class="lni lni-briefcase me-1"></i>جراحة
+                                  عيون</span
+                                >
+                              </div>
+                              <div
+                                class="desc d-flex mb-3"
+                                style="max-width: 400px"
+                              >
+                                <i class="fa fa-briefcase me-2"></i>
+                                <p class="mb-0">
+                                  اخصائى الجراحة العامة و التخدير بمستشفى الزمرد
+                                  بالرياض
+                                </p>
+                              </div>
+                              <div class="ico-content">
+                                <ul class="d-flex flex-sm-row flex-column">
+                                  <li class="me-2 mb-3">
+                                    <a
+                                      href="#"
+                                      class="px-2 py-2 medium bg-light-success rounded text-success"
+                                      ><i class="lni lni-download me-1"></i>
+                                      السيرة الذاتية</a
+                                    >
+                                  </li>
+                                  <li>
+                                    <a
+                                      href="#"
+                                      data-toggle="modal"
+                                      data-target="#message"
+                                      class="px-2 py-2 medium bg-light-info rounded text-info"
+                                      ><i class="lni lni-envelope me-1"></i
+                                      >إرسال رسالة</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dashed-list-last">
+                          <div class="text-end">
+                            <a
+                              href="#"
+                              class="btn gray ft-medium apply-btn fs-sm rounded me-1"
+                              ><i class="fa fa-eye me-2"></i>عـرض</a
+                            >
+                            <a
+                              href="#"
+                              class="btn gray ft-medium apply-btn fs-sm rounded"
+                              ><i class="far fa-bookmark me-2"></i>حفـظ</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="dashed-list-footer justify-content-end p-3 br-top"
+                      >
+                        <div class="ico-content">
+                          <ul class="text-end">
+                            <li class="me-2">
+                              <span
+                                ><i class="lni lni-calendar me-2"></i>منذ 3
+                                ساعات</span
+                              >
+                            </li>
+                            <li>
+                              <span
+                                class="bg-success text-white rounded-pill py-2 px-3"
+                                ><i class="fa fa-check-circle me-2"></i>مطابق
+                                للوظيفة</span
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span class="fas fa-arrow-circle-left"></span>
+                            <span class="sr-only">السابق</span>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">...</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">18</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Next">
+                            <span class="fas fa-arrow-circle-right"></span>
+                            <span class="sr-only">التالى</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- ============================ Main Section End ================================== -->
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js"
+      integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+
+    <script type="module" src="../assets/js/jquery.waypoints.min.js"></script>
+    <script type="module" src="../assets/js/jquery.counterup.min.js"></script>
+    <script src="../assets/js/ckeditor/ckeditor.js"></script>
+    <script src="../assets/js/select2.full.min.js"></script>
+    <script type="module" src="../assets/js/dashboard/layout.js"></script>
+    <script type="module" src="../assets/js/dashboard/script.js"></script>
+  </body>
+</html>

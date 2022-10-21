@@ -478,6 +478,33 @@ body {
       }
     }
   }
+  &.full-width-stages {
+    width: 100%;
+    background-color: #ffffff;
+    overflow-x: auto;
+    li {
+      width: 25% !important;
+      @media screen and (max-width: 575px) {
+        min-width: 120px !important;
+      }
+      padding: 15px 20px;
+      border-left: 1px solid #eeeeee;
+      span {
+        font-size: 15px;
+      }
+      &.active {
+        background-color: #004381;
+        overflow: hidden;
+        color: #ffffff;
+      }
+      &::after {
+        display: none;
+      }
+      &::before {
+        display: none;
+      }
+    }
+  }
 }
 
 .mw-100px {
@@ -488,4 +515,10 @@ body {
 }
 .mw-200px {
   min-width: 200px !important;
+}
+
+@media screen and (max-width: 575px) {
+  .single_filter {
+    width: 100%;
+  }
 }

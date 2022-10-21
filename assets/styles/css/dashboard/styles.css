@@ -1178,6 +1178,35 @@ body {
 .table-job-stages li:last-child::after, .table-job-stages li:last-child::before {
   display: none;
 }
+.table-job-stages.full-width-stages {
+  width: 100%;
+  background-color: #ffffff;
+  overflow-x: auto;
+}
+.table-job-stages.full-width-stages li {
+  width: 25% !important;
+  padding: 15px 20px;
+  border-left: 1px solid #eeeeee;
+}
+@media screen and (max-width: 575px) {
+  .table-job-stages.full-width-stages li {
+    min-width: 120px !important;
+  }
+}
+.table-job-stages.full-width-stages li span {
+  font-size: 15px;
+}
+.table-job-stages.full-width-stages li.active {
+  background-color: #004381;
+  overflow: hidden;
+  color: #ffffff;
+}
+.table-job-stages.full-width-stages li::after {
+  display: none;
+}
+.table-job-stages.full-width-stages li::before {
+  display: none;
+}
 
 .mw-100px {
   min-width: 100px !important;
@@ -1189,6 +1218,12 @@ body {
 
 .mw-200px {
   min-width: 200px !important;
+}
+
+@media screen and (max-width: 575px) {
+  .single_filter {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
