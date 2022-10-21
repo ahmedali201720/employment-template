@@ -1185,7 +1185,7 @@ body {
 }
 .table-job-stages.full-width-stages li {
   width: 25% !important;
-  padding: 15px 20px;
+  padding: 0;
   border-left: 1px solid #eeeeee;
 }
 @media screen and (max-width: 575px) {
@@ -1195,10 +1195,16 @@ body {
 }
 .table-job-stages.full-width-stages li span {
   font-size: 15px;
+  color: #000000;
 }
-.table-job-stages.full-width-stages li.active {
-  background-color: #004381;
+.table-job-stages.full-width-stages li a {
+  border-radius: 0;
+}
+.table-job-stages.full-width-stages li a.active {
+  background-color: #004381 !important;
   overflow: hidden;
+}
+.table-job-stages.full-width-stages li a.active span {
   color: #ffffff;
 }
 .table-job-stages.full-width-stages li::after {
@@ -1224,6 +1230,9 @@ body {
   .single_filter {
     width: 100%;
   }
+}
+.flex-no-wrap {
+  flex-wrap: nowrap !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
