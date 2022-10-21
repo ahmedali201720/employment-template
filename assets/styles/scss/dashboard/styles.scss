@@ -39,7 +39,7 @@ body {
   .dashboard-card {
     box-shadow: 0 0 5px #dfdfdf;
     background-color: #ffffff;
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 2rem;
     @media screen and (max-width: 1400px) {
       padding: 2rem 1.25rem;
@@ -478,4 +478,14 @@ body {
       }
     }
   }
+}
+
+.mw-100px {
+  min-width: 100px !important;
+}
+.mw-140px {
+  min-width: 140px !important;
+}
+.mw-200px {
+  min-width: 200px !important;
 }

@@ -237,7 +237,7 @@ if (el1) {
   var chart = new ApexCharts(el1, options);
 }
 if (el2) {
-  var chart2 = new ApexCharts(e12, options2);
+  var chart2 = new ApexCharts(el2, options2);
 }
 if (el3) {
   var chart3 = new ApexCharts(el3, options);

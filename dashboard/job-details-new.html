@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="../assets/font/stylesheet.css" />
     <link rel="stylesheet" href="../assets/styles/css/global.css" />
     <link rel="stylesheet" href="../assets/styles/css/animation.css" />
+    <link rel="stylesheet" href="../assets/styles/css/nice-select.css" />
     <link rel="stylesheet" href="../assets/styles/css/dashboard/layout.css" />
     <link rel="stylesheet" href="../assets/assets/css/styles.css" />
     <link rel="stylesheet" href="../assets/styles/css/dashboard/styles.css" />
@@ -335,70 +336,31 @@
           </div>
           <div class="job-details-section">
             <div class="container-fluid">
-              <div class="row mb-4 g-4">
-                <div class="col-12">
-                  <div class="dashboard-card">
-                    <div class="head">
-                      <h4>
-                        بيانات الوظيفة
-                        <br />
-                        <small
-                          class="text-secondary d-inline-block me-2"
-                          style="font-size: 0.9rem"
-                        >
-                          <i class="far fa-clock me-1"></i>
-                          <span>منذ 4 أيام</span>
-                        </small>
-                        <small class="text-secondary" style="font-size: 0.9rem">
-                          <i class="fa fa-map-marker-alt me-1"></i>
-                          <span>القاهرة ، مصر</span>
-                        </small>
-                      </h4>
-                      <div class="dropdown">
-                        <button
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <i class="fa fa-ellipsis-v ellipsis-icon"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <i class="fa fa-pen text-secondary me-1"></i>
-                              <span>تعديل البيانات</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <i class="fa fa-trash text-danger me-1"></i>
-                              <span>مسح الإعلان</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+              <div class="row">
+                <div class="col-xl-12 col-md-12 col-sm-12">
+                  <div class="cl-justify">
+                    <div class="cl-justify-first">
+                      <p class="m-0 p-0 ft-sm">
+                        لقد قمت بنشر
+                        <span class="text-dark ft-medium">26</span> وظيفة
+                      </p>
                     </div>
-                    <div class="content">
-                      <div class="row g-4">
-                        <div class="col-12">
-                          <h6 class="title text-success">
-                            أخصائى نساء وولادة خبرة +10 سنوات
-                          </h6>
-                          <p class="desc">
-                            !.أبجد هوز حطى كلمن هوى ، حسومات محسنة. خطأ الحقيقة
-                            أننا يمكن قطعه مفتوحا. قيل موليستياس ، سوف أكون
-                            سهلًا عليك ، فقل الألم هو متعة الباني الرئيسي ، ولا
-                            الملذات التي قد يرضيها أحدنا في المتاعب والفرار ؛
-                            بالنسبة له ، المحاضر ، من لا أحد من هؤلاء ، خطأ ،
-                            وهرب أيضًا؟ أحزان الألم في ممارسة عواقبها معه ما لم
-                            يتجنب كل متعة ليس هناك الكثير من الوقت ، لا ، فنحن
-                            نعتبر كل متعة الألم. أو ، ولكن ، منه أنه ، الذي ولدت
-                            منه ، سأفتح متعة عقلانية ملزمة بالثناء على الأناشيد
-                            ، وفي نفس الوقت ، معاناة هؤلاء الجبناء المشينين في
-                            أولئك الذين هم من واجبات النوع من الملذات ، الرجل
-                            الصالح كما هو ، للقيام بذلك في وقت واحد. إنها رحلة
-                            ممتعة لأنها تأتي شاقة تندد مؤلمة للغاية أبدا سعيدة؟
-                          </p>
+
+                    <div class="cl-justify-last">
+                      <div class="filter-selector">
+                        <div class="dlc-list d-inline-block mw-140px">
+                          <select class="form-control rounded nice-selector">
+                            <option>كل الوظائف</option>
+                            <option>دوام كلى</option>
+                            <option>دوام جزئى</option>
+                          </select>
+                        </div>
+                        <div class="dlc-list d-inline-block mw-140px">
+                          <select class="form-control rounded nice-selector">
+                            <option>ترتيب أبجدى</option>
+                            <option>من الأحدث إلى الأقدم</option>
+                            <option>من الأقدم إلى الأحدث</option>
+                          </select>
                         </div>
                       </div>
                     </div>
@@ -817,8 +779,13 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+
     <script type="module" src="../assets/js/jquery.waypoints.min.js"></script>
     <script type="module" src="../assets/js/jquery.counterup.min.js"></script>
+    <script src="../assets/js/ckeditor/ckeditor.js"></script>
+    <script src="../assets/js/select2.full.min.js"></script>
     <script type="module" src="../assets/js/dashboard/layout.js"></script>
+    <script type="module" src="../assets/js/dashboard/script.js"></script>
   </body>
 </html>
