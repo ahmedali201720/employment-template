@@ -91,6 +91,12 @@
             background-color: lighten($color: $mainColor, $amount: 50%);
             transition: all 0.5s;
           }
+          &:lang(en) {
+            &:not(.dropdown-toggle)::after {
+              right: auto;
+              left: 0;
+            }
+          }
           &:hover {
             color: lighten($color: $mainColor, $amount: 50%);
             &::after {
@@ -131,6 +137,12 @@
               background-color: $mainColor;
               display: none;
               transition: all 0.5s;
+            }
+            &:lang(en) {
+              &::after {
+                right: auto;
+                left: 0;
+              }
             }
             &:hover {
               color: $mainColor;
@@ -176,6 +188,12 @@
               right: 0;
               z-index: -1;
             }
+            &:lang(en) {
+              &::before {
+                left: 0;
+                right: auto;
+              }
+            }
           }
         }
         &.login {
@@ -199,6 +217,12 @@
             &::before {
               right: 0;
               z-index: -1;
+            }
+            &:lang(en) {
+              &::before {
+                left: 0;
+                right: auto;
+              }
             }
           }
         }
@@ -247,6 +271,10 @@
       i {
         position: absolute;
         right: 10px;
+        &:lang(en) {
+          right: auto;
+          left: 10px;
+        }
         top: 50%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
@@ -256,6 +284,10 @@
       input,
       select {
         padding-right: 3rem;
+        &:lang(en) {
+          padding-right: 0;
+          padding-left: 3rem;
+        }
         outline: none !important;
         box-shadow: none !important;
         border: none;
@@ -292,6 +324,12 @@
         &::before {
           right: 0;
           z-index: -1;
+        }
+        &:lang(en) {
+          &::before {
+            left: 0;
+            right: auto;
+          }
         }
       }
     }
@@ -495,6 +533,12 @@
             display: none;
             transition: all 0.5s;
           }
+          &:lang(en) {
+            &::after {
+              right: auto;
+              left: 0;
+            }
+          }
           &:hover {
             color: $mainColor;
             background-color: lighten($color: $mainColor, $amount: 60%);
@@ -535,9 +579,11 @@
         }
         &:hover {
           color: #ffffff;
-          &::before {
-            right: 0;
-            z-index: -1;
+          &:lang(en) {
+            &::before {
+              left: 0;
+              right: auto;
+            }
           }
         }
       }
@@ -563,6 +609,12 @@
             right: 0;
             z-index: -1;
           }
+          &:lang(en) {
+            &::before {
+              left: 0;
+              right: auto;
+            }
+          }
         }
       }
     }
@@ -576,7 +628,11 @@
 .sidebar {
   position: fixed;
   top: 0;
-  right: -100%;
+  right: -105%;
+  &:lang(en) {
+    right: auto;
+    left: -105%;
+  }
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;

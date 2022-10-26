@@ -17,6 +17,12 @@
     .next-arrow-img {
       position: absolute;
       right: 90%;
+      &:lang(en) {
+        right: auto;
+        left: 90%;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
       top: 10%;
       width: 80px;
       @media screen and (max-width: 768px) {
@@ -163,6 +169,10 @@
         padding-right: 1rem;
         margin-bottom: 0.5rem;
         font-size: 1.2rem;
+        &:lang(en) {
+          padding-left: 1rem;
+          padding-right: 0;
+        }
         &::marker {
           content: "\f058";
           font-family: "Font Awesome 5 Free";
@@ -253,7 +263,7 @@
         }
       }
       .read-more {
-        width: 120px;
+        width: 130px;
       }
     }
     figure {
