@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Vendors -->
     <link rel="shortcut icon" href="../assets/images/icon.jpeg" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.rtl.min.css"
       integrity="sha512-rXhL8a+X3wTosWn2Zgd/5L8rfWrpff7qdOnl7Wg1n2zHk8lHGhiSujoyxoKw1nf43kZAzJoe0Z0ymr2Kkku7lQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <!-- <link
+    /> -->
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
       integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    /> -->
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -62,10 +62,10 @@
         <div class="user">
           <img src="../assets/images/icons/dr.png" alt="user" />
           <div class="meta">
-            <a href="#" class="name"> مستشفى الجابرى </a>
+            <a href="#" class="name"> Gabri Hospital </a>
             <span class="role">
               <span class="dot online me-1"></span>
-              <small class="text-online" t>متصل </small>
+              <small class="text-online" t>Online </small>
             </span>
           </div>
           <div class="dropdown">
@@ -81,19 +81,19 @@
               <li>
                 <a class="dropdown-item" href="#">
                   <i class="fa fa-user me-1"></i>
-                  <span>الملف الشخصي</span>
+                  <span>Profile</span>
                 </a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">
                   <i class="fa fa-cogs me-1"></i>
-                  <span>الإعدادات</span>
+                  <span>Settings</span>
                 </a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">
                   <i class="fa fa-sign-out-alt me-1"></i>
-                  <span>تسجيل الخروج</span>
+                  <span>Logout</span>
                 </a>
               </li>
             </ul>
@@ -102,64 +102,63 @@
         <ul class="side-links-list">
           <li class="side-item">
             <div class="wrapper">
-              <a href="#" class="side-link">
+              <a href="#" class="side-link sep-side-link text-warning">
                 <img
-                  src="../assets/images/icons/dashboard.png"
+                  src="../assets/images/icons/login.svg"
                   alt=""
                   class="icon"
                 />
-                <span class="text">لوحة التحكم</span>
+                <span class="text">Login As User Company</span>
+              </a>
+              <i
+                class="fa fa-arrow-circle-left ico"
+                style="font-size: 15px"
+              ></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-list"></i>
+                <span class="text">Dashboard</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
             <div class="submenu">
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span>التوظيف</span>
+                <span>Employment</span>
               </a>
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span> طلبات التوظيف</span>
+                <span>My Requests</span>
               </a>
             </div>
           </li>
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img src="../assets/images/icons/job.png" alt="" class="icon" />
-                <span class="text">الوظائف</span>
+                <i class="fa fa-briefcase"></i>
+                <span class="text">Jobs</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
             <div class="submenu">
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span>الوظائف المفتوحة</span>
+                <span>Open Jobs</span>
               </a>
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span>الوظائف السابقة</span>
+                <span>Closed Jobs</span>
               </a>
             </div>
           </li>
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img src="../assets/images/icons/add.png" alt="" class="icon" />
-                <span class="text">أضف وظيفة</span>
-              </a>
-              <i class="fa fa-angle-left ico"></i>
-            </div>
-          </li>
-          <li class="side-item">
-            <div class="wrapper">
-              <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/search.png"
-                  alt=""
-                  class="icon"
-                />
-                <span class="text">بحث عن أطباء</span>
+                <i class="fa fa-plus-circle"></i>
+                <span class="text">Add Job</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -167,12 +166,17 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/bell.png"
-                  alt=""
-                  class="icon"
-                />
-                <span class="text">الإشعارات</span>
+                <i class="fa fa-search-location"></i>
+                <span class="text">Search</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-bell"></i>
+                <span class="text">Notifications</span>
               </a>
               <span class="badge"> +100 </span>
             </div>
@@ -180,12 +184,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/email.png"
-                  alt=""
-                  class="icon"
-                />
-                <span class="text">الرسائل</span>
+                <i class="fa fa-envelope"></i>
+                <span class="text">Messages</span>
               </a>
               <span class="badge"> +100 </span>
             </div>
@@ -193,12 +193,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/setting.png"
-                  alt="setting"
-                  class="icon"
-                />
-                <span class="text">الإعدادات</span>
+                <i class="fa fa-cog"></i>
+                <span class="text">Settings</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -206,12 +202,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/service.png"
-                  alt="service"
-                  class="icon"
-                />
-                <span class="text">خدمة الدعم</span>
+                <i class="fa fa-user-clock"></i>
+                <span class="text">Support</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -219,12 +211,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/logout.png"
-                  alt="logout"
-                  class="icon"
-                />
-                <span class="text">تسجيل خروج</span>
+                <i class="fa fa-sign-out-alt"></i>
+                <span class="text">Logout</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -233,15 +221,15 @@
         <div class="hint">
           <i class="fa fa-check-circle me-2"></i>
           <span>
-            للحصول على أفضل نتائج البحث ، اشترك فى النشرة الاخبارية الخاصة بنا
-            ليصلك كل التحديثات
+            For better user experience , subscribe to our newsletter to receive
+            latest updates.
           </span>
         </div>
         <div class="footer text-white text-center">
-          <strong>شركة التوظيف</strong>
+          <strong>Meeza</strong>
           <p class="mb-0 mt-1">
             <i class="far fa-copyright me-1"></i>
-            <span>جميع الحقوق محفوظة 2022</span>
+            <span>All Rights Reserved 2023</span>
           </p>
         </div>
       </aside>
@@ -275,7 +263,7 @@
                 <input
                   type="text"
                   name="key"
-                  placeholder="بحث عن أطباء"
+                  placeholder="Search Doctors .."
                   class="form-control"
                 />
               </div>
@@ -314,20 +302,20 @@
           </div>
         </div>
         <div class="page-content" id="pageContent">
-          <div class="dashboard-tlbar d-block mb-5">
+          <div class="dashboard-tlbar d-block mb-3">
             <div class="row">
               <div class="colxl-12 col-lg-12 col-md-12">
-                <h1 class="ft-medium">ادارة الوظائف</h1>
+                <h1 class="h1-sm fw-bold">Job Management</h1>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item text-muted">
-                      <a href="#">لوحة التحكم</a>
+                      <a href="#">Dashboard</a>
                     </li>
                     <li class="breadcrumb-item text-muted">
-                      <a href="#">الوظائف</a>
+                      <a href="#">Jobs</a>
                     </li>
                     <li class="breadcrumb-item">
-                      <a href="#" class="theme-cl">الوظائف المفتوحة</a>
+                      <a href="#" class="theme-cl">Open Jobs</a>
                     </li>
                   </ol>
                 </nav>
@@ -341,8 +329,8 @@
                   <div class="cl-justify">
                     <div class="cl-justify-first">
                       <p class="m-0 p-0 ft-sm">
-                        لقد قمت بنشر
-                        <span class="text-dark ft-medium">26</span> وظيفة
+                        You have
+                        <span class="text-green fw-bold">26</span> Open Jobs
                       </p>
                     </div>
 
@@ -350,16 +338,16 @@
                       <div class="filter-selector">
                         <div class="dlc-list d-inline-block mw-140px">
                           <select class="form-control rounded nice-selector">
-                            <option>كل الوظائف</option>
-                            <option>دوام كلى</option>
-                            <option>دوام جزئى</option>
+                            <option>All Jobs</option>
+                            <option>Part Time Jobs 2022</option>
+                            <option>Full Time Jobs 2023</option>
                           </select>
                         </div>
                         <div class="dlc-list d-inline-block mw-140px">
                           <select class="form-control rounded nice-selector">
-                            <option>ترتيب أبجدى</option>
-                            <option>من الأحدث إلى الأقدم</option>
-                            <option>من الأقدم إلى الأحدث</option>
+                            <option>Sort By</option>
+                            <option>From Oldest To Newest</option>
+                            <option>From Newest To Oldest</option>
                           </select>
                         </div>
                       </div>
@@ -375,16 +363,16 @@
                         <table class="table">
                           <thead class="thead-dark">
                             <tr>
-                              <th scope="col">عنوان الوظيفة</th>
-                              <th scope="col">مراحل الوظيفة</th>
-                              <th scope="col">التحكم</th>
+                              <th scope="col">Job Title</th>
+                              <th scope="col">Job Stages</th>
+                              <th scope="col">Actions</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
                               <td style="min-width: 330px">
                                 <div
-                                  class="cats-box rounded bg-white d-flex align-items-center"
+                                  class="cats-box rounded bg-white d-flex align-items-start"
                                 >
                                   <div class="text-center">
                                     <img
@@ -396,16 +384,16 @@
                                   </div>
                                   <div class="cats-box-caption px-2">
                                     <h4 class="fs-md mb-0 ft-medium">
-                                      طبيب جراحة عامة خبرة +10 سنوات
+                                      Surgeon Specialist +10 years experience
                                     </h4>
                                     <div class="d-block mb-2 position-relative">
                                       <span class="text-muted medium"
                                         ><i class="lni lni-map-marker me-1"></i
-                                        >الرياض ، السعودية</span
+                                        >Riyadh, KSA</span
                                       >
                                       <span class="muted medium ms-2 theme-cl"
                                         ><i class="lni lni-briefcase me-1"></i
-                                        >دوام كامل</span
+                                        >Full Time</span
                                       >
                                     </div>
                                   </div>
@@ -421,7 +409,7 @@
                                       <i class="far fa-envelope-open"></i>
                                     </span>
                                     <span class="label d-block mt-2"
-                                      >Inbox</span
+                                      >Applications</span
                                     >
                                   </li>
                                   <li class="stage d-inline-block">
@@ -431,7 +419,9 @@
                                       <span class="fw-bold">7</span>
                                       <i class="fa fa-check-double"></i>
                                     </span>
-                                    <span class="label d-block mt-2">OK</span>
+                                    <span class="label d-block mt-2"
+                                      >Accepted</span
+                                    >
                                   </li>
                                   <li class="stage d-inline-block">
                                     <span
@@ -441,7 +431,7 @@
                                       <i class="fa fa-users"></i>
                                     </span>
                                     <span class="label d-block mt-2"
-                                      >Shortlisted</span
+                                      >Head Department</span
                                     >
                                   </li>
                                   <li class="stage d-inline-block">
@@ -452,280 +442,29 @@
                                       <i class="fa fa-user-check"></i>
                                     </span>
                                     <span class="label d-block mt-2"
-                                      >Hired</span
-                                    >
-                                  </li>
-                                </ul>
-                              </td>
-                              <td>
-                                <div class="dash-action" style="width: 120px">
-                                  <a
-                                    href="#"
-                                    class="p-3 circle text-info bg-light-info d-inline-flex align-items-center justify-content-center me-1"
-                                    ><i class="lni lni-eye"></i
-                                  ></a>
-                                  <a
-                                    href="#"
-                                    class="p-3 circle text-danger bg-light-danger d-inline-flex align-items-center justify-content-center ml-1"
-                                    ><i class="lni lni-trash-can"></i
-                                  ></a>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="min-width: 330px">
-                                <div
-                                  class="cats-box rounded bg-white d-flex align-items-center"
-                                >
-                                  <div class="text-center">
-                                    <img
-                                      src="https://via.placeholder.com/120x120"
-                                      class="img-fluid"
-                                      width="55"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <div class="cats-box-caption px-2">
-                                    <h4 class="fs-md mb-0 ft-medium">
-                                      طبيب جراحة عامة خبرة +10 سنوات
-                                    </h4>
-                                    <div class="d-block mb-2 position-relative">
-                                      <span class="text-muted medium"
-                                        ><i class="lni lni-map-marker me-1"></i
-                                        >الرياض ، السعودية</span
-                                      >
-                                      <span class="muted medium ms-2 theme-cl"
-                                        ><i class="lni lni-briefcase me-1"></i
-                                        >دوام كامل</span
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>
-                                <ul class="table-job-stages">
-                                  <li class="stage d-inline-block">
-                                    <span
-                                      class="meta d-flex justify-content-between align-items-center"
-                                    >
-                                      <span class="fw-bold">7</span>
-                                      <i class="far fa-envelope-open"></i>
-                                    </span>
-                                    <span class="label d-block mt-2"
-                                      >Inbox</span
+                                      >HR Head</span
                                     >
                                   </li>
                                   <li class="stage d-inline-block">
                                     <span
                                       class="meta d-flex justify-content-between align-items-center"
                                     >
-                                      <span class="fw-bold">7</span>
-                                      <i class="fa fa-check-double"></i>
-                                    </span>
-                                    <span class="label d-block mt-2">OK</span>
-                                  </li>
-                                  <li class="stage d-inline-block">
-                                    <span
-                                      class="meta d-flex justify-content-between align-items-center"
-                                    >
-                                      <span class="fw-bold">7</span>
-                                      <i class="fa fa-users"></i>
-                                    </span>
-                                    <span class="label d-block mt-2"
-                                      >Shortlisted</span
-                                    >
-                                  </li>
-                                  <li class="stage d-inline-block">
-                                    <span
-                                      class="meta d-flex justify-content-between align-items-center"
-                                    >
-                                      <span class="fw-bold">5</span>
+                                      <span class="fw-bold">0</span>
                                       <i class="fa fa-user-check"></i>
                                     </span>
                                     <span class="label d-block mt-2"
-                                      >Hired</span
-                                    >
-                                  </li>
-                                </ul>
-                              </td>
-                              <td>
-                                <div class="dash-action" style="width: 120px">
-                                  <a
-                                    href="#"
-                                    class="p-3 circle text-info bg-light-info d-inline-flex align-items-center justify-content-center me-1"
-                                    ><i class="lni lni-eye"></i
-                                  ></a>
-                                  <a
-                                    href="#"
-                                    class="p-3 circle text-danger bg-light-danger d-inline-flex align-items-center justify-content-center ml-1"
-                                    ><i class="lni lni-trash-can"></i
-                                  ></a>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="min-width: 330px">
-                                <div
-                                  class="cats-box rounded bg-white d-flex align-items-center"
-                                >
-                                  <div class="text-center">
-                                    <img
-                                      src="https://via.placeholder.com/120x120"
-                                      class="img-fluid"
-                                      width="55"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <div class="cats-box-caption px-2">
-                                    <h4 class="fs-md mb-0 ft-medium">
-                                      طبيب جراحة عامة خبرة +10 سنوات
-                                    </h4>
-                                    <div class="d-block mb-2 position-relative">
-                                      <span class="text-muted medium"
-                                        ><i class="lni lni-map-marker me-1"></i
-                                        >الرياض ، السعودية</span
-                                      >
-                                      <span class="muted medium ms-2 theme-cl"
-                                        ><i class="lni lni-briefcase me-1"></i
-                                        >دوام كامل</span
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>
-                                <ul class="table-job-stages">
-                                  <li class="stage d-inline-block">
-                                    <span
-                                      class="meta d-flex justify-content-between align-items-center"
-                                    >
-                                      <span class="fw-bold">7</span>
-                                      <i class="far fa-envelope-open"></i>
-                                    </span>
-                                    <span class="label d-block mt-2"
-                                      >Inbox</span
+                                      >Admitted</span
                                     >
                                   </li>
                                   <li class="stage d-inline-block">
                                     <span
                                       class="meta d-flex justify-content-between align-items-center"
                                     >
-                                      <span class="fw-bold">7</span>
-                                      <i class="fa fa-check-double"></i>
-                                    </span>
-                                    <span class="label d-block mt-2">OK</span>
-                                  </li>
-                                  <li class="stage d-inline-block">
-                                    <span
-                                      class="meta d-flex justify-content-between align-items-center"
-                                    >
-                                      <span class="fw-bold">7</span>
-                                      <i class="fa fa-users"></i>
-                                    </span>
-                                    <span class="label d-block mt-2"
-                                      >Shortlisted</span
-                                    >
-                                  </li>
-                                  <li class="stage d-inline-block">
-                                    <span
-                                      class="meta d-flex justify-content-between align-items-center"
-                                    >
-                                      <span class="fw-bold">5</span>
+                                      <span class="fw-bold">0</span>
                                       <i class="fa fa-user-check"></i>
                                     </span>
                                     <span class="label d-block mt-2"
-                                      >Hired</span
-                                    >
-                                  </li>
-                                </ul>
-                              </td>
-                              <td>
-                                <div class="dash-action" style="width: 120px">
-                                  <a
-                                    href="#"
-                                    class="p-3 circle text-info bg-light-info d-inline-flex align-items-center justify-content-center me-1"
-                                    ><i class="lni lni-eye"></i
-                                  ></a>
-                                  <a
-                                    href="#"
-                                    class="p-3 circle text-danger bg-light-danger d-inline-flex align-items-center justify-content-center ml-1"
-                                    ><i class="lni lni-trash-can"></i
-                                  ></a>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="min-width: 330px">
-                                <div
-                                  class="cats-box rounded bg-white d-flex align-items-center"
-                                >
-                                  <div class="text-center">
-                                    <img
-                                      src="https://via.placeholder.com/120x120"
-                                      class="img-fluid"
-                                      width="55"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <div class="cats-box-caption px-2">
-                                    <h4 class="fs-md mb-0 ft-medium">
-                                      طبيب جراحة عامة خبرة +10 سنوات
-                                    </h4>
-                                    <div class="d-block mb-2 position-relative">
-                                      <span class="text-muted medium"
-                                        ><i class="lni lni-map-marker me-1"></i
-                                        >الرياض ، السعودية</span
-                                      >
-                                      <span class="muted medium ms-2 theme-cl"
-                                        ><i class="lni lni-briefcase me-1"></i
-                                        >دوام كامل</span
-                                      >
-                                    </div>
-                                  </div>
-                                </div>
-                              </td>
-                              <td>
-                                <ul class="table-job-stages">
-                                  <li class="stage d-inline-block">
-                                    <span
-                                      class="meta d-flex justify-content-between align-items-center"
-                                    >
-                                      <span class="fw-bold">7</span>
-                                      <i class="far fa-envelope-open"></i>
-                                    </span>
-                                    <span class="label d-block mt-2"
-                                      >Inbox</span
-                                    >
-                                  </li>
-                                  <li class="stage d-inline-block">
-                                    <span
-                                      class="meta d-flex justify-content-between align-items-center"
-                                    >
-                                      <span class="fw-bold">7</span>
-                                      <i class="fa fa-check-double"></i>
-                                    </span>
-                                    <span class="label d-block mt-2">OK</span>
-                                  </li>
-                                  <li class="stage d-inline-block">
-                                    <span
-                                      class="meta d-flex justify-content-between align-items-center"
-                                    >
-                                      <span class="fw-bold">7</span>
-                                      <i class="fa fa-users"></i>
-                                    </span>
-                                    <span class="label d-block mt-2"
-                                      >Shortlisted</span
-                                    >
-                                  </li>
-                                  <li class="stage d-inline-block">
-                                    <span
-                                      class="meta d-flex justify-content-between align-items-center"
-                                    >
-                                      <span class="fw-bold">5</span>
-                                      <i class="fa fa-user-check"></i>
-                                    </span>
-                                    <span class="label d-block mt-2"
-                                      >Hired</span
+                                      >Rejected</span
                                     >
                                   </li>
                                 </ul>

@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Vendors -->
     <link rel="shortcut icon" href="../assets/images/icon.jpeg" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.rtl.min.css"
       integrity="sha512-rXhL8a+X3wTosWn2Zgd/5L8rfWrpff7qdOnl7Wg1n2zHk8lHGhiSujoyxoKw1nf43kZAzJoe0Z0ymr2Kkku7lQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -44,7 +51,7 @@
         </div>
         <div class="logo text-center">
           <img
-            class="std-logo brand"
+            class="brand std-logo"
             src="../assets/images/logo-w-2.jpeg"
             alt="Logo"
           />
@@ -53,10 +60,10 @@
         <div class="user">
           <img src="../assets/images/icons/dr.png" alt="user" />
           <div class="meta">
-            <a href="#" class="name"> مستشفى الجابرى </a>
+            <a href="#" class="name"> Gabri Hospital </a>
             <span class="role">
               <span class="dot online me-1"></span>
-              <small class="text-online" t>متصل </small>
+              <small class="text-online" t>Online </small>
             </span>
           </div>
           <div class="dropdown">
@@ -72,19 +79,19 @@
               <li>
                 <a class="dropdown-item" href="#">
                   <i class="fa fa-user me-1"></i>
-                  <span>الملف الشخصي</span>
+                  <span>Profile</span>
                 </a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">
                   <i class="fa fa-cogs me-1"></i>
-                  <span>الإعدادات</span>
+                  <span>Settings</span>
                 </a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">
                   <i class="fa fa-sign-out-alt me-1"></i>
-                  <span>تسجيل الخروج</span>
+                  <span>Logout</span>
                 </a>
               </li>
             </ul>
@@ -93,64 +100,63 @@
         <ul class="side-links-list">
           <li class="side-item">
             <div class="wrapper">
-              <a href="#" class="side-link">
+              <a href="#" class="side-link sep-side-link text-warning">
                 <img
-                  src="../assets/images/icons/dashboard.png"
+                  src="../assets/images/icons/login.svg"
                   alt=""
                   class="icon"
                 />
-                <span class="text">لوحة التحكم</span>
+                <span class="text">Login As User Company</span>
+              </a>
+              <i
+                class="fa fa-arrow-circle-left ico"
+                style="font-size: 15px"
+              ></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-list"></i>
+                <span class="text">Dashboard</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
             <div class="submenu">
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span>التوظيف</span>
+                <span>Employment</span>
               </a>
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span> طلبات التوظيف</span>
+                <span>My Requests</span>
               </a>
             </div>
           </li>
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img src="../assets/images/icons/job.png" alt="" class="icon" />
-                <span class="text">الوظائف</span>
+                <i class="fa fa-briefcase"></i>
+                <span class="text">Jobs</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
             <div class="submenu">
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span>الوظائف المفتوحة</span>
+                <span>Open Jobs</span>
               </a>
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span>الوظائف السابقة</span>
+                <span>Closed Jobs</span>
               </a>
             </div>
           </li>
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img src="../assets/images/icons/add.png" alt="" class="icon" />
-                <span class="text">أضف وظيفة</span>
-              </a>
-              <i class="fa fa-angle-left ico"></i>
-            </div>
-          </li>
-          <li class="side-item">
-            <div class="wrapper">
-              <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/search.png"
-                  alt=""
-                  class="icon"
-                />
-                <span class="text">بحث عن أطباء</span>
+                <i class="fa fa-plus-circle"></i>
+                <span class="text">Add Job</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -158,12 +164,17 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/bell.png"
-                  alt=""
-                  class="icon"
-                />
-                <span class="text">الإشعارات</span>
+                <i class="fa fa-search-location"></i>
+                <span class="text">Search</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-bell"></i>
+                <span class="text">Notifications</span>
               </a>
               <span class="badge"> +100 </span>
             </div>
@@ -171,12 +182,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/email.png"
-                  alt=""
-                  class="icon"
-                />
-                <span class="text">الرسائل</span>
+                <i class="fa fa-envelope"></i>
+                <span class="text">Messages</span>
               </a>
               <span class="badge"> +100 </span>
             </div>
@@ -184,12 +191,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/setting.png"
-                  alt="setting"
-                  class="icon"
-                />
-                <span class="text">الإعدادات</span>
+                <i class="fa fa-cog"></i>
+                <span class="text">Settings</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -197,12 +200,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/service.png"
-                  alt="service"
-                  class="icon"
-                />
-                <span class="text">خدمة الدعم</span>
+                <i class="fa fa-user-clock"></i>
+                <span class="text">Support</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -210,12 +209,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/logout.png"
-                  alt="logout"
-                  class="icon"
-                />
-                <span class="text">تسجيل خروج</span>
+                <i class="fa fa-sign-out-alt"></i>
+                <span class="text">Logout</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -224,15 +219,15 @@
         <div class="hint">
           <i class="fa fa-check-circle me-2"></i>
           <span>
-            للحصول على أفضل نتائج البحث ، اشترك فى النشرة الاخبارية الخاصة بنا
-            ليصلك كل التحديثات
+            For better user experience , subscribe to our newsletter to receive
+            latest updates.
           </span>
         </div>
         <div class="footer text-white text-center">
-          <strong>شركة التوظيف</strong>
+          <strong>Meeza</strong>
           <p class="mb-0 mt-1">
             <i class="far fa-copyright me-1"></i>
-            <span>جميع الحقوق محفوظة 2022</span>
+            <span>All Rights Reserved 2023</span>
           </p>
         </div>
       </aside>
@@ -266,7 +261,7 @@
                 <input
                   type="text"
                   name="key"
-                  placeholder="بحث عن أطباء"
+                  placeholder="Search Doctors .."
                   class="form-control"
                 />
               </div>
@@ -349,10 +344,10 @@
               </div>
             </div>
             <div class="row g-4">
-              <div class="col-xl-6">
+              <div class="col-12">
                 <div class="dashboard-card">
                   <div class="head">
-                    <h4>العناصر المحفوظة</h4>
+                    <h4 class="h4-sm fw-bold">Bookmarked Profiles</h4>
                     <div class="dropdown">
                       <button
                         type="button"
@@ -365,13 +360,13 @@
                         <li>
                           <a class="dropdown-item" href="#">
                             <i class="fa fa-eye text-info me-1"></i>
-                            <span>عرض الكل</span>
+                            <span>Display All</span>
                           </a>
                         </li>
                         <li>
                           <a class="dropdown-item" href="#">
                             <i class="fa fa-trash text-danger me-1"></i>
-                            <span>مسح الكل</span>
+                            <span>Trash All</span>
                           </a>
                         </li>
                       </ul>
@@ -379,115 +374,177 @@
                   </div>
                   <div class="content">
                     <div class="row g-4">
-                      <div class="col-lg-6">
-                        <div class="person-item">
-                          <a href="#">
-                            <img
-                              src="../assets/images/client-1.jpg"
-                              alt="client"
-                            />
-                          </a>
+                      <div class="col-xl-4 col-lg-6">
+                        <div class="candidate-card">
+                          <div class="image">
+                            <a href="#">
+                              <img
+                                src="../assets/images/client-1.jpg"
+                                alt="dr"
+                              />
+                            </a>
+                          </div>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
+                          <p class="desc">
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
+                          </p>
                           <div class="meta">
-                            <a href="#" class="name"> د / عصام عبد الفتاح </a>
-                            <span class="title"> جلدية وتجميل </span>
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
+                          </div>
+                          <div class="actions">
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-user"></i>
+                            </a>
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-phone-alt"></i>
+                            </a>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6">
-                        <div class="person-item">
-                          <a href="#">
-                            <img
-                              src="../assets/images/client-2.jpg"
-                              alt="client"
-                            />
-                          </a>
+                      <div class="col-xl-4 col-lg-6">
+                        <div class="candidate-card">
+                          <div class="image">
+                            <a href="#">
+                              <img
+                                src="../assets/images/client-1.jpg"
+                                alt="dr"
+                              />
+                            </a>
+                          </div>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
+                          <p class="desc">
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
+                          </p>
                           <div class="meta">
-                            <a href="#" class="name"> د / أسماء الخولى </a>
-                            <span class="title"> أمراض باطنة </span>
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
+                          </div>
+                          <div class="actions">
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-user"></i>
+                            </a>
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-phone-alt"></i>
+                            </a>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6">
-                        <div class="person-item">
-                          <a href="#">
-                            <img
-                              src="../assets/images/client-4.jpg"
-                              alt="client"
-                            />
-                          </a>
+                      <div class="col-xl-4 col-lg-6">
+                        <div class="candidate-card">
+                          <div class="image">
+                            <a href="#">
+                              <img
+                                src="../assets/images/client-1.jpg"
+                                alt="dr"
+                              />
+                            </a>
+                          </div>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
+                          <p class="desc">
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
+                          </p>
                           <div class="meta">
-                            <a href="#" class="name"> كمال الدين أحمد / ح </a>
-                            <span class="title"> نساء وولادة </span>
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
+                          </div>
+                          <div class="actions">
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-user"></i>
+                            </a>
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-phone-alt"></i>
+                            </a>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6">
-                        <div class="person-item">
-                          <a href="#">
-                            <img
-                              src="../assets/images/client-5.jpg"
-                              alt="client"
-                            />
-                          </a>
+                      <div class="col-xl-4 col-lg-6">
+                        <div class="candidate-card">
+                          <div class="image">
+                            <a href="#">
+                              <img
+                                src="../assets/images/client-1.jpg"
+                                alt="dr"
+                              />
+                            </a>
+                          </div>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
+                          <p class="desc">
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
+                          </p>
                           <div class="meta">
-                            <a href="#" class="name"> د / فاطمة عز الدين </a>
-                            <span class="title"> أطفال وحديثى الولادة </span>
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
+                          </div>
+                          <div class="actions">
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-user"></i>
+                            </a>
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-phone-alt"></i>
+                            </a>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6">
-                        <div class="person-item">
-                          <a href="#">
-                            <img
-                              src="../assets/images/client-1.jpg"
-                              alt="client"
-                            />
-                          </a>
+                      <div class="col-xl-4 col-lg-6">
+                        <div class="candidate-card">
+                          <div class="image">
+                            <a href="#">
+                              <img
+                                src="../assets/images/client-1.jpg"
+                                alt="dr"
+                              />
+                            </a>
+                          </div>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
+                          <p class="desc">
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
+                          </p>
                           <div class="meta">
-                            <a href="#" class="name"> د / عصام عبد الفتاح </a>
-                            <span class="title"> جلدية وتجميل </span>
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
+                          </div>
+                          <div class="actions">
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-user"></i>
+                            </a>
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-phone-alt"></i>
+                            </a>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6">
-                        <div class="person-item">
-                          <a href="#">
-                            <img
-                              src="../assets/images/client-2.jpg"
-                              alt="client"
-                            />
-                          </a>
-                          <div class="meta">
-                            <a href="#" class="name"> د / أسماء الخولى </a>
-                            <span class="title"> أمراض باطنة </span>
+                      <div class="col-xl-4 col-lg-6">
+                        <div class="candidate-card">
+                          <div class="image">
+                            <a href="#">
+                              <img
+                                src="../assets/images/client-1.jpg"
+                                alt="dr"
+                              />
+                            </a>
                           </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="person-item">
-                          <a href="#">
-                            <img
-                              src="../assets/images/client-4.jpg"
-                              alt="client"
-                            />
-                          </a>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
+                          <p class="desc">
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
+                          </p>
                           <div class="meta">
-                            <a href="#" class="name"> كمال الدين أحمد / ح </a>
-                            <span class="title"> نساء وولادة </span>
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
                           </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="person-item">
-                          <a href="#">
-                            <img
-                              src="../assets/images/client-5.jpg"
-                              alt="client"
-                            />
-                          </a>
-                          <div class="meta">
-                            <a href="#" class="name"> د / فاطمة عز الدين </a>
-                            <span class="title"> أطفال وحديثى الولادة </span>
+                          <div class="actions">
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-user"></i>
+                            </a>
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-phone-alt"></i>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -495,10 +552,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-6">
+              <div class="col-12">
                 <div class="dashboard-card">
                   <div class="head">
-                    <h4>الوظائف المفتوحة</h4>
+                    <h4 class="h4-sm fw-bolder">Open Jobs</h4>
                     <div class="dropdown">
                       <button
                         type="button"
@@ -511,13 +568,13 @@
                         <li>
                           <a class="dropdown-item" href="#">
                             <i class="fa fa-eye text-info me-1"></i>
-                            <span>عرض الكل</span>
+                            <span>Show All</span>
                           </a>
                         </li>
                         <li>
                           <a class="dropdown-item" href="#">
-                            <i class="fa fa-times-circle text-danger me-1"></i>
-                            <span>الغاء الكل</span>
+                            <i class="fa fa-eye-slash text-danger me-1"></i>
+                            <span>Hide Section</span>
                           </a>
                         </li>
                       </ul>
@@ -526,12 +583,12 @@
                   <div class="content">
                     <div class="row g-4">
                       <div class="col-12">
-                        <div class="job-item">
+                        <div class="job-item job-item-lg">
                           <button class="bookmark">
                             <i class="fa fa-trash text-danger"></i>
                           </button>
                           <button class="apply-btn theme-btn danger">
-                            <span>إغلاق</span>
+                            <span>Close</span>
                           </button>
                           <div class="image">
                             <a href="#">
@@ -543,78 +600,228 @@
                           </div>
                           <div class="desc">
                             <a class="title" href="#">
-                              طبيب جلدية وتجميل ليزر - دوام كامل
+                              Full Time , Experienced Dermatologist with +10
+                              years of experience.
                             </a>
                             <div class="meta">
                               <a href="#">
                                 <span class="category me-2">
                                   <i class="fa fa-tasks"></i>
-                                  جلدية وتجميل
+                                  Dermatologist
                                 </span>
                               </a>
                               <span class="location me-2">
                                 <a href="#">
                                   <i class="fa fa-map-marker-alt"></i>
-                                  الجيزة
+                                  Giza, Cairo
                                 </a>
                               </span>
                               <span class="time">
                                 <i class="far fa-clock"></i>
-                                منذ 4 ساعات
+                                4 Hours Ago
                               </span>
                             </div>
                             <div class="badges">
                               <span class="theme-badge success-badge"
-                                >دوام كامل</span
+                                >Full-Time Job</span
                               >
-                              <span class="theme-badge danger-badge">عاجل</span>
+                              <span class="theme-badge danger-badge"
+                                >Urgent</span
+                              >
+                            </div>
+                            <div
+                              class="job-stages-container overflow-auto max-width-100"
+                            >
+                              <ul class="table-job-stages mt-4">
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">7</span>
+                                    <i class="far fa-envelope-open"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >Applications</span
+                                  >
+                                </li>
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">7</span>
+                                    <i class="fa fa-check-double"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >Accepted</span
+                                  >
+                                </li>
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">7</span>
+                                    <i class="fa fa-users"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >Head Department</span
+                                  >
+                                </li>
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">5</span>
+                                    <i class="fa fa-user-check"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >HR Head</span
+                                  >
+                                </li>
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">0</span>
+                                    <i class="fa fa-user-check"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >Admitted</span
+                                  >
+                                </li>
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">0</span>
+                                    <i class="fa fa-user-check"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >Rejected</span
+                                  >
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>
                       </div>
                       <div class="col-12">
-                        <div class="job-item">
+                        <div class="job-item job-item-lg">
                           <button class="bookmark">
                             <i class="fa fa-trash text-danger"></i>
                           </button>
                           <button class="apply-btn theme-btn danger">
-                            <span>إغلاق</span>
+                            <span>Close</span>
                           </button>
                           <div class="image">
                             <a href="#">
                               <img
-                                src="../assets/images/y2.webp"
+                                src="../assets/images/y1.webp"
                                 alt="Company"
                               />
                             </a>
                           </div>
                           <div class="desc">
                             <a class="title" href="#">
-                              طبيب جلدية وتجميل ليزر - دوام كامل
+                              Full Time , Experienced Dermatologist with +10
+                              years of experience.
                             </a>
                             <div class="meta">
                               <a href="#">
                                 <span class="category me-2">
                                   <i class="fa fa-tasks"></i>
-                                  جلدية وتجميل
+                                  Dermatologist
                                 </span>
                               </a>
                               <span class="location me-2">
                                 <a href="#">
                                   <i class="fa fa-map-marker-alt"></i>
-                                  الجيزة
+                                  Giza, Cairo
                                 </a>
                               </span>
                               <span class="time">
                                 <i class="far fa-clock"></i>
-                                منذ 4 ساعات
+                                4 Hours Ago
                               </span>
                             </div>
                             <div class="badges">
                               <span class="theme-badge success-badge"
-                                >دوام كامل</span
+                                >Full-Time Job</span
                               >
-                              <span class="theme-badge danger-badge">عاجل</span>
+                              <span class="theme-badge danger-badge"
+                                >Urgent</span
+                              >
+                            </div>
+                            <div
+                              class="job-stages-container overflow-auto max-width-100"
+                            >
+                              <ul class="table-job-stages mt-4">
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">7</span>
+                                    <i class="far fa-envelope-open"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >Applications</span
+                                  >
+                                </li>
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">7</span>
+                                    <i class="fa fa-check-double"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >Accepted</span
+                                  >
+                                </li>
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">7</span>
+                                    <i class="fa fa-users"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >Head Department</span
+                                  >
+                                </li>
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">5</span>
+                                    <i class="fa fa-user-check"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >HR Head</span
+                                  >
+                                </li>
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">0</span>
+                                    <i class="fa fa-user-check"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >Admitted</span
+                                  >
+                                </li>
+                                <li class="stage d-inline-block">
+                                  <span
+                                    class="meta d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="fw-bold">0</span>
+                                    <i class="fa fa-user-check"></i>
+                                  </span>
+                                  <span class="label d-block mt-2"
+                                    >Rejected</span
+                                  >
+                                </li>
+                              </ul>
                             </div>
                           </div>
                         </div>

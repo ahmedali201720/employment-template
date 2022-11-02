@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Vendors -->
     <link rel="shortcut icon" href="../assets/images/icon.jpeg" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.rtl.min.css"
       integrity="sha512-rXhL8a+X3wTosWn2Zgd/5L8rfWrpff7qdOnl7Wg1n2zHk8lHGhiSujoyxoKw1nf43kZAzJoe0Z0ymr2Kkku7lQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -45,7 +52,7 @@
         </div>
         <div class="logo text-center">
           <img
-            class="std-logo brand"
+            class="brand std-logo"
             src="../assets/images/logo-w-2.jpeg"
             alt="Logo"
           />
@@ -54,10 +61,10 @@
         <div class="user">
           <img src="../assets/images/icons/dr.png" alt="user" />
           <div class="meta">
-            <a href="#" class="name"> مستشفى الجابرى </a>
+            <a href="#" class="name"> Gabri Hospital </a>
             <span class="role">
               <span class="dot online me-1"></span>
-              <small class="text-online" t>متصل </small>
+              <small class="text-online" t>Online </small>
             </span>
           </div>
           <div class="dropdown">
@@ -73,19 +80,19 @@
               <li>
                 <a class="dropdown-item" href="#">
                   <i class="fa fa-user me-1"></i>
-                  <span>الملف الشخصي</span>
+                  <span>Profile</span>
                 </a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">
                   <i class="fa fa-cogs me-1"></i>
-                  <span>الإعدادات</span>
+                  <span>Settings</span>
                 </a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">
                   <i class="fa fa-sign-out-alt me-1"></i>
-                  <span>تسجيل الخروج</span>
+                  <span>Logout</span>
                 </a>
               </li>
             </ul>
@@ -94,64 +101,63 @@
         <ul class="side-links-list">
           <li class="side-item">
             <div class="wrapper">
-              <a href="#" class="side-link">
+              <a href="#" class="side-link sep-side-link text-warning">
                 <img
-                  src="../assets/images/icons/dashboard.png"
+                  src="../assets/images/icons/login.svg"
                   alt=""
                   class="icon"
                 />
-                <span class="text">لوحة التحكم</span>
+                <span class="text">Login As User Company</span>
+              </a>
+              <i
+                class="fa fa-arrow-circle-left ico"
+                style="font-size: 15px"
+              ></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-list"></i>
+                <span class="text">Dashboard</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
             <div class="submenu">
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span>التوظيف</span>
+                <span>Employment</span>
               </a>
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span> طلبات التوظيف</span>
+                <span>My Requests</span>
               </a>
             </div>
           </li>
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img src="../assets/images/icons/job.png" alt="" class="icon" />
-                <span class="text">الوظائف</span>
+                <i class="fa fa-briefcase"></i>
+                <span class="text">Jobs</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
             <div class="submenu">
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span>الوظائف المفتوحة</span>
+                <span>Open Jobs</span>
               </a>
               <a href="#">
                 <i class="fa fa-dot-circle me-1"></i>
-                <span>الوظائف السابقة</span>
+                <span>Closed Jobs</span>
               </a>
             </div>
           </li>
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img src="../assets/images/icons/add.png" alt="" class="icon" />
-                <span class="text">أضف وظيفة</span>
-              </a>
-              <i class="fa fa-angle-left ico"></i>
-            </div>
-          </li>
-          <li class="side-item">
-            <div class="wrapper">
-              <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/search.png"
-                  alt=""
-                  class="icon"
-                />
-                <span class="text">بحث عن أطباء</span>
+                <i class="fa fa-plus-circle"></i>
+                <span class="text">Add Job</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -159,12 +165,17 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/bell.png"
-                  alt=""
-                  class="icon"
-                />
-                <span class="text">الإشعارات</span>
+                <i class="fa fa-search-location"></i>
+                <span class="text">Search</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-bell"></i>
+                <span class="text">Notifications</span>
               </a>
               <span class="badge"> +100 </span>
             </div>
@@ -172,12 +183,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/email.png"
-                  alt=""
-                  class="icon"
-                />
-                <span class="text">الرسائل</span>
+                <i class="fa fa-envelope"></i>
+                <span class="text">Messages</span>
               </a>
               <span class="badge"> +100 </span>
             </div>
@@ -185,12 +192,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/setting.png"
-                  alt="setting"
-                  class="icon"
-                />
-                <span class="text">الإعدادات</span>
+                <i class="fa fa-cog"></i>
+                <span class="text">Settings</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -198,12 +201,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/service.png"
-                  alt="service"
-                  class="icon"
-                />
-                <span class="text">خدمة الدعم</span>
+                <i class="fa fa-user-clock"></i>
+                <span class="text">Support</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -211,12 +210,8 @@
           <li class="side-item">
             <div class="wrapper">
               <a href="#" class="side-link">
-                <img
-                  src="../assets/images/icons/logout.png"
-                  alt="logout"
-                  class="icon"
-                />
-                <span class="text">تسجيل خروج</span>
+                <i class="fa fa-sign-out-alt"></i>
+                <span class="text">Logout</span>
               </a>
               <i class="fa fa-angle-left ico"></i>
             </div>
@@ -225,15 +220,15 @@
         <div class="hint">
           <i class="fa fa-check-circle me-2"></i>
           <span>
-            للحصول على أفضل نتائج البحث ، اشترك فى النشرة الاخبارية الخاصة بنا
-            ليصلك كل التحديثات
+            For better user experience , subscribe to our newsletter to receive
+            latest updates.
           </span>
         </div>
         <div class="footer text-white text-center">
-          <strong>شركة التوظيف</strong>
+          <strong>Meeza</strong>
           <p class="mb-0 mt-1">
             <i class="far fa-copyright me-1"></i>
-            <span>جميع الحقوق محفوظة 2022</span>
+            <span>All Rights Reserved 2023</span>
           </p>
         </div>
       </aside>
@@ -267,7 +262,7 @@
                 <input
                   type="text"
                   name="key"
-                  placeholder="بحث عن أطباء"
+                  placeholder="Search Doctors .."
                   class="form-control"
                 />
               </div>
@@ -308,15 +303,13 @@
         <div class="page-content" id="pageContent">
           <section class="jobs-filter-section" id="jobFilterSection">
             <div class="container-fluid">
-              <div class="section-head text-center">
+              <div class="section-head section-head-sm text-center">
                 <h2 class="main-head">
-                  بحث عن
-                  <span class="display-5 fw-bold">الأطباء</span>
+                  Search For
+                  <span class="fw-bold">Doctors</span>
                 </h2>
                 <p class="head-meta mb-0">
-                  <span class="text-grey"
-                    >2000 طبيب متاح - 130 مضـاف حديثــاً</span
-                  >
+                  <span class="text-grey">+ 2000 Experienced Doctors</span>
                 </p>
               </div>
 
@@ -326,7 +319,7 @@
                     <div class="filter-category content-shown">
                       <div class="head filter-category-head">
                         <i class="fa fa-globe me-2"></i>
-                        <span>الدولة</span>
+                        <span>By Country</span>
                       </div>
 
                       <div class="content ms-4">
@@ -341,9 +334,9 @@
                             class="form-check-label"
                             for="flexCheckDefault"
                           >
-                            مصر
+                            Egypt
                           </label>
-                          <span class="count">( 13 )</span>
+                          <span class="count">(10)</span>
                         </div>
                         <div class="form-check">
                           <input
@@ -357,9 +350,9 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            الإمارات
+                            UAE
                           </label>
-                          <span class="count">( 10 )</span>
+                          <span class="count">(10)</span>
                         </div>
                         <div class="form-check">
                           <input
@@ -373,9 +366,9 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            السعودية
+                            KSA
                           </label>
-                          <span class="count">( 10 )</span>
+                          <span class="count">(10)</span>
                         </div>
                         <div class="form-check">
                           <input
@@ -389,9 +382,9 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            الكويت
+                            Kuwait
                           </label>
-                          <span class="count">( 10 )</span>
+                          <span class="count">(10)</span>
                         </div>
                         <div class="form-check">
                           <input
@@ -405,9 +398,9 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            قطر
+                            Qatar
                           </label>
-                          <span class="count">( 10 )</span>
+                          <span class="count">(10)</span>
                         </div>
                         <div class="form-check">
                           <input
@@ -421,9 +414,9 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            البحرين
+                            Bahrain
                           </label>
-                          <span class="count">( 10 )</span>
+                          <<span class="count">(10)</span>
                         </div>
                         <div class="form-check">
                           <input
@@ -437,16 +430,16 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            أسوان
+                            Aswan
                           </label>
-                          <span class="count">( 10 )</span>
+                          <span class="count">(10)</span>
                         </div>
                       </div>
                     </div>
                     <div class="filter-category content-shown">
                       <div class="head filter-category-head">
                         <i class="fa fa-map-marker-alt me-2"></i>
-                        <span>المدينة</span>
+                        <span>By City</span>
                       </div>
 
                       <div class="content ms-4">
@@ -461,7 +454,7 @@
                             class="form-check-label"
                             for="flexCheckDefault"
                           >
-                            القاهرة
+                            Cairo
                           </label>
                           <span class="count">( 13 )</span>
                         </div>
@@ -477,7 +470,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            الجيزة
+                            Giza
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -493,7 +486,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            الإسكندرية
+                            Alex
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -509,7 +502,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            أسيوط
+                            Asiut
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -525,7 +518,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            أسوان
+                            Aswan
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -541,7 +534,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            قنا
+                            Qena
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -557,7 +550,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            البحر الأحمر
+                            Red Sea
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -566,7 +559,7 @@
                     <div class="filter-category content-shown">
                       <div class="head filter-category-head">
                         <i class="fa fa-tasks me-2"></i>
-                        <span>التخصص</span>
+                        <span>Specialization</span>
                       </div>
 
                       <div class="content ms-4">
@@ -581,7 +574,7 @@
                             class="form-check-label"
                             for="flexCheckDefault"
                           >
-                            طب الأطفال
+                            Pedri.
                           </label>
                           <span class="count">( 13 )</span>
                         </div>
@@ -597,7 +590,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            الجلدية و التجميل
+                            Dermatology
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -613,7 +606,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            الأشعة و التحاليل
+                            XRays
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -629,7 +622,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            المخ و الأعصاب
+                            Brain
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -645,7 +638,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            النساء و الولادة
+                            Feminin
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -654,9 +647,8 @@
 
                     <div class="filter-category content-shown">
                       <div class="head filter-category-head">
-                        <i class="plus far fa-plus-circle me-2"></i>
-                        <i class="minus far fa-minus-circle me-2"></i>
-                        <span>مستوى الخبرة</span>
+                        <i class="fa fa-history me-2"></i>
+                        <span>Experience</span>
                       </div>
 
                       <div class="content ms-4">
@@ -671,7 +663,7 @@
                             class="form-check-label"
                             for="flexCheckDefault"
                           >
-                            +3 سنوات
+                            +10 Years
                           </label>
                           <span class="count">( 13 )</span>
                         </div>
@@ -687,7 +679,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            +6 سنوات
+                            +6 Years
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -703,7 +695,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            +10 سنوات
+                            +10 Years
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -719,7 +711,7 @@
                             class="form-check-label"
                             for="flexCheckChecked"
                           >
-                            +15 سنوات
+                            +15 Years
                           </label>
                           <span class="count">( 10 )</span>
                         </div>
@@ -730,7 +722,7 @@
                 <div class="col-xxl-9 col-xl-7 ps-xl-4">
                   <div class="candidates">
                     <div class="row g-4">
-                      <div class="col-xxl-3 col-lg-6">
+                      <div class="col-xl-4 col-lg-6">
                         <div class="candidate-card">
                           <div class="image">
                             <a href="#">
@@ -740,12 +732,14 @@
                               />
                             </a>
                           </div>
-                          <a href="#" class="name"> د / كمال عبد الرحمن </a>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
                           <p class="desc">
-                            دكتوراة الجراحة الحامة بالقصر العينى
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
                           </p>
                           <div class="meta">
-                            <span class="exp"> مستوى الخبرة : +10 </span>
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
                           </div>
                           <div class="actions">
                             <a href="#" class="link profile-link">
@@ -757,34 +751,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xxl-3 col-lg-6">
-                        <div class="candidate-card">
-                          <div class="image">
-                            <a href="#">
-                              <img
-                                src="../assets/images/client-2.jpg"
-                                alt="dr"
-                              />
-                            </a>
-                          </div>
-                          <a href="#" class="name"> د / فاطمة عز الدين </a>
-                          <p class="desc">
-                            دكتوراة الجراحة الحامة بالقصر العينى
-                          </p>
-                          <div class="meta">
-                            <span class="exp"> مستوى الخبرة : +10 </span>
-                          </div>
-                          <div class="actions">
-                            <a href="#" class="link profile-link">
-                              <i class="fa fa-user"></i>
-                            </a>
-                            <a href="#" class="link profile-link">
-                              <i class="fa fa-phone-alt"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-3 col-lg-6">
+                      <div class="col-xl-4 col-lg-6">
                         <div class="candidate-card">
                           <div class="image">
                             <a href="#">
@@ -794,12 +761,14 @@
                               />
                             </a>
                           </div>
-                          <a href="#" class="name"> د / كمال عبد الرحمن </a>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
                           <p class="desc">
-                            دكتوراة الجراحة الحامة بالقصر العينى
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
                           </p>
                           <div class="meta">
-                            <span class="exp"> مستوى الخبرة : +10 </span>
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
                           </div>
                           <div class="actions">
                             <a href="#" class="link profile-link">
@@ -811,34 +780,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xxl-3 col-lg-6">
-                        <div class="candidate-card">
-                          <div class="image">
-                            <a href="#">
-                              <img
-                                src="../assets/images/client-2.jpg"
-                                alt="dr"
-                              />
-                            </a>
-                          </div>
-                          <a href="#" class="name"> د / فاطمة عز الدين </a>
-                          <p class="desc">
-                            دكتوراة الجراحة الحامة بالقصر العينى
-                          </p>
-                          <div class="meta">
-                            <span class="exp"> مستوى الخبرة : +10 </span>
-                          </div>
-                          <div class="actions">
-                            <a href="#" class="link profile-link">
-                              <i class="fa fa-user"></i>
-                            </a>
-                            <a href="#" class="link profile-link">
-                              <i class="fa fa-phone-alt"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-3 col-lg-6">
+                      <div class="col-xl-4 col-lg-6">
                         <div class="candidate-card">
                           <div class="image">
                             <a href="#">
@@ -848,12 +790,14 @@
                               />
                             </a>
                           </div>
-                          <a href="#" class="name"> د / كمال عبد الرحمن </a>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
                           <p class="desc">
-                            دكتوراة الجراحة الحامة بالقصر العينى
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
                           </p>
                           <div class="meta">
-                            <span class="exp"> مستوى الخبرة : +10 </span>
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
                           </div>
                           <div class="actions">
                             <a href="#" class="link profile-link">
@@ -865,34 +809,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xxl-3 col-lg-6">
-                        <div class="candidate-card">
-                          <div class="image">
-                            <a href="#">
-                              <img
-                                src="../assets/images/client-2.jpg"
-                                alt="dr"
-                              />
-                            </a>
-                          </div>
-                          <a href="#" class="name"> د / فاطمة عز الدين </a>
-                          <p class="desc">
-                            دكتوراة الجراحة الحامة بالقصر العينى
-                          </p>
-                          <div class="meta">
-                            <span class="exp"> مستوى الخبرة : +10 </span>
-                          </div>
-                          <div class="actions">
-                            <a href="#" class="link profile-link">
-                              <i class="fa fa-user"></i>
-                            </a>
-                            <a href="#" class="link profile-link">
-                              <i class="fa fa-phone-alt"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xxl-3 col-lg-6">
+                      <div class="col-xl-4 col-lg-6">
                         <div class="candidate-card">
                           <div class="image">
                             <a href="#">
@@ -902,12 +819,14 @@
                               />
                             </a>
                           </div>
-                          <a href="#" class="name"> د / كمال عبد الرحمن </a>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
                           <p class="desc">
-                            دكتوراة الجراحة الحامة بالقصر العينى
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
                           </p>
                           <div class="meta">
-                            <span class="exp"> مستوى الخبرة : +10 </span>
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
                           </div>
                           <div class="actions">
                             <a href="#" class="link profile-link">
@@ -919,22 +838,53 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-xxl-3 col-lg-6">
+                      <div class="col-xl-4 col-lg-6">
                         <div class="candidate-card">
                           <div class="image">
                             <a href="#">
                               <img
-                                src="../assets/images/client-2.jpg"
+                                src="../assets/images/client-1.jpg"
                                 alt="dr"
                               />
                             </a>
                           </div>
-                          <a href="#" class="name"> د / فاطمة عز الدين </a>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
                           <p class="desc">
-                            دكتوراة الجراحة الحامة بالقصر العينى
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
                           </p>
                           <div class="meta">
-                            <span class="exp"> مستوى الخبرة : +10 </span>
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
+                          </div>
+                          <div class="actions">
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-user"></i>
+                            </a>
+                            <a href="#" class="link profile-link">
+                              <i class="fa fa-phone-alt"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-6">
+                        <div class="candidate-card">
+                          <div class="image">
+                            <a href="#">
+                              <img
+                                src="../assets/images/client-1.jpg"
+                                alt="dr"
+                              />
+                            </a>
+                          </div>
+                          <a href="#" class="name"> Dr. Kamal Abdelrahman </a>
+                          <p class="desc">
+                            <i class="fa fa-briefcase me-1"></i>
+                            Eye Surgery
+                          </p>
+                          <div class="meta">
+                            <i class="fa fa-history me-1"></i>
+                            <span class="exp"> +10 Years Experience</span>
                           </div>
                           <div class="actions">
                             <a href="#" class="link profile-link">
@@ -980,6 +930,7 @@
     <script type="module" src="../assets/js/jquery.waypoints.min.js"></script>
     <script type="module" src="../assets/js/jquery.counterup.min.js"></script>
     <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/select2.full.min.js"></script>
     <script src="../assets/js/ckeditor/ckeditor.js"></script>
     <script type="module" src="../assets/js/dashboard/layout.js"></script>
     <script src="../assets/js/dashboard/script.js"></script>

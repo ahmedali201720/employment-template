@@ -6,7 +6,7 @@
   direction: ltr;
   @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 }
-*:lang(en):not(.fa, .far, .fab, .fas) {
+*:lang(en):not(.fa, .far, .fab, .fas, .lni) {
   font-family: "Roboto", sans-serif;
 }
 
@@ -195,11 +195,21 @@ body {
 }
 .section-head .main-head {
   position: relative;
+  font-size: 1.5rem;
   animation: fadeLeftRight 1.5s ease-in-out;
 }
 .section-head .head-meta {
   position: relative;
   animation: fadeRightLeft 1.5s ease-in-out;
+}
+
+.section-head-sm {
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 576px) {
+  .section-head-sm {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .minimized-item {
@@ -305,7 +315,21 @@ body {
 }
 @media screen and (max-width: 576px) {
   .job-item {
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
+  }
+}
+.job-item.job-item-lg {
+  grid-template-columns: 15% 85%;
+  padding-bottom: 2rem !important;
+}
+@media screen and (max-width: 1400px) {
+  .job-item.job-item-lg {
+    grid-template-columns: 20% 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .job-item.job-item-lg {
+    grid-template-columns: 100%;
   }
 }
 .job-item .bookmark {
@@ -451,18 +475,32 @@ body {
 .nice-select {
   padding-right: 0.9rem;
 }
+.nice-select:lang(en) {
+  padding-right: 1.8rem;
+}
 .nice-select .current {
   display: block;
   text-align: right;
+  position: relative;
+  top: -5px;
+  font-size: 0.9rem;
+}
+.nice-select .current:lang(en) {
+  text-align: left;
 }
 .nice-select::after {
   left: 15px;
   right: auto;
 }
+.nice-select:lang(en)::after {
+  right: 15px;
+  left: auto;
+}
 .nice-select .list {
   position: absolute;
   top: 100%;
-  width: 100%;
+  width: auto !important;
+  min-width: 100% !important;
   max-height: 200px;
   overflow-y: auto;
   scrollbar-width: thin;
@@ -490,6 +528,9 @@ body {
   padding-right: 0.9rem;
   padding-left: 0.9rem;
 }
+.nice-select .list li:lang(en) {
+  text-align: left;
+}
 
 .candidate-card {
   position: relative;
@@ -511,10 +552,14 @@ body {
 .candidate-card .name {
   display: block;
   color: #004c70;
-  font-size: 1.125rem;
+  font-size: 0.95rem;
   font-weight: 500;
   text-decoration: none;
   margin-bottom: 0.5rem;
+  transition: all 0.4s;
+}
+.candidate-card .name:hover {
+  color: #0080bd;
 }
 .candidate-card .desc {
   color: #696969;
@@ -743,6 +788,18 @@ section.middle {
   border-radius: 50px;
 }
 
+.h1-sm {
+  font-size: 1.5rem;
+}
+
+.h4-sm {
+  font-size: 1.2rem;
+}
+
+.max-width-100 {
+  max-width: 100% !important;
+}
+
 body {
   background-color: #f8f8f8;
 }
@@ -857,28 +914,37 @@ body {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 1.2rem;
+  font-size: 20px;
   color: #004c70;
+}
+.page-content .job-form .input-wrapper .icon:lang(en) {
+  right: auto;
+  left: 1.2rem;
 }
 .page-content .job-form .input-wrapper input {
   border: none;
   border-radius: 5px;
-  background-color: #efefef;
+  border: 1px solid #e6e6e6;
   padding: 0.9rem 3rem 0.9rem 0.9rem;
   outline: none;
   box-shadow: none;
 }
+.page-content .job-form .input-wrapper input:lang(en) {
+  padding: 0.9rem 0.9rem 0.9rem 3rem;
+}
 .page-content .job-form .input-wrapper .nice-selector {
-  background-color: #efefef !important;
+  border: 1px solid #e6e6e6 !important;
   border: none;
   outline: none !important;
   box-shadow: none !important;
 }
 .page-content .job-form .input-wrapper .select2.select2-container {
   width: 100% !important;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
 }
 .page-content .job-form .input-wrapper .select2.select2-container .select2-selection--multiple {
   height: 50px !important;
-  background-color: #efefef;
   border: none;
 }
 .page-content .job-form .input-wrapper .select2.select2-container .select2-search__field {
@@ -917,6 +983,16 @@ body {
 .page-content .jobs-filter-section .filter-category .content .form-check:lang(en) {
   padding-right: 2rem;
   padding-left: 0;
+}
+.page-content .jobs-filter-section .filter-category .content .form-check input {
+  margin-left: 0;
+}
+.page-content .jobs-filter-section .filter-category .content .form-check label {
+  margin-right: 1rem;
+}
+.page-content .jobs-filter-section .filter-category .content .form-check label:lang(en) {
+  margin-right: 0;
+  margin-left: 1rem;
 }
 .page-content .jobs-filter-section .filter-category .content .form-check .count {
   color: #038db8;
@@ -971,6 +1047,10 @@ body {
   top: -120px;
   right: 50px;
 }
+.page-content .profile-section .info-section .avatar:lang(en) {
+  right: auto;
+  left: 50px;
+}
 .page-content .profile-section .info-section .avatar img {
   width: 180px;
   height: 180px;
@@ -982,6 +1062,10 @@ body {
   top: -140px;
   left: 20px;
 }
+.page-content .profile-section .info-section .meta:lang(en) {
+  left: auto;
+  right: 50px;
+}
 @media screen and (max-width: 768px) {
   .page-content .profile-section .info-section .meta {
     top: -80px;
@@ -990,6 +1074,9 @@ body {
 @media screen and (max-width: 575px) {
   .page-content .profile-section .info-section .meta {
     top: -100px;
+  }
+  .page-content .profile-section .info-section .meta:lang(en) {
+    right: 0;
   }
 }
 .page-content .profile-section .info-section .meta .dropdown button {
@@ -1008,6 +1095,10 @@ body {
   border-radius: 10px;
   padding: 0.5rem;
 }
+.page-content .profile-section .info-section .meta .theme-btn:lang(en) {
+  margin-right: 1rem;
+  margin-left: 0;
+}
 .page-content .profile-section .info-section .meta .dropdown-menu {
   padding: 0;
   border: none;
@@ -1023,6 +1114,10 @@ body {
   top: -150px;
   right: 20px;
   padding: 1.5rem;
+}
+.page-content .profile-section .info-section .main-info:lang(en) {
+  right: auto;
+  left: 30px;
 }
 @media screen and (max-width: 768px) {
   .page-content .profile-section .info-section .main-info {
@@ -1045,6 +1140,10 @@ body {
   width: 80%;
   max-width: 1000px;
 }
+.page-content .profile-section .info-section .description:lang(en) {
+  left: 30px;
+  right: 0;
+}
 @media screen and (max-width: 768px) {
   .page-content .profile-section .info-section .description {
     top: -90px;
@@ -1062,7 +1161,11 @@ body {
   margin-bottom: 1rem;
 }
 .page-content .profile-section .info-section .description ul li {
-  padding-right: 0.8rem;
+  padding-right: 0.7rem;
+}
+.page-content .profile-section .info-section .description ul li:lang(en) {
+  padding-right: 0;
+  padding-left: 0.7rem;
 }
 .page-content .profile-section .info-section .description ul li::marker {
   content: "\f058";
@@ -1070,10 +1173,13 @@ body {
   color: #004c70;
   font-weight: 700;
 }
+.page-content .profile-section .info-section .form-container {
+  padding: 0 2.5rem;
+}
 .page-content .profile-section .info-section .action {
   position: relative;
-  top: -40px;
-  left: 40px;
+  padding: 0 2rem;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 575px) {
   .page-content .profile-section .info-section .action {
@@ -1155,12 +1261,12 @@ body {
   border-radius: 7px;
 }
 .table-job-stages li {
-  width: 95px;
+  width: 120px;
   position: relative;
   padding: 5px 15px;
 }
 .table-job-stages li span {
-  font-size: 13px;
+  font-size: 12px;
 }
 .table-job-stages li:not(:first-child) {
   padding-right: 22px;

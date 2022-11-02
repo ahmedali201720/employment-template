@@ -6,7 +6,7 @@
   direction: ltr;
   @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 }
-*:lang(en):not(.fa, .far, .fab, .fas) {
+*:lang(en):not(.fa, .far, .fab, .fas, .lni) {
   font-family: "Roboto", sans-serif;
 }
 
@@ -195,11 +195,21 @@ body {
 }
 .section-head .main-head {
   position: relative;
+  font-size: 1.5rem;
   animation: fadeLeftRight 1.5s ease-in-out;
 }
 .section-head .head-meta {
   position: relative;
   animation: fadeRightLeft 1.5s ease-in-out;
+}
+
+.section-head-sm {
+  margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 576px) {
+  .section-head-sm {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .minimized-item {
@@ -305,7 +315,21 @@ body {
 }
 @media screen and (max-width: 576px) {
   .job-item {
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
+  }
+}
+.job-item.job-item-lg {
+  grid-template-columns: 15% 85%;
+  padding-bottom: 2rem !important;
+}
+@media screen and (max-width: 1400px) {
+  .job-item.job-item-lg {
+    grid-template-columns: 20% 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .job-item.job-item-lg {
+    grid-template-columns: 100%;
   }
 }
 .job-item .bookmark {
@@ -451,18 +475,32 @@ body {
 .nice-select {
   padding-right: 0.9rem;
 }
+.nice-select:lang(en) {
+  padding-right: 1.8rem;
+}
 .nice-select .current {
   display: block;
   text-align: right;
+  position: relative;
+  top: -5px;
+  font-size: 0.9rem;
+}
+.nice-select .current:lang(en) {
+  text-align: left;
 }
 .nice-select::after {
   left: 15px;
   right: auto;
 }
+.nice-select:lang(en)::after {
+  right: 15px;
+  left: auto;
+}
 .nice-select .list {
   position: absolute;
   top: 100%;
-  width: 100%;
+  width: auto !important;
+  min-width: 100% !important;
   max-height: 200px;
   overflow-y: auto;
   scrollbar-width: thin;
@@ -490,6 +528,9 @@ body {
   padding-right: 0.9rem;
   padding-left: 0.9rem;
 }
+.nice-select .list li:lang(en) {
+  text-align: left;
+}
 
 .candidate-card {
   position: relative;
@@ -511,10 +552,14 @@ body {
 .candidate-card .name {
   display: block;
   color: #004c70;
-  font-size: 1.125rem;
+  font-size: 0.95rem;
   font-weight: 500;
   text-decoration: none;
   margin-bottom: 0.5rem;
+  transition: all 0.4s;
+}
+.candidate-card .name:hover {
+  color: #0080bd;
 }
 .candidate-card .desc {
   color: #696969;
@@ -741,6 +786,18 @@ section.middle {
   max-width: 160px;
   height: auto;
   border-radius: 50px;
+}
+
+.h1-sm {
+  font-size: 1.5rem;
+}
+
+.h4-sm {
+  font-size: 1.2rem;
+}
+
+.max-width-100 {
+  max-width: 100% !important;
 }
 
 .faq-section,

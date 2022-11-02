@@ -8,12 +8,12 @@ $(document).ready(function () {
       if (menu.is(":visible")) {
         menu.slideUp(400);
         icon.css({
-          transform: "rotateZ(0deg)",
+          transform: "rotateZ(0deg) scaleX(-1)",
         });
       } else {
         menu.slideDown(400);
         icon.css({
-          transform: "rotateZ(-90deg)",
+          transform: "rotateZ(-90deg) scaleX(-1)",
         });
       }
     }

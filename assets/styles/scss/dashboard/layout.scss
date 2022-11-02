@@ -4,21 +4,21 @@
   display: flex;
   transition: 0.4s;
   .dashboard-sidebar {
-    width: 18%;
+    width: 22%;
     @media screen and (max-width: 1600px) {
-      width: 20%;
-    }
-    @media screen and (max-width: 1500px) {
-      width: 22%;
-    }
-    @media screen and (max-width: 1400px) {
       width: 23%;
     }
+    @media screen and (max-width: 1500px) {
+      width: 25%;
+    }
+    @media screen and (max-width: 1400px) {
+      width: 32%;
+    }
     @media screen and (max-width: 1300px) {
-      width: 27%;
+      width: 35%;
     }
     @media screen and (max-width: 1200px) {
-      width: 29%;
+      width: 33%;
     }
     @media screen and (max-width: 1024px) {
       width: 32%;
@@ -154,17 +154,19 @@
           display: inline-block;
           width: 70%;
           transition: all 0.4s;
+          i,
           img {
-            width: 20px;
-            margin-left: 1rem;
+            font-size: 20px;
+            width: 25px;
+            margin-left: 0.8rem;
             &:lang(en) {
-              margin-right: 1rem;
+              margin-right: 0.8rem;
               margin-left: 0;
             }
             transition: all 0.4s;
           }
           .text {
-            font-size: 1.2rem;
+            font-size: 0.95rem;
             font-weight: 400;
           }
         }
@@ -178,6 +180,11 @@
           font-size: 1.5rem;
           color: #ffffff;
           transition: all 0.4s;
+        }
+        .sep-side-link {
+          + .ico {
+            color: #ef7968 !important;
+          }
         }
         .badge {
           position: relative;
@@ -201,6 +208,10 @@
             color: #ffffff;
             text-decoration: none;
             padding-right: 2.2rem;
+            &:lang(en) {
+              padding-right: 0;
+              padding-left: 2.2rem;
+            }
             margin-bottom: 0.75rem;
             transition: all 0.4s;
             i {
@@ -419,6 +430,18 @@
         }
         @media screen and (max-width: 1199px) {
           margin-left: 1rem;
+        }
+        &:lang(en) {
+          margin-right: 4rem;
+          margin-left: 0;
+          @media screen and (max-width: 1600px) {
+            margin-right: 2rem;
+            margin-left: 0;
+          }
+          @media screen and (max-width: 1199px) {
+            margin-right: 1rem;
+            margin-left: 0;
+          }
         }
       }
       .brand {

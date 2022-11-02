@@ -33,6 +33,8 @@
     />
     <link rel="stylesheet" href="../assets/font/stylesheet.css" />
     <link rel="stylesheet" href="../assets/styles/css/nice-select.css" />
+    <link rel="stylesheet" href="../assets/styles/css/select2.min.css" />
+    <link rel="stylesheet" href="../assets/assets/css/styles.css" />
     <link rel="stylesheet" href="../assets/styles/css/global.css" />
     <link rel="stylesheet" href="../assets/styles/css/animation.css" />
     <link rel="stylesheet" href="../assets/styles/css/dashboard/layout.css" />
@@ -301,157 +303,96 @@
           </div>
         </div>
         <div class="page-content" id="pageContent">
-          <section class="profile-section" id="profileSection">
-            <div class="container-fluid">
-              <div class="info-section">
-                <div class="cover">
-                  <img src="../assets/images/banner-2.jpg" alt="BANNER" />
-                </div>
-                <div class="avatar">
-                  <img src="../assets/images/client-1.jpg" alt="Client" />
-                </div>
-                <div
-                  class="meta d-flex justify-content-lg-end justify-content-center align-items-center"
-                >
-                  <button class="theme-btn">
-                    <i class="fa fa-download me-1"></i>
-                    <span>Download CV</span>
-                  </button>
-                  <div class="dropdown">
-                    <button
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="fa fa-ellipsis-v ellipsis-icon"></i>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="far fa-heart me-1"></i>
-                          <span>Bookmark</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="far fa-bell me-1"></i>
-                          <span>Notify Me</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="fa fa-ban me-1"></i>
-                          <span>Block</span>
-                        </a>
-                      </li>
-                    </ul>
+          <div class="dashboard-tlbar d-block mb-5 px-4">
+            <div class="row">
+              <div class="colxl-12 col-lg-12 col-md-12">
+                <h1 class="ft-medium h1-sm fw-bold">Approvals</h1>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-muted">
+                      <a href="#">Dashboard</a>
+                    </li>
+                    <li class="breadcrumb-item text-muted">
+                      <a href="#">Approvals</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="#" class="theme-cl">Add New</a>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="dashboard-card">
+                  <div class="head">
+                    <h4 class="fw-bold">
+                      <i class="fa fa-plus-square text-success me-1"></i>
+                      <span>Add New Stage</span>
+                    </h4>
                   </div>
-                </div>
-                <div class="main-info">
-                  <h4>Dr. Michel Emad Salem</h4>
-                  <p class="title">Dental Surgeon</p>
-                </div>
-                <div class="description">
-                  <h5 class="text-success">Profile Summary</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Pariatur ad voluptas earum nemo perferendis, neque ea ab
-                    beatae quod, eveniet culpa est. Velit saepe blanditiis
-                    aliquid illum ipsam rem sunt. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Pariatur ad voluptas earum
-                    nemo perferendis, neque ea ab beatae quod, eveniet culpa
-                    est. Velit saepe blanditiis aliquid illum ipsam rem sunt.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Pariatur ad voluptas earum nemo perferendis, neque ea ab
-                    beatae quod, eveniet culpa est. Velit saepe blanditiis
-                    aliquid illum ipsam rem sunt. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Pariatur ad voluptas earum
-                    nemo perferendis, neque ea ab beatae quod, eveniet culpa
-                    est. Velit saepe blanditiis aliquid illum ipsam rem sunt.
-                  </p>
-                </div>
-                <div class="description">
-                  <h5 class="text-success">Experience</h5>
-                  <ul>
-                    <li>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsum ea quae distinctio nobis? Eaque ipsam fuga,
-                      expedita, repudiandae quod natus fugiat exercitationem
-                      totam quis alias quos, non voluptate tenetur ipsum.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsum ea quae distinctio nobis? Eaque ipsam fuga,
-                      expedita, repudiandae quod natus fugiat exercitationem
-                      totam quis alias quos, non voluptate tenetur ipsum.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsum ea quae distinctio nobis? Eaque ipsam fuga,
-                      expedita, repudiandae quod natus fugiat exercitationem
-                      totam quis alias quos, non voluptate tenetur ipsum.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsum ea quae distinctio nobis? Eaque ipsam fuga,
-                      expedita, repudiandae quod natus fugiat exercitationem
-                      totam quis alias quos, non voluptate tenetur ipsum.
-                    </li>
-                  </ul>
-                </div>
-                <div class="description">
-                  <h5 class="text-success">Work Experience</h5>
-                  <ul>
-                    <li>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsum ea quae distinctio nobis? Eaque ipsam fuga,
-                      expedita, repudiandae quod natus fugiat exercitationem
-                      totam quis alias quos, non voluptate tenetur ipsum.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsum ea quae distinctio nobis? Eaque ipsam fuga,
-                      expedita, repudiandae quod natus fugiat exercitationem
-                      totam quis alias quos, non voluptate tenetur ipsum.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsum ea quae distinctio nobis? Eaque ipsam fuga,
-                      expedita, repudiandae quod natus fugiat exercitationem
-                      totam quis alias quos, non voluptate tenetur ipsum.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsum ea quae distinctio nobis? Eaque ipsam fuga,
-                      expedita, repudiandae quod natus fugiat exercitationem
-                      totam quis alias quos, non voluptate tenetur ipsum.
-                    </li>
-                    <li>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Ipsum ea quae distinctio nobis? Eaque ipsam fuga,
-                      expedita, repudiandae quod natus fugiat exercitationem
-                      totam quis alias quos, non voluptate tenetur ipsum.
-                    </li>
-                  </ul>
-                </div>
-                <div class="form-container">
-                  <div class="profile-form-row">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <h4 class="main-head">Department Head</h4>
+                  <div class="content">
+                    <div class="row g-4">
+                      <div class="col-l2">
+                        <form class="job-form" id="jobForm">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="form-group mb-4">
+                                <label for="name" class="form-label fw-bolder">
+                                  Name
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <i class="icon fa fa-newspaper"></i>
+                                  <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    class="form-control"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-group mb-4">
+                                <div class="wrapper">
+                                  <label
+                                    for="ctry"
+                                    class="form-label fw-bolder"
+                                  >
+                                    Select Department
+                                    <span class="text-danger">*</span>
+                                  </label>
+                                  <div class="input-wrapper">
+                                    <select
+                                      class="form-control w-100 nice-selector"
+                                      name="dept"
+                                      id="dept"
+                                    >
+                                      <option value="AL">
+                                        Department Head
+                                      </option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group text-end my-4">
+                            <button class="theme-btn fw-bold">
+                              Save Approval
+                            </button>
+                          </div>
+                        </form>
                       </div>
-                      <div class="col-lg-4"></div>
                     </div>
                   </div>
                 </div>
-                <div class="action text-end">
-                  <button class="theme-btn">Accept For Interview</button>
-                </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </div>
     </div>
@@ -480,8 +421,8 @@
     <script type="module" src="../assets/js/jquery.waypoints.min.js"></script>
     <script type="module" src="../assets/js/jquery.counterup.min.js"></script>
     <script src="../assets/js/jquery.nice-select.min.js"></script>
-    <script src="../assets/js/select2.full.min.js"></script>
     <script src="../assets/js/ckeditor/ckeditor.js"></script>
+    <script src="../assets/js/select2.full.min.js"></script>
     <script type="module" src="../assets/js/dashboard/layout.js"></script>
     <script src="../assets/js/dashboard/script.js"></script>
   </body>
