@@ -31,7 +31,7 @@ $(document).ready(function () {
     if (!container.hasClass("collapsed")) {
       subs.slideUp(100);
       icos.css({
-        transform: "rotateZ(0deg)",
+        transform: "rotateZ(0deg) scaleX(-1)",
       });
     }
     sidebar.find("*").animate(
