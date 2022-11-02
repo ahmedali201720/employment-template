@@ -547,36 +547,17 @@ body {
   position: relative;
   height: 100%;
   background-color: #ffffff;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 3rem;
   box-shadow: 0 0 5px #eeeeee;
   border-radius: 10px;
-  text-align: right;
-}
-@media screen and (max-width: 1300px) {
-  .candidate-card {
-    padding: 1.5rem;
-  }
-}
-.candidate-card:lang(en) {
-  text-align: left;
-}
-.candidate-card .head {
-  display: flex;
-  justify-content: start !important;
-  margin-bottom: 1rem;
-  align-items: center;
+  text-align: center;
 }
 .candidate-card .image {
-  text-align: center;
-  margin-left: 10px;
-}
-.candidate-card .image:lang(en) {
-  margin-left: 0;
-  margin-right: 10px;
+  margin-bottom: 1rem;
 }
 .candidate-card .image img {
-  width: 70px;
-  height: 70px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
 }
 .candidate-card .name {
@@ -585,7 +566,9 @@ body {
   font-size: 0.95rem;
   font-weight: 500;
   text-decoration: none;
+  margin-bottom: 1rem;
   transition: all 0.4s;
+  text-align: center;
 }
 .candidate-card .name:hover {
   color: #0080bd;
@@ -596,9 +579,15 @@ body {
   margin-bottom: 0.2rem;
 }
 .candidate-card .meta {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
   color: #8f8f8f;
   font-size: 0.9rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
+}
+.candidate-card .actions {
+  margin-top: 1rem;
 }
 .candidate-card .actions a {
   display: inline-block;
@@ -623,8 +612,6 @@ body {
 }
 .candidate-card .actions a:last-child {
   margin-left: 0;
-}
-.candidate-card .actions a:lang(en):last-child {
   margin-right: 0;
 }
 
