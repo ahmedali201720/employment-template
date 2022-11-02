@@ -496,6 +496,9 @@ body {
 .nice-select .current:lang(en) {
   text-align: left;
 }
+.nice-select.no-top .current {
+  top: auto !important;
+}
 .nice-select::after {
   left: 15px;
   right: auto;

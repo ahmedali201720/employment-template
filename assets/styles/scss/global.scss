@@ -493,6 +493,11 @@ body {
       text-align: left;
     }
   }
+  &.no-top {
+    .current {
+      top: auto !important;
+    }
+  }
   &::after {
     left: 15px;
     right: auto;
