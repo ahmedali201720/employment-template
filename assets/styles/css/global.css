@@ -332,6 +332,14 @@ body {
     grid-template-columns: 100%;
   }
 }
+.job-item.job-item-lg .bookmark {
+  left: 10px;
+  top: 10px;
+}
+.job-item.job-item-lg .bookmark:lang(en) {
+  left: auto;
+  right: 10px;
+}
 .job-item .bookmark {
   position: absolute;
   left: 5px;

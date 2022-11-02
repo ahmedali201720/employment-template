@@ -326,6 +326,14 @@ body {
     @media screen and (max-width: 768px) {
       grid-template-columns: 100%;
     }
+    .bookmark {
+      left: 10px;
+      top: 10px;
+      &:lang(en) {
+        left: auto;
+        right: 10px;
+      }
+    }
   }
   .bookmark {
     position: absolute;
