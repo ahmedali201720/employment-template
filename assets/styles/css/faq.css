@@ -563,7 +563,7 @@ body {
 .candidate-card .head {
   display: flex;
   justify-content: start !important;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   align-items: center;
 }
 .candidate-card .image {
