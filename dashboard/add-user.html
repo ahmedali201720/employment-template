@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Vendors -->
+    <link rel="shortcut icon" href="../assets/images/icon.jpeg" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.rtl.min.css"
+      integrity="sha512-rXhL8a+X3wTosWn2Zgd/5L8rfWrpff7qdOnl7Wg1n2zHk8lHGhiSujoyxoKw1nf43kZAzJoe0Z0ymr2Kkku7lQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/font/stylesheet.css" />
+    <link rel="stylesheet" href="../assets/assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/styles/css/nice-select.css" />
+    <link rel="stylesheet" href="../assets/styles/css/select2.min.css" />
+    <link rel="stylesheet" href="../assets/styles/css/global.css" />
+    <link rel="stylesheet" href="../assets/styles/css/animation.css" />
+    <link rel="stylesheet" href="../assets/styles/css/dashboard/layout.css" />
+    <link rel="stylesheet" href="../assets/styles/css/dashboard/styles.css" />
+    <title>Medical Employment</title>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+
+    <div class="page-container" id="pageContainer">
+      <aside class="dashboard-sidebar" id="dashboardSidebar">
+        <div class="wrapper text-end mb-3 d-sm-none d-block">
+          <button class="sidebar-closer" id="sidebarCloser">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="logo text-center">
+          <img
+            class="brand std-logo"
+            src="../assets/images/logo-w-2.jpeg"
+            alt="Logo"
+          />
+          <img src="../assets/images/icon.jpeg" alt="Icon" class="logo-icon" />
+        </div>
+        <div class="user">
+          <img src="../assets/images/icons/dr.png" alt="user" />
+          <div class="meta">
+            <a href="#" class="name"> Gabri Hospital </a>
+            <span class="role">
+              <span class="dot online me-1"></span>
+              <small class="text-online" t>Online </small>
+            </span>
+          </div>
+          <div class="dropdown">
+            <button
+              type="button"
+              id="userDropdownButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa fa-ellipsis-v ellipsis-icon"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-user me-1"></i>
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-cogs me-1"></i>
+                  <span>Settings</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-sign-out-alt me-1"></i>
+                  <span>Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="side-links-list">
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link sep-side-link text-warning">
+                <img
+                  src="../assets/images/icons/login.svg"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text">Login As User Company</span>
+              </a>
+              <i
+                class="fa fa-arrow-circle-left ico"
+                style="font-size: 15px"
+              ></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-list"></i>
+                <span class="text">Dashboard</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+            <div class="submenu">
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span>Employment</span>
+              </a>
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span>My Requests</span>
+              </a>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-briefcase"></i>
+                <span class="text">Jobs</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+            <div class="submenu">
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span>Open Jobs</span>
+              </a>
+              <a href="#">
+                <i class="fa fa-dot-circle me-1"></i>
+                <span>Closed Jobs</span>
+              </a>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-plus-circle"></i>
+                <span class="text">Add Job</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-search-location"></i>
+                <span class="text">Search</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-bell"></i>
+                <span class="text">Notifications</span>
+              </a>
+              <span class="badge"> +100 </span>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-envelope"></i>
+                <span class="text">Messages</span>
+              </a>
+              <span class="badge"> +100 </span>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-cog"></i>
+                <span class="text">Settings</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-user-clock"></i>
+                <span class="text">Support</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+          <li class="side-item">
+            <div class="wrapper">
+              <a href="#" class="side-link">
+                <i class="fa fa-sign-out-alt"></i>
+                <span class="text">Logout</span>
+              </a>
+              <i class="fa fa-angle-left ico"></i>
+            </div>
+          </li>
+        </ul>
+        <div class="hint">
+          <i class="fa fa-check-circle me-2"></i>
+          <span>
+            For better user experience , subscribe to our newsletter to receive
+            latest updates.
+          </span>
+        </div>
+        <div class="footer text-white text-center">
+          <strong>Meeza</strong>
+          <p class="mb-0 mt-1">
+            <i class="far fa-copyright me-1"></i>
+            <span>All Rights Reserved 2023</span>
+          </p>
+        </div>
+      </aside>
+      <div class="page-body">
+        <div class="header" class="header" id="header">
+          <div class="controls-wrapper">
+            <button
+              class="sidebar-toggler d-sm-inline-block d-none"
+              id="sidebarToggler"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <button
+              class="sidebar-toggler d-sm-none d-inline-block"
+              id="mobileSidebarToggler"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="brand">
+              <img
+                class="std-logo"
+                src="../assets/images/logo-w-2.jpeg"
+                alt="Logo"
+              />
+            </div>
+          </div>
+          <div class="header-search-form-container">
+            <form action="" class="header-search-form">
+              <div class="input-wrapper">
+                <i class="icon fa fa-search"></i>
+                <input
+                  type="text"
+                  name="key"
+                  placeholder="Search Doctors .."
+                  class="form-control"
+                />
+              </div>
+            </form>
+            <button class="add-job-btn">
+              <i class="fa fa-plus"></i>
+            </button>
+          </div>
+
+          <div class="links-wrapper">
+            <button class="widget" type="button" id="notButton">
+              <img src="../assets/images/icons/black/bell.png" alt="Chat" />
+              <div class="badge">10</div>
+            </button>
+            <button class="widget" type="button" id="chatButton">
+              <img
+                src="../assets/images/icons/black/message.png"
+                alt="setting"
+              />
+              <div class="badge">10</div>
+            </button>
+            <button class="widget" id="settingButton">
+              <img
+                src="../assets/images/icons/black/setting.png"
+                alt="setting"
+              />
+              <div class="badge">10</div>
+            </button>
+            <button class="profile-btn" id="profileButton">
+              <img
+                class="profile"
+                src="../assets/images/icons/dr.png"
+                alt="user"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="page-content" id="pageContent">
+          <div class="dashboard-tlbar d-block mb-5 px-4">
+            <div class="row">
+              <div class="colxl-12 col-lg-12 col-md-12">
+                <h1 class="ft-medium h1-sm fw-bold">Users</h1>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-muted">
+                      <a href="#">Dashboard</a>
+                    </li>
+                    <li class="breadcrumb-item text-muted">
+                      <a href="#">Users</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="#" class="theme-cl">New User</a>
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="row g-4">
+              <div class="col-12">
+                <div class="dashboard-card">
+                  <div class="head">
+                    <h4>
+                      <i class="fa fa-plus-square text-success me-1"></i>
+                      <span>New Company User</span>
+                    </h4>
+                  </div>
+                  <div class="content">
+                    <div class="row g-4">
+                      <div class="col-l2">
+                        <form class="job-form" id="jobForm">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div class="form-group mb-4">
+                                <label for="title" class="form-label">
+                                  Name
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <i class="icon fa fa-user-alt"></i>
+                                  <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    class="form-control"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-group mb-4">
+                                <label for="title" class="form-label">
+                                  Phone
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <i class="icon fa fa-phone-alt"></i>
+                                  <input
+                                    type="text"
+                                    name="phone"
+                                    id="phone"
+                                    class="form-control"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-group mb-4">
+                                <label for="title" class="form-label">
+                                  Email
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <i class="icon fa fa-envelope"></i>
+                                  <input
+                                    type="text"
+                                    name="email"
+                                    id="email"
+                                    class="form-control"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-group mb-4">
+                                <label for="title" class="form-label">
+                                  Password
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <i class="icon fa fa-lock"></i>
+                                  <input
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    class="form-control"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-group mb-4">
+                                <label for="title" class="form-label">
+                                  Birthdate
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <i class="icon fa fa-birthday-cake"></i>
+                                  <input
+                                    type="date"
+                                    name="birthdate"
+                                    id="birthdate"
+                                    class="form-control"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                              <div class="wrapper">
+                                <label for="level" class="form-label">
+                                  Gender
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <select
+                                    class="form-control w-100 nice-selector"
+                                    name="spec"
+                                    id="ctry"
+                                  >
+                                    <option value="">--Select Gender--</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                              <div class="wrapper">
+                                <label for="level" class="form-label">
+                                  User Role
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <select
+                                    class="form-control w-100 nice-selector"
+                                    name="role"
+                                    id="role"
+                                  >
+                                    <option value="">
+                                      --Select User Role--
+                                    </option>
+                                    <option value="Male">Admin</option>
+                                    <option value="Female">User</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 mb-4">
+                              <div class="wrapper">
+                                <label for="level" class="form-label">
+                                  Approval
+                                  <span class="text-danger">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                  <select
+                                    class="form-control w-100 nice-selector"
+                                    name="role"
+                                    id="role"
+                                  >
+                                    <option value="">
+                                      --Select Approval--
+                                    </option>
+                                    <option value="Male">
+                                      Head Department
+                                    </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group text-end mb-4">
+                            <button class="theme-btn">Save User</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js"
+      integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script type="module" src="../assets/js/jquery.waypoints.min.js"></script>
+    <script type="module" src="../assets/js/jquery.counterup.min.js"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/ckeditor/ckeditor.js"></script>
+    <script src="../assets/js/select2.full.min.js"></script>
+    <script type="module" src="../assets/js/dashboard/layout.js"></script>
+    <script src="../assets/js/dashboard/script.js"></script>
+  </body>
+</html>
