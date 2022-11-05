@@ -73,6 +73,14 @@ body {
   transform: scaleX(-1);
 }
 
+.overflow-ellipsis {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .adjusted-icon {
   position: relative;
   top: 2px;
