@@ -835,6 +835,78 @@ section.middle {
   max-width: 100% !important;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
 .faq-section,
 .privacy-section {
   padding-top: 160px;
@@ -846,12 +918,38 @@ section.middle {
 }
 
 .contactus-section {
-  padding: 200px 20px 120px;
+  padding: 160px 20px 90px;
 }
 @media screen and (max-width: 768px) {
   .contactus-section {
     padding: 150px 20px 80px;
   }
+}
+.contactus-section .section-head {
+  margin-bottom: 3rem;
+}
+.contactus-section .contact-card {
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #daffce;
+  height: 100%;
+}
+.contactus-section .contact-card .icon {
+  margin-bottom: 15px;
+}
+.contactus-section .contact-card .icon img {
+  width: 80px;
+  height: 80px;
+}
+.contactus-section .contact-card .desc {
+  max-width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contactus-section .contact-card .desc a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .contactus-section .card-wrap-body {
@@ -898,6 +996,19 @@ section.middle {
   font-size: 40px;
   color: #004c70;
   margin-bottom: 20px;
+}
+
+.map-section .map-wrapper {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.map-section .map-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=faq.css.map */

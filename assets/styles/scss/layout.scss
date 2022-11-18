@@ -459,7 +459,7 @@
   .brand {
     img {
       position: relative;
-      max-width: 150px;
+      max-width: 135px;
       height: auto;
       border-radius: 50px;
       @media screen and (max-width: 575px) {
@@ -478,14 +478,13 @@
         display: inline-block;
         color: #ffffff;
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 400;
-        padding-bottom: 1rem;
         transition: all 0.5s;
         &:not(.dropdown-toggle)::after {
           content: "";
           position: absolute;
-          bottom: 0;
+          bottom: -5px;
           right: 0;
           width: 0;
           height: 2px;

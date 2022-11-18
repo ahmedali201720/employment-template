@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Vendors -->
     <link rel="shortcut icon" href="./assets/images/icon.png" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.rtl.min.css"
       integrity="sha512-rXhL8a+X3wTosWn2Zgd/5L8rfWrpff7qdOnl7Wg1n2zHk8lHGhiSujoyxoKw1nf43kZAzJoe0Z0ymr2Kkku7lQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -33,11 +40,62 @@
   </head>
 
   <body>
+    <div class="sidebar" id="sidebar">
+      <button class="close-toggler-icon toggler-icon" id="closeSidebarBtn">
+        <i class="fa fa-times"></i>
+      </button>
+
+      <div class="image">
+        <img
+          class="img img-fluid"
+          src="./assets/images/logo-w-2.jpeg"
+          alt="logo"
+        />
+      </div>
+
+      <div class="links">
+        <a href="#" class="sidebar-link">
+          <i class="fa fa-home me-2"></i>
+          Home
+        </a>
+
+        <a href="#" class="sidebar-link">
+          <i class="fa fa-tasks me-2"></i>
+          Jobs
+        </a>
+
+        <a href="#" class="sidebar-link">
+          <i class="fa fa-building me-2"></i>
+          Partners
+        </a>
+
+        <a href="#" class="sidebar-link">
+          <i class="fa fa-question me-2"></i>
+          About
+        </a>
+
+        <a href="#" class="sidebar-link">
+          <i class="fa fa-phone-alt me-2"></i>
+          Contact US
+        </a>
+
+        <a href="#" class="sidebar-link">
+          <i class="fa fa-user me-2"></i>
+          Login
+        </a>
+
+        <a href="#" class="sidebar-link">
+          <i class="fa fa-user-plus me-2"></i>
+          Register
+        </a>
+      </div>
+    </div>
+
     <header class="static-header" id="staticHeader">
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-3 col-3 d-xl-none d-block">
-            <button class="nav-toggler">
+            <button class="nav-toggler" id="openSidebarBtn">
               <i class="fa fa-bars"></i>
             </button>
           </div>
@@ -53,19 +111,19 @@
           >
             <ul class="nav-list text-center">
               <li class="nav-list-item">
-                <a href="#" class="nav-list-link">الرئيسية</a>
+                <a href="#" class="nav-list-link">Home</a>
               </li>
 
               <span class="sep-md"></span>
 
               <li class="nav-list-item">
-                <a href="#" class="nav-list-link">الوظائف</a>
+                <a href="./opportunities.html" class="nav-list-link">Jobs</a>
               </li>
 
               <span class="sep-md"></span>
 
               <li class="nav-list-item">
-                <a href="#" class="nav-list-link"> الشركاء </a>
+                <a href="#" class="nav-list-link"> Partners </a>
               </li>
 
               <span class="sep-md"></span>
@@ -78,16 +136,16 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  المزيد
+                  More
                   <i class="fa fa-angle-down ms-2"></i>
                 </a>
                 <ul
                   class="dropdown-menu"
                   aria-labelledby="navbarDarkDropdownMenuLink"
                 >
-                  <li><a class="dropdown-item" href="#">الأسئلة الشائعة</a></li>
-                  <li><a class="dropdown-item" href="#">عن الشركة</a></li>
-                  <li><a class="dropdown-item" href="#">اتصل بنا</a></li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                  <li><a class="dropdown-item" href="#">About</a></li>
+                  <li><a class="dropdown-item" href="#">Contactus</a></li>
                 </ul>
               </li>
             </ul>
@@ -95,9 +153,9 @@
 
           <div class="col-xl-3 col-5 d-xl-inline-block d-none">
             <div class="links d-flex justify-content-end align-items-center">
-              <a href="#" class="auth register">انضم إلينا</a>
+              <a href="./register.html" class="auth register">Join Us</a>
               <span class="sep-sm"></span>
-              <a href="#" class="auth login">تسجيل دخول</a>
+              <a href="./login.html" class="auth login">Sign in</a>
             </div>
           </div>
 
@@ -111,127 +169,96 @@
     </header>
     <section class="contactus-section">
       <div class="container">
-        <div class="row justify-content-center mb-4">
+        <div class="row justify-content-center">
           <div class="col-12">
             <div class="section-head position-relative text-center">
               <h1 class="normal-h1 main-head no-animation">
-                تواصـل <span class="fw-bold display-5">معنـــا</span>
+                <span class="fw-bold display-6">Contact Us</span>
               </h1>
               <p class="text-secondary">
-                تواصل معنا وسنقوم بالرد على رسالتك فى اقرب وقت ممكن
+                Send us your inquiry and we will replay within 24 working hours.
               </p>
             </div>
           </div>
         </div>
-
-        <div class="row align-items-start justify-content-between">
-          <div class="col-lg-4 mb-lg-0 mb-5">
-            <div class="card-wrap-body mb-4 gray rounded p-4">
-              <h4 class="mb-3">زور فروعنا</h4>
-              <p class="d-flex align-items-start">
-                <i class="fa fa-map-marker-alt text-green me-2"></i>
-                451 A بجوار مول العرب ، الحي السادس
-                <br />
-                مدينة 6 أكتوبر ، مصر.
-              </p>
-              <p class="d-flex align-items-start">
-                <i class="fa fa-map-marker-alt text-green me-2"></i>
-                451 A بجوار مول العرب ، الحي السادس
-                <br />
-                مدينة 6 أكتوبر ، مصر.
-              </p>
-            </div>
-
-            <div class="card-wrap-body mb-3 gray rounded p-4">
-              <h4 class="mb-4">اتصـل بنـا</h4>
-              <h6 class="ft-medium mb-1">خدمة العملاء:</h6>
-              <p class="d-flex align-items-center mb-3">
-                <i class="fa fa-phone me-1 text-green"></i>
-                <a href="tel:+152140445040" class="text-blue">
-                  +152140445040
-                </a>
-              </p>
-              <h6 class="ft-medium mb-1">للوظائف :</h6>
-              <p class="d-flex align-items-center mb-2">
-                <i class="fa fa-phone me-1 text-green"></i>
-                <a href="tel:+152140445040" class="text-blue">
-                  +91 965 784 23658
-                </a>
-              </p>
-            </div>
-
-            <div class="card-wrap-body mb-3 gray rounded p-4">
-              <h4 class="mb-4">البريد الإلكترونى</h4>
-              <p class="d-flex">
-                <i
-                  class="fa fa-exclamation-circle me-2 adjusted-icon text-green"
-                ></i>
-                <span class="text-secondary">
-                  إملأ الفورم وسنقوم بالتواصل معك خلال 24 ساعة
-                </span>
-              </p>
-              <p class="text-blue d-flex mb-1">
-                <i class="fa fa-envelope me-2 adjusted-icon text-green"></i>
-                <a href="#" class="text-blue"> dhananjaypreet11@gmail.com </a>
-              </p>
-              <p class="text-blue d-flex">
-                <i class="fa fa-envelope me-2 adjusted-icon text-green"></i>
-                <a href="#" class="text-blue"> dhananjaypreet12@gmail.com </a>
+        <div class="row g-4 mb-70">
+          <div class="col-xl-4 col-md-6">
+            <div class="contact-card">
+              <div class="icon">
+                <img src="./assets/images/icons/address.svg" alt="Address" />
+              </div>
+              <p class="desc">
+                12 Almadina almonwara , Riyadh , Saudia Arabia 3306A
               </p>
             </div>
           </div>
-
-          <div class="col-lg-7">
+          <div class="col-xl-4 col-md-6">
+            <div class="contact-card">
+              <div class="icon">
+                <img src="./assets/images/icons/email.svg" alt="Email" />
+              </div>
+              <p class="desc">
+                <a href="#">customersupport@meezajobs.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="contact-card">
+              <div class="icon">
+                <img src="./assets/images/icons/phone.svg" alt="Phone" />
+              </div>
+              <p class="desc"><a href="#">(966) 4321 651 4210</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 align-items-start justify-content-between">
+          <div class="col-lg-6">
+            <div class="image">
+              <img
+                class="img img-fluid"
+                src="./assets/images/contact.jpg"
+                alt="Contact Us"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 ps-lg-5">
             <form class="row contact-form">
               <div class="col-12">
-                <div class="form-group mb-3">
-                  <label class="text-dark mb-2">
-                    الإسم
-                    <span class="text-danger">( مطلوب * )</span>
-                  </label>
+                <div class="form-group mb-2">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="ادخل الإسـم كاملا .. *"
+                    placeholder="Enter Your Name ..."
                   />
                 </div>
               </div>
-
               <div class="col-12">
                 <div class="form-group mb-3">
-                  <label class="text-dark mb-2">
-                    البريد الإلكترونى
-                    <span class="text-danger">( مطلوب * )</span>
-                  </label>
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="ادخل البريد الإلكترونى .."
+                    placeholder="Enter Your Email ..."
                   />
                 </div>
               </div>
-
               <div class="col-12">
-                <div class="form-group mb-3">
-                  <label class="text-dark mb-2">
-                    موضوع الإتصال
-                    <span class="text-danger">( مطلوب * )</span>
-                  </label>
+                <div class="form-group mb-2">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="سبب الإتصال / الاستفسار.."
+                    placeholder="Contact Subject"
                   />
                 </div>
               </div>
-
               <div class="col-12">
-                <div class="form-group mb-3">
-                  <label class="text-dark mb-2"> الرسـالة / الإستفسار </label>
-                  <textarea class="form-control" rows="4"> </textarea>
+                <div class="form-group mb-2">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Your Message / Inquiry ..."
+                  ></textarea>
                 </div>
               </div>
-
               <div class="col-12 mt-4">
                 <div class="form-group">
                   <button
@@ -239,13 +266,26 @@
                     class="theme-btn"
                     style="border-radius: 5px"
                   >
-                    إرسال الرسالة
+                    Send Message
                   </button>
                 </div>
               </div>
             </form>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="map-section">
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16421992.915334428!2d-74.54900526175051!3d53.308708074896664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1654426516184!5m2!1sen!2sbd"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
     <footer id="footer" class="footer">
